@@ -1,0 +1,1584 @@
+@charset "UTF-8";
+
+#wrap {position: relative; display: block; width: 100%; height: 100%;}
+
+
+.heart-3 {
+  width: 20px;
+  height: 21px;
+  margin: 0 0 0 11px;
+  background-color: red;
+}
+
+.heart-4 {
+  width: 20px;
+  height: 21px;
+  margin: 0 0 0 10px;
+}
+
+
+
+/* ===================================== 팝업's ===================================== */
+
+/* 게임 NFTs 준비중 팝업 */
+.comingsoonPop {position: fixed; display: none; width: 100%; height: 100%; z-index: 4000;}
+.comingsoonPop>.shadow {display: block; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4);}
+.comingsoonPop>.contArea {position: absolute; top:50%; left:50%; padding:40px; display: block; background-color: #fff; transform: translate(-50%, -50%); box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1); border-radius: 16px;}
+.comingsoonPop>.contArea>p {padding-bottom: 40px; font-weight: 600; font-size: 23px; color: #834BEF; text-align: center; line-height: normal; border-bottom: 1px solid #E6E8EC;}
+.comingsoonPop>.contArea>.imgArea {display: block; width: 100%; height: auto;}
+.comingsoonPop>.contArea>.imgArea>.frame {display: block; width: 528px; height: 296px;}
+.comingsoonPop>.contArea>.imgArea>.frame>img {display: block; width: 100%; height: 100%;}
+.comingsoonPop>.contArea>a {display: block; width: 100%; height: 48px;}
+.comingsoonPop>.contArea>a>img {display: block; width: 100%; height: 100%;}
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* NFT 생성 완료 팝업 */
+.nftcreateconfPop {position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; z-index: 4000;}
+.nftcreateconfPop>.shadow {display: block; width: 100%; height: 100%; background-color: rgba(35, 38, 47, 0.5);}
+.nftcreateconfPop>.contArea {padding: 40px; position: absolute; top: 50%; left: 50%; display: block; width: 600px; height: auto; box-sizing: border-box; text-align: center; background-color: #fff; transform: translate(-50%, -50%); border-radius: 16px;}
+.nftcreateconfPop>.contArea>.txtArea {padding-bottom: 33px; display: block; border-bottom: 1px solid #E6E8EC;}
+.nftcreateconfPop>.contArea>.txtArea>p {display: block; font-size: 23px; font-weight: 600; color: #834BEF; line-height: normal;}
+.nftcreateconfPop>.contArea>.frame {margin: 40px auto 16px; display: block; width: 280px; height: 280px; border: none;}
+.nftcreateconfPop>.contArea>.frame>img {display: block; width: 100%; height: 100%; object-fit: cover; object-position: center;}
+.nftcreateconfPop>.contArea>span {display: block; font-size: 15px; font-weight: 400; color: #777E90; line-height: normal;}
+.nftcreateconfPop>.contArea>.btnArea {padding:20px 20px 0; display: block; width: 100%; height: auto; box-sizing: border-box;}
+.nftcreateconfPop>.contArea>.btnArea>a {padding:15px 0; display: block; width: 100%; font-weight: 500; font-size: 16px; color: #fff; text-align: center; border-radius: 24px;
+  background: #c18bff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #c18bff 0%, #aa7dff 50%, #834bef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c18bff', endColorstr='#834bef',GradientType=1 ); /* IE6-9 */
+}
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* NFT 바로 구매 팝업 */
+.buynowPop {position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; z-index: 4000;}
+.buynowPop>.shadow {display: block; width: 100%; height: 100%; background-color: rgba(35, 38, 47, 0.5);}
+.buynowPop>.contArea {padding: 0 40px 40px; position: absolute; top: 50%; left: 50%; display: block; width: 600px; height: auto; box-sizing: border-box; background-color: #fff; transform: translate(-50%, -50%); border-radius: 16px;}
+.buynowPop>.contArea>p.tit {position: relative; padding:40px 0; font-weight: 600; font-size: 23px; color: #000; text-align: center;}
+.buynowPop>.contArea>p.tit>a {position: absolute; top:50%; right:0; display: block; width: 40px; height: 40px; transform: translateY(-50%);}
+.buynowPop>.contArea>p.tit>a>img {display: block; width: 100%; height: 100%;}
+.buynowPop>.contArea>.imgArea {padding:40px 0; display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: center; width: 100%; height: auto; text-align: center; border-top:1px solid #E6E8EC; border-bottom:1px solid #E6E8EC;}
+.buynowPop>.contArea>.imgArea>.frame {display: block; width: 140px; height: 140px;}
+.buynowPop>.contArea>.imgArea>.frame>img {display: block; width: 100%; height: 100%; object-fit: cover; object-position: center;}
+.buynowPop>.contArea>.imgArea>.txtbox {display: block; width: 70%; height: auto;}
+.buynowPop>.contArea>.imgArea>.txtbox>p {font-weight: 600; font-size: 19px; color: #777E90; line-height: normal;}
+.buynowPop>.contArea>.imgArea>.txtbox>p>em {font-weight: 600;}
+.buynowPop>.contArea>.infoArea {padding:24px 0 40px; display: block; width: 100%; height: auto;}
+.buynowPop>.contArea>.infoArea>p {margin-bottom:10px; position: relative; font-weight: 600; font-size: 19px; line-height: normal; color: #000;}
+.buynowPop>.contArea>.infoArea>p:last-child {margin-bottom:0;}
+.buynowPop>.contArea>.infoArea>p>span {position: absolute; top:50%; right:0; display: block; font-weight: normal; font-size: 19px; color: #777E90; transform: translateY(-50%);}
+.buynowPop>.contArea>.infoArea>p>span>em {margin-right:6px;}
+.buynowPop>.contArea>.btnArea {display: block; width: 100%; height: auto;}
+.buynowPop>.contArea>.btnArea>a {padding:15px 0; display: block; width: 100%; font-weight: 500; font-size: 16px; color: #fff; background-color: #E6E8EC; text-align: center; border-radius: 24px;}
+.buynowPop>.contArea>.btnArea>a.on {padding:15px 0; display: block; width: 100%; font-weight: 500; font-size: 16px; color: #fff; text-align: center; border-radius: 24px;
+  background: #c18bff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #c18bff 0%, #aa7dff 50%, #834bef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c18bff', endColorstr='#834bef',GradientType=1 ); /* IE6-9 */}
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* NFT 입찰하기 팝업 */
+.placebidPop {position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; z-index: 4000;}
+.placebidPop>.shadow {display: block; width: 100%; height: 100%; background-color: rgba(35, 38, 47, 0.5);}
+.placebidPop>.contArea {padding: 0 40px 40px; position: absolute; top: 50%; left: 50%; display: block; width: 600px; height: auto; box-sizing: border-box; background-color: #fff; transform: translate(-50%, -50%); border-radius: 16px;}
+.placebidPop>.contArea>p.tit {position: relative; padding:40px 0; font-weight: 600; font-size: 23px; color: #000; text-align: center;}
+.placebidPop>.contArea>p.tit>a {position: absolute; top:50%; right:0; display: block; width: 40px; height: 40px; transform: translateY(-50%);}
+.placebidPop>.contArea>p.tit>a>img {display: block; width: 100%; height: 100%;}
+.placebidPop>.contArea>.imgArea {padding:40px 0; display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: center; width: 100%; height: auto; text-align: center; border-top:1px solid #E6E8EC; border-bottom:1px solid #E6E8EC;}
+.placebidPop>.contArea>.imgArea>.frame {display: block; width: 140px; height: 140px;}
+.placebidPop>.contArea>.imgArea>.frame>img {display: block; width: 100%; height: 100%; object-fit: cover; object-position: center;}
+.placebidPop>.contArea>.imgArea>.txtbox {display: block; width: 70%; height: auto;}
+.placebidPop>.contArea>.imgArea>.txtbox>p {font-weight: 600; font-size: 19px; color: #777E90; line-height: normal;}
+.placebidPop>.contArea>.imgArea>.txtbox>p>em {font-weight: 600;}
+.placebidPop>.contArea>.bidArea {padding:24px 0 40px; display: block; width: 100%; height: auto;}
+.placebidPop>.contArea>.bidArea>p {margin-bottom:10px; position: relative; font-weight: 600; font-size: 19px; line-height: normal; color: #000;}
+.placebidPop>.contArea>.bidArea>span {margin-top: 5px; display: block; font-weight: normal; font-size: 13px; color: #EF4B4B; line-height: normal;}
+.placebidPop>.contArea>.bidArea>.inputArea {padding: 1vh 0; position: relative; display: block; width: 100%; height: auto; border-bottom: 1px solid #E6E8EC;}
+.placebidPop>.contArea>.bidArea>.inputArea>input {padding:0; display: inline-block; width: 90%; height: 100%; font-family: Poppins; font-weight: normal; font-size: 19px; color: #23262F; border:none;}
+.placebidPop>.contArea>.bidArea>.inputArea>input::placeholder {font-family: Poppins; font-weight: normal; font-size: 19px; color: #E6E8EC;}
+.placebidPop>.contArea>.bidArea>.inputArea>span {position: absolute; top:50%; right:0; display: inline-block; font-weight: 600; font-size: 19px; color: #834BEF; transform: translateY(-50%);}
+.placebidPop>.contArea>.btnArea {display: block; width: 100%; height: auto;}
+.placebidPop>.contArea>.btnArea>a {padding:15px 0; display: block; width: 100%; font-weight: 500; font-size: 16px; color: #fff; background-color: #E6E8EC; text-align: center; border-radius: 24px;}
+.placebidPop>.contArea>.btnArea>a.on {
+  background: #c18bff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #c18bff 0%, #aa7dff 50%, #834bef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c18bff', endColorstr='#834bef',GradientType=1); /* IE6-9 */
+}
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* 경매 생성하기 팝업 */
+.createauctionPop {position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; z-index: 4000;}
+.createauctionPop>.shadow {display: block; width: 100%; height: 100%; background-color: rgba(35, 38, 47, 0.5);}
+.createauctionPop>.contArea {padding: 0 40px 40px; position: absolute; top: 50%; left: 50%; display: block; width: 600px; height: auto; box-sizing: border-box; background-color: #fff; transform: translate(-50%, -50%); border-radius: 16px;}
+.createauctionPop>.contArea>p.tit {position: relative; padding:40px 0; font-weight: 600; font-size: 23px; color: #000; text-align: center;}
+.createauctionPop>.contArea>p.tit>a {position: absolute; top:50%; right:0; display: block; width: 40px; height: 40px; transform: translateY(-50%);}
+.createauctionPop>.contArea>p.tit>a>img {display: block; width: 100%; height: 100%;}
+.createauctionPop>.contArea>.inputbox {display: block; width: 100%; height: auto;}
+.createauctionPop>.contArea>.inputbox.step1 {padding:10px 0 0;}
+.createauctionPop>.contArea>.inputbox.step2 {padding:20px 0;}
+.createauctionPop>.contArea>.inputbox.step3 {padding:0 0 40px;}
+.createauctionPop>.contArea>.inputbox>p {margin-bottom:10px; position: relative; font-weight: 600; font-size: 19px; line-height: normal; color: #000;}
+.createauctionPop>.contArea>.inputbox>span {margin-top: 5px; display: block; font-weight: normal; font-size: 13px; color: #EF4B4B; line-height: normal;}
+.createauctionPop>.contArea>.inputbox>.inputArea {padding: 15px 0; position: relative; display: block; width: 100%; height: auto; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1); border-radius: 15px;}
+.createauctionPop>.contArea>.inputbox>.inputArea>input {padding:0; display: inline-block; width: 87%; height: 100%; font-family: Poppins; font-weight: normal; font-size: 19px; color: #23262F; background-color: transparent; text-align: right; border:none;}
+.createauctionPop>.contArea>.inputbox>.inputArea>input::placeholder {font-family: Poppins; font-weight: normal; font-size: 19px; color: #E6E8EC;}
+.createauctionPop>.contArea>.inputbox>.inputArea>span {position: absolute; top:50%; right:20px; display: inline-block; font-weight: 600; font-size: 19px; color: #834BEF; transform: translateY(-50%);}
+.createauctionPop>.contArea>.inputbox>.inputArea>span.frame {display: block; width: 24px; height: 24px;}
+.createauctionPop>.contArea>.inputbox>.inputArea>span.frame>img {display: block; width: 100%; height: 100%;}
+.createauctionPop>.contArea>.inputbox.err>.inputArea {background: #FFF8F8; border: 1px solid #FF7A7A;}
+.createauctionPop>.contArea>.btnArea {display: block; width: 100%; height: auto;}
+.createauctionPop>.contArea>.btnArea>a {padding:15px 0; display: block; width: 100%; font-weight: 500; font-size: 16px; color: #fff; background-color: #E6E8EC; text-align: center; border-radius: 24px;}
+.createauctionPop>.contArea>.btnArea>a.on {
+  background: #c18bff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #c18bff 0%, #aa7dff 50%, #834bef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c18bff', endColorstr='#834bef',GradientType=1); /* IE6-9 */
+}
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* 경매 생성 완료 팝업 */
+.auctionsuccessPop {position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; z-index: 4000;}
+.auctionsuccessPop>.shadow {display: block; width: 100%; height: 100%; background-color: rgba(35, 38, 47, 0.5);}
+.auctionsuccessPop>.contArea {padding: 0 40px 40px; position: absolute; top: 50%; left: 50%; display: block; width: 600px; height: auto; box-sizing: border-box; background-color: #fff; transform: translate(-50%, -50%); border-radius: 16px;}
+.auctionsuccessPop>.contArea>.titbox {padding:40px 0; display: block; width: 100%; height: auto; text-align: center; border-bottom:1px solid #E6E8EC;}
+.auctionsuccessPop>.contArea>.titbox>p {font-weight: 600; font-size: 23px; color: #834BEF; line-height: normal;}
+.auctionsuccessPop>.contArea>.imgArea {padding:40px 0; display: block; width: 100%; height: auto;}
+.auctionsuccessPop>.contArea>.imgArea>.frame {margin:0 auto; display: block; width: 280px; height: 280px;}
+.auctionsuccessPop>.contArea>.imgArea>.frame>img {display: block; width: 100%; height: 100%; object-fit: cover; object-position: center;}
+.auctionsuccessPop>.contArea>.imgArea>p {margin-top: 10px; font-weight: 600; font-size: 15px; color: #777E90; line-height: normal; text-align: center;}
+.auctionsuccessPop>.contArea>.btnArea {display: block; width: 100%; height: auto;}
+.auctionsuccessPop>.contArea>.btnArea>a {padding:15px 0; display: block; width: 100%; font-weight: 500; font-size: 16px; color: #fff; background-color: #E6E8EC; text-align: center; border-radius: 24px;
+  background: #c18bff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #c18bff 0%, #aa7dff 50%, #834bef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c18bff', endColorstr='#834bef',GradientType=1); /* IE6-9 */
+}
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* 경매 정산 팝업 */
+.settlePop {position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; z-index: 4000;}
+.settlePop>.shadow {display: block; width: 100%; height: 100%; background-color: rgba(35, 38, 47, 0.5);}
+.settlePop>.contArea {padding: 0 40px 40px; position: absolute; top: 50%; left: 50%; display: block; width: 600px; height: auto; box-sizing: border-box; background-color: #fff; transform: translate(-50%, -50%); border-radius: 16px;}
+.settlePop>.contArea>p.tit {position: relative; padding:40px 0; font-weight: 600; font-size: 23px; color: #000; text-align: center;}
+.settlePop>.contArea>p.tit>a {position: absolute; top:50%; right:0; display: block; width: 40px; height: 40px; transform: translateY(-50%);}
+.settlePop>.contArea>p.tit>a>img {display: block; width: 100%; height: 100%;}
+.settlePop>.contArea>.imgArea {padding:40px 0; display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: center; width: 100%; height: auto; text-align: center; border-top:1px solid #E6E8EC; border-bottom:1px solid #E6E8EC;}
+.settlePop>.contArea>.imgArea>.frame {display: block; width: 140px; height: 140px;}
+.settlePop>.contArea>.imgArea>.frame>img {display: block; width: 100%; height: 100%; object-fit: cover; object-position: center;}
+.settlePop>.contArea>.imgArea>.txtbox {display: block; width: 70%; height: auto;}
+.settlePop>.contArea>.imgArea>.txtbox>p {font-weight: 600; font-size: 19px; color: #777E90; line-height: normal;}
+.settlePop>.contArea>.imgArea>.txtbox>p>em {font-weight: 600;}
+.settlePop>.contArea>.infoArea {padding:24px 0 40px; display: block; width: 100%; height: auto;}
+.settlePop>.contArea>.infoArea>p {margin-bottom:10px; position: relative; font-weight: 600; font-size: 19px; line-height: normal; color: #000;}
+.settlePop>.contArea>.infoArea>p:last-child {margin-bottom:0;}
+.settlePop>.contArea>.infoArea>p>span {position: absolute; top:50%; right:0; display: block; font-weight: normal; font-size: 19px; color: #777E90; transform: translateY(-50%);}
+.settlePop>.contArea>.infoArea>p>span>em {margin-right:6px;}
+.settlePop>.contArea>.btnArea {display: block; width: 100%; height: auto;}
+.settlePop>.contArea>.btnArea>a {padding:15px 0; display: block; width: 100%; font-weight: 500; font-size: 16px; color: #fff; text-align: center; border-radius: 24px;
+  background: #c18bff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #c18bff 0%, #aa7dff 50%, #834bef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c18bff', endColorstr='#834bef',GradientType=1 ); /* IE6-9 */}
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* 문의하기 완료 팝업 */
+.inquirycompPop {position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; z-index: 4000;}
+.inquirycompPop>.shadow {display: block; width: 100%; height: 100%; background-color: rgba(35, 38, 47, 0.5);}
+.inquirycompPop>.contArea {padding: 0 40px 40px; position: absolute; top: 50%; left: 50%; display: block; width: 600px; height: auto; box-sizing: border-box; background-color: #fff; transform: translate(-50%, -50%); border-radius: 16px;}
+.inquirycompPop>.contArea>p.tit {position: relative; padding:40px 0; font-weight: 600; font-size: 23px; color: #834BEF; text-align: center; border-bottom:1px solid #E6E8EC;}
+.inquirycompPop>.contArea>.txtArea {padding:60px 0; display: block; width: 100%; height: auto; text-align: center;}
+.inquirycompPop>.contArea>.txtArea>p {margin-bottom:5px; position: relative; font-weight: normal; font-size: 23px; line-height: normal; color: #777E90;}
+.inquirycompPop>.contArea>.txtArea>p:last-child {margin-bottom:0;}
+.inquirycompPop>.contArea>.btnArea {display: block; width: 100%; height: auto;}
+.inquirycompPop>.contArea>.btnArea>a {padding:15px 0; display: block; width: 100%; font-weight: 500; font-size: 16px; color: #fff; text-align: center; border-radius: 24px;
+  background: #c18bff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #c18bff 0%, #aa7dff 50%, #834bef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c18bff', endColorstr='#834bef',GradientType=1 ); /* IE6-9 */}
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* 모바일 메뉴 팝업 */
+.mobmnuPop {position: fixed; top:10vh; left:0; padding:5vw; display: none; width: 100%; height: 90vh; background-color: #fff; box-sizing: border-box; z-index: 5000;}
+.mobmnuPop>a.connectBtn {display: block; width: 100%; height: 6.3vh;}
+.mobmnuPop>a.connectBtn>img {display: block; width: 100%; height: 100%;}
+.mobmnuPop>ul {padding-bottom: 2vh; display: block; width: 100%; height: 78vh; overflow-y: auto; box-sizing: border-box;}
+.mobmnuPop>ul::-webkit-scrollbar {display: none;}
+.mobmnuPop>ul>li {margin-bottom: 5vw;}
+.mobmnuPop>ul>li:last-child {margin-bottom: 0;}
+.mobmnuPop>ul>li>a {display: block; font-weight: 600; font-size: 5.4vw; color: #777E90; line-height: normal; letter-spacing: 0.25px;}
+.mobmnuPop>ul>li>a>i {margin-left: 3vw; font-size: 4.3vw; vertical-align: middle;}
+.mobmnuPop>ul>li>.subMnu {padding-top: 5vw; display: none;}
+.mobmnuPop>ul>li>.subMnu>ol>li {margin-bottom: 2.7vw;}
+.mobmnuPop>ul>li>.subMnu>ol>li:last-child {margin-bottom: 0;}
+.mobmnuPop>ul>li>.subMnu>ol>li>a {display: block; font-weight: normal; font-size: 4.4vw; color: #777E90;}
+.mobmnuPop>.mobBtnArea {display: block; width: 100%; height: auto; box-sizing: border-box;}
+.mobmnuPop>.mobBtnArea>a {padding:1.5vh 0; display: block; width: 100%; font-size: 4vw; color: #fff; text-align: center; border-radius: 24px;
+  background: #c18bff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #c18bff 0%, #aa7dff 50%, #834bef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c18bff', endColorstr='#834bef',GradientType=1 ); /* IE6-9 */
+}
+
+.mobmnuPop>ul>li>.srchArea {position: relative; padding:0 20px; display: block; width: auto; height: 40px; background-color: #fff; border-radius: 20px; box-shadow: 0 3px 20px rgba(119, 126, 144, 0.1); box-sizing: border-box;}
+.mobmnuPop>ul>li>.srchArea>input {padding:0; display: block; width: 90%; height: 100%; font-weight: 300; font-size: 12px; color: #23262F; font-family: 'Poppins', sans-serif; background-color: #fff; border: none;}
+.mobmnuPop>ul>li>.srchArea>input::placeholder {font-weight: 300; font-size: 12px; color: #AFB5C7; font-family: 'Poppins', sans-serif;}
+.mobmnuPop>ul>li>.srchArea>a.srch {position: absolute; top:50%; right:20px; display: block; width: 20px; height: 20px; transform:translateY(-50%)}
+.mobmnuPop>ul>li>.srchArea>a.srch>img {display: block; width: 100%; height: 100%;}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* ===================================== 팝업's END ===================================== */
+
+
+
+
+
+/* 헤더 영역 */
+header {display: block; width: 100%; height: auto; background-color: #fff; border-bottom: 1px solid rgba(0,0,0,0.1); box-sizing: border-box;}
+header>.headerInner.web {position: relative; margin:0 auto; display: flex; padding:0 40px; width: 1440px; height: 69px; background-color: #fff; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; box-sizing: border-box;}
+header>.headerInner.web>a.mainLogo {display: block; width: 182px; height: 40px;}
+header>.headerInner.web>a.mainLogo>img {display: block; width: 100%; height: 100%;}
+header>.headerInner.web>.srchArea {position: relative; padding:0 20px; display: block; width: 325px; height: 40px; background-color: #fff; border-radius: 20px; box-shadow: 0 3px 20px rgba(119, 126, 144, 0.1); box-sizing: border-box;}
+header>.headerInner.web>.srchArea>input {padding:0; display: block; width: 90%; height: 100%; font-weight: 300; font-size: 12px; color: #23262F; font-family: 'Poppins', sans-serif; background-color: #fff; border: none;}
+header>.headerInner.web>.srchArea>input::placeholder {font-weight: 300; font-size: 12px; color: #AFB5C7; font-family: 'Poppins', sans-serif;}
+header>.headerInner.web>.srchArea>a.srch {position: absolute; top:50%; right:20px; display: block; width: 20px; height: 20px; transform:translateY(-50%)}
+header>.headerInner.web>.srchArea>a.srch>img {display: block; width: 100%; height: 100%;}
+
+header>.headerInner.web>nav {display: block;}
+header>.headerInner.web>nav>ul>li {position: relative; margin-right:32px; float: left;}
+header>.headerInner.web>nav>ul>li:last-child {margin-right: 0;}
+header>.headerInner.web>nav>ul>li>a {padding:10px 0; font-weight: 500; font-size: 15px; color: #777E90;}
+header>.headerInner.web>nav>ul>li>a>i {margin-left: 10px; font-size: 14px;}
+header>.headerInner.web>nav>ul>li>.subMnu {position: absolute; left:0; top:55px; display: none; width: 200px; height: auto; background-color: #fff; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1); border-radius: 16px; z-index: 3000;}
+header>.headerInner.web>nav>ul>li>.subMnu>ol>li {padding:14px 20px; width: 100%; border-bottom:1px solid #E6E8EC; box-sizing: border-box;}
+header>.headerInner.web>nav>ul>li>.subMnu>ol>li:last-child {border-bottom: none;}
+header>.headerInner.web>nav>ul>li>.subMnu>ol>li>a {display: block; font-weight: 600; font-size: 15px; color: #777E90; letter-spacing: 0.5px; transition: all 0.3s;}
+header>.headerInner.web>nav>ul>li>.subMnu>ol>li>a:hover {color: #844CEF;}
+header>.headerInner.web>nav>ul>li>.subMnu>ol>li>a>.frame {margin-right: 10px; display: inline-block; width: 24px; height: 24px; vertical-align: middle;}
+header>.headerInner.web>nav>ul>li>.subMnu>ol>li>a>.frame>img {display: block; width: 100%; height: 100%;}
+
+header>.headerInner.web>.connectBtns {display: block;}
+header>.headerInner.web>.connectBtns>ul>li {position: relative; float: left;}
+header>.headerInner.web>.connectBtns>ul>li>a.myInfo {display: block; width: 32px; height: 32px;}
+header>.headerInner.web>.connectBtns>ul>li>a.connect {width: 101px; height: 32px;}
+header>.headerInner.web>.connectBtns>ul>li>a>img {display: block; width: 100%; height: 100%;}
+header>.headerInner.web>.connectBtns>ul>li>.infoCont {position: absolute; right:0; top: 50px; display: none; width: 200px; height: auto; background-color: #fff; box-sizing: border-box; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1); border-radius:0 0 16px 16px; z-index: 3000;}
+header>.headerInner.web>.connectBtns>ul>li>.infoCont>.promnubtns>ul {}
+header>.headerInner.web>.connectBtns>ul>li>.infoCont>.promnubtns>ul>li {border-bottom: 1px solid #E6E8EC;}
+header>.headerInner.web>.connectBtns>ul>li>.infoCont>.promnubtns>ul>li>a {padding:13px 16px; display: block; width: 100%; height: auto; font-weight: 500; font-size: 15px; color: #777E90; box-sizing: border-box; transition: all 0.3s;}
+header>.headerInner.web>.connectBtns>ul>li>.infoCont>.promnubtns>ul>li>a>.frame {margin-right: 10px; display: inline-block; width: 26px; height: 26px; vertical-align: middle;}
+header>.headerInner.web>.connectBtns>ul>li>.infoCont>.promnubtns>ul>li>a>.frame>img {display: block; width: 100%; height: 100%;}
+header>.headerInner.web>.connectBtns>ul>li>.infoCont>.promnubtns>ul>li:hover>a {color: #844CEF;}
+
+header>.headerInner.mob {position: fixed; top:0; left:0; padding:4vw 5vw; display: none; width: 100%; height: 10vh; background-color: #fff; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; box-sizing: border-box; z-index: 4000;}
+header>.headerInner.mob>a.mainLogo {display: block; width: 34vw; height: 9vw;}
+header>.headerInner.mob>a.mainLogo>img {display: block; width: 100%; height: 100%;}
+header>.headerInner.mob>.mobmnuArea {display: block;}
+header>.headerInner.mob>.mobmnuArea>ul>li {margin-right: 3vw; float: left;}
+header>.headerInner.mob>.mobmnuArea>ul>li:last-child {margin-right: 0;}
+header>.headerInner.mob>.mobmnuArea>ul>li>a {display: block; width: 11.1vw; height: 11.1vw;}
+header>.headerInner.mob>.mobmnuArea>ul>li>a>img {display: block; width: 100%; height: 100%;}
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* 섹션 영역 */
+section {position: relative; display: block; width: 100%; height: auto; min-height: 100%; background-color: #FCFCFD;}
+
+/* MY NFTs */
+#MynftsPage {display: block; width: 100%; height: 100%;}
+#MynftsPage>.mynftBG {display: block; width: 100%; height: 280px; background-image: url(../img/mynftBG.png); background-size: cover; background-repeat: no-repeat; background-position: center;}
+#MynftsPage>.content {margin:0 auto; display: block; width: 1440px; height: auto; background-color: #FCFCFD;}
+#MynftsPage>.content>h2 {padding:35px 0 20px; font-weight: normal; font-size: 19px; color: #23262F; text-align: center; line-height: normal;}
+#MynftsPage>.content>.disconnectBtn {margin:0 auto 40px; padding:7.5px 18px; display: block; width: 122px; font-weight: 500; font-size: 13px; color: #fff; text-align: center; border-radius: 15px;
+  background: #c18bff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #c18bff 0%, #aa7dff 50%, #834bef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c18bff', endColorstr='#834bef',GradientType=1 ); /* IE6-9 */
+}
+#MynftsPage>.content>.sortArea {display: block; width: 100%; height: auto;}
+#MynftsPage>.content>.sortArea>ul {display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: center;}
+#MynftsPage>.content>.sortArea>ul>li {display: block;}
+#MynftsPage>.content>.sortArea>ul>li>a {padding-bottom:14px; display: block; width: 100px; font-weight: 500; font-size: 15px; color: #777E90; text-align: center; box-sizing: border-box; border-bottom:4px solid transparent;}
+#MynftsPage>.content>.sortArea>ul>li.on>a {font-weight: 500; color: #23262F; box-sizing: border-box; border-color: #834BEF;}
+
+#MynftsPage>.content>.listArea {margin-top: 20px; display: none; width: 100%; height: auto;}
+#MynftsPage>.content>.listArea>ul {margin:0 auto; width: 1360px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-items: center;}
+#MynftsPage>.content>.listArea>ul>li {margin: 0 15px 32px 0; display: block; width: 260px; background-color: #fff; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1); border-radius: 10px;}
+#MynftsPage>.content>.listArea>ul>li:nth-child(5n) {margin-right: 0;}
+#MynftsPage>.content>.listArea>ul>li>.listCont {padding:20px; display: block; width: 100%; height: auto; box-sizing: border-box;}
+#MynftsPage>.content>.listArea>ul>li>.listCont>.frame {margin:0 auto; display: block; width: 220px; height: 220px; border-radius: 10px; overflow: hidden;}
+#MynftsPage>.content>.listArea>ul>li>.listCont>.frame>img {display: block; width: 100%; height: 100%; object-fit: cover; object-position: center;}
+#MynftsPage>.content>.listArea>ul>li>.listCont>.txtBox {padding:12px 0; display: block; width: 100%; height: auto; border-bottom:1px solid #E6E8EC;  }
+#MynftsPage>.content>.listArea>ul>li>.listCont>.txtBox>p {position: relative; display: block; font-weight: 600; font-size: 15px; color: #000; line-height: normal;}
+#MynftsPage>.content>.listArea>ul>li>.listCont>.txtBox>p:nth-child(n+2) {color: #777E90;}
+#MynftsPage>.content>.listArea>ul>li>.listCont>.txtBox>p>span {position: absolute; top:50%; right:0; font-weight: normal; transform: translateY(-50%);}
+#MynftsPage>.content>.listArea>ul>li>.listCont>.txtBox>p>span>em {margin-right: 6px; font-weight: normal;}
+
+#MynftsPage>.content>.listArea.sort1 {display: block;}
+
+#MynftsPage>.content>.btnArea {padding:0 40px 20px; display: block; width: 100%; height: auto; box-sizing: border-box;}
+#MynftsPage>.content>.btnArea>a {padding:14px 0; display: block; width: 100%; font-size: 16px; color: #fff; text-align: center; border-radius: 24px;
+  background: #c18bff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #c18bff 0%, #aa7dff 50%, #834bef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c18bff', endColorstr='#834bef',GradientType=1 ); /* IE6-9 */
+}
+
+#MynftsPage>.content>.myPointBtn {margin:0 auto 40px; padding:7.5px 18px; display: block; width: 160px; font-weight: 500; font-size: 13px; color: #fff; text-align: center; border-radius: 15px;
+  background: #c18bff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #c18bff 0%, #aa7dff 50%, #834bef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c18bff', endColorstr='#834bef',GradientType=1 ); /* IE6-9 */
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* EXPLORE */
+#explorePage {margin:0 auto; display: block; width: 1440px; height: auto; background-color: #FCFCFD;}
+#explorePage>.content {display: flex; width: 100%; height: 100%; flex-direction: row; flex-wrap: nowrap; justify-content: space-between;}
+#explorePage>.content>.sortArea {display: block; width: 19.1%; background-color: #FCFCFD; box-sizing: border-box;}
+#explorePage>.content>.sortArea>ul>li {border-left: 2.5px solid #FCFCFD; border-right:2.5px solid #FCFCFD; border-bottom: 1px solid #E6E8EC;}
+#explorePage>.content>.sortArea>ul>li>p {position: relative; margin:0 40px; padding:20px 0; font-weight: 600; font-size: 15px; color: #000;}
+#explorePage>.content>.sortArea>ul>li>p>a {position: absolute; top:50%; right:0; padding:10px 0; display: block; font-weight: 300; font-size: 10px; color: #C18BFF; transform: translateY(-50%);}
+#explorePage>.content>.sortArea>ul>li>a {position: relative; margin:0 40px; padding:20px 0; display: block; font-weight: 600; font-size: 15px; color: #000;}
+#explorePage>.content>.sortArea>ul>li>a>i {position: absolute; top:50%; right:0; display: block; transform: translateY(-50%);}
+#explorePage>.content>.sortArea>ul>li>.subsortMnu {display: none;}
+#explorePage>.content>.sortArea>ul>li>.subsortMnu>ol {background-color: #fff;}
+#explorePage>.content>.sortArea>ul>li>.subsortMnu>ol>li {position: relative; padding:11px 40px; border-top: 1px solid #E6E8EC;}
+#explorePage>.content>.sortArea>ul>li>.subsortMnu>ol>li>p {font-weight: 600; font-size: 13px; color: #777E90;}
+#explorePage>.content>.sortArea>ul>li>.subsortMnu>ol>li>input[type="checkbox"] {display: none;}
+#explorePage>.content>.sortArea>ul>li>.subsortMnu>ol>li>input[type="checkbox"] + label {position: absolute; right:40px; top:50%; display: block; width: 20px; height: 20px; font-size: 14px; color: #fff; text-align: center; background-color: #fff; border:1px solid #E6E8EC; border-radius: 2px; transform:translateY(-50%)}
+#explorePage>.content>.sortArea>ul>li>.subsortMnu>ol>li>input[type="checkbox"]:checked + label {background-color: #834BEF;}
+
+#explorePage>.content>.itemlistArea {position: relative; display: block; width: 80.9%; background-color: #FCFCFD;}
+#explorePage>.content>.itemlistArea>.titleArea {padding:40px; position: relative; display: flex; width: 100%; line-height: normal; box-sizing: border-box; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;}
+#explorePage>.content>.itemlistArea>.titleArea>p {font-weight: 600; font-size: 23px; color: #000; line-height: normal;}
+#explorePage>.content>.itemlistArea>.titleArea>.sortbyArea {position: relative; display: block;}
+#explorePage>.content>.itemlistArea>.titleArea>.sortbyArea>a {position: relative; display: block; padding:12px 20px; width: 200px; font-weight: 300; font-size: 12px; color: #777E90; background-color: #fff; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1); border-radius: 10px;}
+#explorePage>.content>.itemlistArea>.titleArea>.sortbyArea>a>i {position: absolute; top:50%; right:20px; transform: translateY(-50%);}
+#explorePage>.content>.itemlistArea>.titleArea>.sortbyArea>ul {position: absolute; top:50px; left:0; display: none; width: 100%; background-color: #fff; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1); border-radius: 10px; z-index: 3000;}
+#explorePage>.content>.itemlistArea>.titleArea>.sortbyArea>ul>li {border-bottom: 1px solid #E6E8EC;}
+#explorePage>.content>.itemlistArea>.titleArea>.sortbyArea>ul>li:last-child {border-bottom: none;}
+#explorePage>.content>.itemlistArea>.titleArea>.sortbyArea>ul>li>a {padding:14px 20px; display: block; font-weight: 500; font-size: 13px; color: #777E90;}
+
+#explorePage>.content>.itemlistArea>.sortchkList {padding:0 40px; display: block; width: 100%; height: auto; box-sizing: border-box;}
+#explorePage>.content>.itemlistArea>.sortchkList>span {margin-right: 10px; padding:9px 10px 9px 20px; display: inline-block; background-color: #FAF5FF; border: 1px solid #C18BFF; box-sizing: border-box; border-radius: 10px;}
+#explorePage>.content>.itemlistArea>.sortchkList>span>em {font-weight: 500; font-size: 15px; color: #000;}
+#explorePage>.content>.itemlistArea>.sortchkList>span>a {padding: 0 10px; display: inline-block; font-size: 13px;}
+#explorePage>.content>.itemlistArea>.sortchkList>span>a>i {color: #777E90;}
+#explorePage>.content>.itemlistArea>.sortchkList>span:last-child {margin-right: 0;}
+
+#explorePage>.content>.itemlistArea>.listArea {margin-top: 20px; display: block; width: 100%; height: auto;}
+#explorePage>.content>.itemlistArea>.listArea>ul {margin:0 auto; width: 1085px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-items: center;}
+#explorePage>.content>.itemlistArea>.listArea>ul>li {margin: 0 15px 32px 0; display: block; width: 260px; background-color: #fff; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1); border-radius: 10px;}
+#explorePage>.content>.itemlistArea>.listArea>ul>li:nth-child(4n) {margin-right: 0;}
+#explorePage>.content>.itemlistArea>.listArea>ul>li>.listCont {padding:20px; display: block; width: 100%; height: auto; box-sizing: border-box;}
+#explorePage>.content>.itemlistArea>.listArea>ul>li>.listCont>.frame {margin:0 auto; display: block; width: 220px; height: 220px;}
+#explorePage>.content>.itemlistArea>.listArea>ul>li>.listCont>.frame>img {display: block; width: 100%; height: 100%; object-fit: cover; object-position: center;}
+#explorePage>.content>.itemlistArea>.listArea>ul>li>.listCont>.txtBox {padding:12px 0; display: block; width: 100%; height: auto; border-bottom:1px solid #E6E8EC;  }
+#explorePage>.content>.itemlistArea>.listArea>ul>li>.listCont>.txtBox>p {position: relative; display: block; font-weight: 600; font-size: 15px; color: #000; line-height: normal;}
+#explorePage>.content>.itemlistArea>.listArea>ul>li>.listCont>.txtBox>p:nth-child(n+2) {color: #777E90;}
+#explorePage>.content>.itemlistArea>.listArea>ul>li>.listCont>.txtBox>p>span {position: absolute; top:50%; right:0; font-weight: normal; transform: translateY(-50%);}
+#explorePage>.content>.itemlistArea>.listArea>ul>li>.listCont>.txtBox>p>span>em {margin-right: 6px; font-weight: normal;}
+
+#explorePage>.content>.itemlistArea>.btnArea {padding:0 40px 20px; display: block; width: 100%; height: auto; box-sizing: border-box;}
+#explorePage>.content>.itemlistArea>.btnArea>a {padding:14px 0; display: block; width: 100%; font-size: 16px; color: #fff; text-align: center; border-radius: 24px;
+  background: #c18bff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #c18bff 0%, #aa7dff 50%, #834bef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c18bff', endColorstr='#834bef',GradientType=1 ); /* IE6-9 */
+}
+#explorePage>.content>.itemlistArea>.btnAreaMob {padding: 0 4vw 4vw; position: fixed; bottom:0; left:0; display: none; width: 100%; height: auto; box-sizing: border-box;}
+#explorePage>.content>.itemlistArea>.btnAreaMob>a {padding:14px 0; display: block; width: 100%; font-size: 16px; color: #fff; text-align: center; border-radius: 24px;  
+  background: #c18bff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #c18bff 0%, #aa7dff 50%, #834bef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c18bff', endColorstr='#834bef',GradientType=1 ); /* IE6-9 */
+}
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* 모바일 슬라이드 부분 */
+.swiper {position:relative; display: none; height: 122vw !important; overflow:hidden;}
+.swiper>ul {position:absolute; display: block; top:0; left:0; overflow:hidden;}
+.swiper>ul>li {display: block; width: auto;}
+.swiper>ul>li>.nftCont {margin: 0 5vw; padding: 5.4vw 5.4vw; display: block; width: 90vw; height: 114vw; box-sizing: border-box; background-color: #fff; border-radius: 10px; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1);}
+.swiper>ul>li>.nftCont>.ContFrame {padding-bottom: 3.2vw; display: block; width: 100%; height: auto; border-bottom: 1px solid #E6E8EC;}
+.swiper>ul>li>.nftCont>.ContFrame>.frame {margin: 0 auto 2.5vw; display: block; width: 78vw; height: 78vw; border-radius: 10px;}
+.swiper>ul>li>.nftCont>.ContFrame>.frame>img {display: block; width: 100%; height: 100%;}
+.swiper>ul>li>.nftCont>.ContFrame>.textArea {margin: 0 10px; display: block;}
+.swiper>ul>li>.nftCont>.ContFrame>.textArea>.nftName {display: block; font-size: 4.2vw; font-weight: 600; color: #000; line-height: normal;}
+.swiper>ul>li>.nftCont>.ContFrame>.textArea>p {position: relative; display: block; font-size: 4.2vw; font-weight: 600; color: #777E90; line-height: normal;}
+.swiper>ul>li>.nftCont>.ContFrame>.textArea>p>span {position: absolute; right: 0; display: inline-block; font-size: 4.2vw; font-weight: 400; color: #777E90;}
+.swiper>ul>li>.nftCont>.ContFrame>.textArea>p>span>em {font-weight: 400;}
+.swiper>ul>li>.nftCont>.frame {margin: 0 auto 5.4vw; display: block; width: 78vw; height: 78vw;}
+.swiper>ul>li>.nftCont>.frame>img {display: block; width: 100%; height: 100%;}
+.swiper>ul>li>.nftCont>p {display: block; font-size: 4.2vw; font-weight: 600; color: #000; line-height: normal; text-align: center;}
+/* explore pageing */
+.sectionCont.thr>.swiper {position:relative; display: none; height: 103vw !important; overflow:hidden; }
+.ts-controls>.ts-paging {display: none;}
+.ts-controls>.ts-paging>.ts-paging-btn {display: inline-block; width: 1vw; height: 2vw; margin-left: 7px; border-radius: 50%; background-color: #E6E8EC; overflow: hidden; border: none;}
+.ts-controls>.ts-paging>.ts-paging-btn:first-child {margin: 0;}
+.ts-controls>.ts-paging>.ts-paging-active {background-color: #834BEF;}
+/* 슬라이드 버튼 */
+.sectionCont.top>.ts-controls>.ts-prev {position: absolute; top: 50%; left: 40px; display: block; width: 50px; height: 50px; z-index: 10; background-color: #fff; filter: drop-shadow(0px 3px 10px rgba(74, 74, 74, 0.09)); transform: translateY(-160%); border: none; border-radius: 50%;}
+.sectionCont.top>.ts-controls>.ts-prev>img {display: block; margin: 0; padding: 1vw; position: absolute; top: 50%; left: 50%; width: 15px; height: 19px; font-weight: 600; color: #834BEF; transform: translate(-50%, -50%);}
+.sectionCont.top>.ts-controls>.ts-next {position: absolute; top: 50%; right: 40px; display: block; width: 50px; height: 50px; z-index: 10; background-color: #fff; filter: drop-shadow(0px 3px 10px rgba(74, 74, 74, 0.09)); transform: translateY(-160%); border: none; border-radius: 50%;}
+.sectionCont.top>.ts-controls>.ts-next>img {display: block; margin: 0; padding: 1vw; position: absolute; top: 50%; left: 50%; width: 15px; height: 19px; font-weight: 600; color: #834BEF; transform: translate(-50%, -50%);}
+.sectionCont.one>.ts-controls>.ts-prev {position: absolute; top: 50%; left: 2vw; display: none; width: 50px; height: 50px; z-index: 10; background-color: #fff; filter: drop-shadow(0px 3px 10px rgba(74, 74, 74, 0.09)); transform: translateY(-160%); border: none; border-radius: 50%;}
+.sectionCont.one>.ts-controls>.ts-prev>img {display: block; margin: 0; padding: 1vw; position: absolute; top: 50%; left: 50%; width: 15px; height: 19px; font-weight: 600; color: #834BEF; transform: translate(-50%, -50%);}
+.sectionCont.one>.ts-controls>.ts-next {position: absolute; top: 50%; right: 2vw; display: none; width: 50px; height: 50px; z-index: 10; background-color: #fff; filter: drop-shadow(0px 3px 10px rgba(74, 74, 74, 0.09)); transform: translateY(-160%); border: none; border-radius: 50%;}
+.sectionCont.one>.ts-controls>.ts-next>img {display: block; margin: 0; padding: 1vw; position: absolute; top: 50%; left: 50%; width: 15px; height: 19px; font-weight: 600; color: #834BEF; transform: translate(-50%, -50%);}
+.sectionCont.two>.ts-controls>.ts-prev {position: absolute; top: 50%; left: 2vw; display: none; width: 50px; height: 50px; z-index: 10; background-color: #fff; filter: drop-shadow(0px 3px 10px rgba(74, 74, 74, 0.09)); transform: translateY(-160%); border: none; border-radius: 50%;}
+.sectionCont.two>.ts-controls>.ts-prev>img {display: block; margin: 0; padding: 1vw; position: absolute; top: 50%; left: 50%; width: 15px; height: 19px; font-weight: 600; color: #834BEF; transform: translate(-50%, -50%);}
+.sectionCont.two>.ts-controls>.ts-next {position: absolute; top: 50%; right: 2vw; display: none; width: 50px; height: 50px; z-index: 10; background-color: #fff; filter: drop-shadow(0px 3px 10px rgba(74, 74, 74, 0.09)); transform: translateY(-160%); border: none; border-radius: 50%;}
+.sectionCont.two>.ts-controls>.ts-next>img {display: block; margin: 0; padding: 1vw; position: absolute; top: 50%; left: 50%; width: 15px; height: 19px; font-weight: 600; color: #834BEF; transform: translate(-50%, -50%);}
+.sectionCont.thr>.ts-controls>.ts-prev {position: absolute; top: 50%; left: 2vw; display: none; width: 50px; height: 50px; z-index: 10; background-color: #fff; filter: drop-shadow(0px 3px 10px rgba(74, 74, 74, 0.09)); transform: translateY(-50%); border: none; border-radius: 50%;}
+.sectionCont.thr>.ts-controls>.ts-prev>img {display: block; margin: 0; padding: 1vw; position: absolute; top: 50%; left: 50%; width: 15px; height: 19px; font-weight: 600; color: #834BEF; transform: translate(-50%, -50%);}
+.sectionCont.thr>.ts-controls>.ts-next {position: absolute; top: 50%; right: 2vw; display: none; width: 50px; height: 50px; z-index: 10; background-color: #fff; filter: drop-shadow(0px 3px 10px rgba(74, 74, 74, 0.09)); transform: translateY(-50%); border: none; border-radius: 50%;}
+.sectionCont.thr>.ts-controls>.ts-next>img {display: block; margin: 0; padding: 1vw; position: absolute; top: 50%; left: 50%; width: 15px; height: 19px; font-weight: 600; color: #834BEF; transform: translate(-50%, -50%);}
+.sectionCont.thr>.ts-controls>.ts-paging {position: absolute; display: none; left: 50%; transform: translateX(-50%);}
+.sectionCont.thr>.swiper>ul>li>.nftCont {height: 100vw;}
+/* --------------모바일 슬라이드 부분 ---------------------- */
+
+/* 웹 부분 */
+.mainPage{ background-color: #FCFCFD;} 
+.mainPage>.sectionCont {margin: 0 auto; padding: 40px; position: relative; display: block; width: 1440px; height: auto; box-sizing: border-box; background-color: #FCFCFD;} 
+.mainPage>.sectionCont>span {margin-bottom: 24px; position: relative; display: inline-block; font-size: 33px; font-weight: 600; color: #000; line-height: normal;} 
+.mainPage>.sectionCont>span>.liveframe {position: absolute; top: 50%; right: -60px; display: block; width: 49px; height: 21px; transform: translateY(-50%);}
+.mainPage>.sectionCont>span>.liveframe>img {display: block; width: 100%; height: 100%; object-fit: cover; object-position: center;}
+.mainPage>.sectionCont>span>.hotframe {position: absolute; top: 50%; right: -30px; display: block; width: 20px; height: 26px; transform: translateY(-50%);}
+.mainPage>.sectionCont>span>.hotframe>img {display: block; width: 100%; height: 100%;}
+.mainPage>.sectionCont>a {position: relative; display: block; width: 100%; height: 48px; background: linear-gradient(90deg, #C18BFF 0%, #AA7DFF 50.52%, #834BEF 100%); border-radius: 500px;}
+.mainPage>.sectionCont>a>p {position: absolute; top: 50%; left: 50%; font-size: 18px; font-weight: 300; color: #fff; text-align: center; transform: translate(-50%, -50%); line-height: normal;}
+/* MainTop 영역 */
+.mainPage>.sectionCont.top {padding: 101px 155px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; background-color: #FCFCFD;}
+.mainPage>.sectionCont.top>.slidermainBG {position: absolute; top:0; left:0; display: block; width: 100%; height: 100%;}
+.mainPage>.sectionCont.top>.slidermainBG>.frame {position: relative; display: block; width: 100%; height: 100%; overflow: hidden;}
+.mainPage>.sectionCont.top>.slidermainBG>.frame>img {display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; filter: blur(3px); -webkit-filter: blur(3px);}
+.mainPage>.sectionCont.top>.slidermainBG>.frameBG {position: absolute; top:0; left:0; display: block; width: 100%; height: 100%;
+  background: -moz-linear-gradient(top,  rgba(252,252,253,0.4) 0%, rgba(252,252,253,0.85) 65%, rgba(252,252,253,0.95) 80%, rgba(252,252,253,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(252,252,253,0.4) 0%,rgba(252,252,253,0.85) 65%,rgba(252,252,253,0.95) 80%,rgba(252,252,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(252,252,253,0.4) 0%,rgba(252,252,253,0.85) 65%,rgba(252,252,253,0.95) 80%,rgba(252,252,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66fcfcfd', endColorstr='#fcfcfd',GradientType=0 ); /* IE6-9 */
+}
+.mainPage>.sectionCont.top{width:100%; }
+.mainPage>.sectionCont.top>.toptxtArea {display: block; z-index: 1; width: 40%; }
+.mainPage>.sectionCont.top>.toptxtArea>span {margin-left: 30%; margin-bottom: 12px; display: block; font-size: 10px; font-weight: 600; color: #777E90; line-height: normal;}
+.mainPage>.sectionCont.top>.toptxtArea>p {margin-left: 30%; display: block; font-size: 24px; font-weight: 600; color: #000; line-height: normal;}
+.mainPage>.sectionCont.top>.toptxtArea>a {margin-left: 40%; margin-top: 60px; position: relative; display: block; width: 148px; height: 40px; background: linear-gradient(90deg, #C18BFF 0%, #AA7DFF 50.52%, #834BEF 100%); border-radius: 500px;}
+.mainPage>.sectionCont.top>.toptxtArea>a>p {position: absolute; top: 50%; left: 50%; font-size: 12px; font-weight: 300; color: #fff; text-align: center; transform: translate(-50%, -50%); line-height: normal;}
+
+/*.mainPage>.sectionCont.top>.swiper {margin-right: 0; display: block; width: 530px; height: 500px !important; overflow: hidden;}*/
+.mainPage>.sectionCont.top>.swiper {margin-left: 10%; display: block; width: 530px; height: 500px !important; overflow: hidden;}
+.mainPage>.sectionCont.top>.swiper>ul>li {width: 100%; border-radius: 10px;}
+.mainPage>.sectionCont.top>.swiper>ul>li>.nftCont {margin: 0; padding: 0; width: 100%; height: 100%; border-radius: 10px;}
+.mainPage>.sectionCont.top>.swiper>ul>li>.nftCont>.ContFrame {padding: 0; border: none;}
+.mainPage>.sectionCont.top>.swiper>ul>li>.nftCont>.ContFrame>.frame {margin: 0; width: 100%; height: 400px; overflow: hidden; border-radius: 10px 10px 0 0;}
+.mainPage>.sectionCont.top>.swiper>ul>li>.nftCont>.ContFrame>.frame>img {display: block; width: 100%; height: 100%; object-fit: cover; object-position: center;}
+.mainPage>.sectionCont.top>.swiper>ul>li>.nftCont>.ContFrame>.Area {padding: 25px; display: block; box-sizing: border-box;}
+.mainPage>.sectionCont.top>.swiper>ul>li>.nftCont>.ContFrame>.Area>p {display: block; font-size: 19px; font-weight: 600; color: #000; line-height: normal;}
+
+/* LIVE, HOT 영역 */
+.mainPage>.sectionCont>.webnftList {display: block;}
+.mainPage>.sectionCont>.webnftList>li {margin: 0 15px 32px 0; float: left; display: block; width: 19%; height: 354px;}
+.mainPage>.sectionCont>.webnftList>li:nth-child(5) {margin-right: 0px;}
+.mainPage>.sectionCont>.webnftList>li:nth-child(10) {margin-right: 0px;}
+.mainPage>.sectionCont>.webnftList>li:nth-child(15) {margin-right: 0px;}
+.mainPage>.sectionCont>.webnftList>li:nth-child(20) {margin-right: 0px;}
+.mainPage>.sectionCont>.webnftList>li:nth-child(25) {margin-right: 0px;}
+.mainPage>.sectionCont>.webnftList>li:nth-child(30) {margin-right: 0px;}
+.mainPage>.sectionCont>.webnftList>li:nth-child(35) {margin-right: 0px;}
+.mainPage>.sectionCont>.webnftList>li:nth-child(40) {margin-right: 0px;}
+.mainPage>.sectionCont>.webnftList>li:nth-child(45) {margin-right: 0px;}
+.mainPage>.sectionCont>.webnftList>li:nth-child(50) {margin-right: 0px;}
+.mainPage>.sectionCont>.webnftList>li>.nftCont {position: relative; padding: 20px; display: block; width: 100%; height: 100%; box-sizing: border-box; background-color: #fff; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1); border-radius: 10px;}
+.mainPage>.sectionCont>.webnftList>li>.nftCont>.ContFrame {padding-bottom: 12px; display: block; border-bottom: 1px solid #E6E8EC;}
+.mainPage>.sectionCont>.webnftList>li>.nftCont>.ContFrame>.frame {margin: 0 auto 12px; display: block; width: 100%; height: 220px;}
+.mainPage>.sectionCont>.webnftList>li>.nftCont>.ContFrame>.frame>img {display: block; width: 100%; height: 100%;}
+.mainPage>.sectionCont>.webnftList>li>.nftCont>.ContFrame>.textArea {margin: 0 10px; display: block;}
+.mainPage>.sectionCont>.webnftList>li>.nftCont>.ContFrame>.textArea>.nftName {display: block; font-size: 15px; font-weight: 600; color: #000; line-height: normal; line-height: normal;}
+.mainPage>.sectionCont>.webnftList>li>.nftCont>.ContFrame>.textArea>p {position: relative; display: block; font-size: 15px; font-weight: 600; color: #777E90; line-height: normal;}
+.mainPage>.sectionCont>.webnftList>li>.nftCont>.ContFrame>.textArea>p>span {position: absolute; right: 0; display: inline-block; font-size: 15px; font-weight: 400; color: #777E90;}
+.mainPage>.sectionCont>.webnftList>li>.nftCont>.ContFrame>.textArea>p>span>em {font-weight: 400;}
+/* explore 영역 */
+.mainPage>.sectionCont>.webexploreList {display: block;}
+.mainPage>.sectionCont>.webexploreList>li {margin: 0 15px 20px 0; float: left; display: block; width: 24%; height: 374px;}
+.mainPage>.sectionCont>.webexploreList>li:nth-child(4) {margin-right: 0;}
+.mainPage>.sectionCont>.webexploreList>li:nth-child(8) {margin-right: 0;}
+.mainPage>.sectionCont>.webexploreList>li>.exploreCont {padding: 20px; width: 100%; height: 100%; box-sizing: border-box; background-color: #fff; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1);}
+.mainPage>.sectionCont>.webexploreList>li>.exploreCont>.frame {margin-bottom: 20px; display: block; width: 100%; height: 285px;}
+.mainPage>.sectionCont>.webexploreList>li>.exploreCont>.frame>img {display: block; width: 100%; height: 100%;}
+.mainPage>.sectionCont>.webexploreList>li>.exploreCont>p {display: block; font-size: 19px; font-weight: 600; color: #000; text-align: center; line-height: normal;}
+/* Create 영역 */
+.mainPage>.sectionCont>.createList {display: block;}
+.mainPage>.sectionCont>.createList>li {margin: 0 10px 20px 0; float: left; display: block; width: 24%; height: 309px;}
+.mainPage>.sectionCont>.createList>li:nth-child(4) {margin-right: 0;}
+.mainPage>.sectionCont>.createList>li>.createCont {position: relative; display: block; width: 100%; height: 100%; text-align: center; background-color: #fff; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1); border-radius: 10px;}
+.mainPage>.sectionCont>.createList>li>.createCont>.contframe {position: absolute; top: 50%; left: 50%; display: block; width: 100%; height: auto; transform: translate(-50%, -50%);}
+.mainPage>.sectionCont>.createList>li>.createCont>.contframe>.frame {margin: 0 auto 30px; display: block; width: 62px; height: 62px;}
+.mainPage>.sectionCont>.createList>li>.createCont>.contframe>.frame>img {display: block; width: 100%; height: 100%;}
+.mainPage>.sectionCont>.createList>li>.createCont>.contframe>p {margin-bottom: 12px; display: block; font-size: 19px; font-weight: 600; color: #000; line-height: normal;}
+.mainPage>.sectionCont>.createList>li>.createCont>.contframe>span {display: block; font-size: 15px; font-weight: 400; color: #777E90; line-height: normal;}
+/* ========================================웹 부분======================================================================= */
+
+/* NFT DETAILS(판매 등록 전) */
+.nftaddprevPage {display: block; width: 100%; height: 100%; background-color: #FCFCFD;}
+.nftaddprevPage>.nftDetails {margin: 0 auto; padding: 40px; display: flex; width: 1440px; height: auto; box-sizing: border-box; background-color: #FCFCFD;} 
+.nftaddprevPage>.nftDetails>.leftCont {position: relative; float: left; display: block; width: 58%; height: auto; background-color: #fff;}
+.nftaddprevPage>.nftDetails>.leftCont>.nftBox {position: absolute; top: 50%; left: 50%; padding: 27px; display: block; width: 725px; height: 725px; box-sizing: border-box; background-color: #fff; border-radius: 10px; transform: translate(-50%, -50%); box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1);}
+.nftaddprevPage>.nftDetails>.leftCont>.nftBox>.frame {display: block; width: 100%; height: 100%; border-radius: 10px;}
+.nftaddprevPage>.nftDetails>.leftCont>.nftBox>.frame>img {display: block; width: 100%; height: 100%;}
+.nftaddprevPage>.nftDetails>.rightCont {padding: 40px 0; float: left; display: block; width: 42%; height: auto;}    
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea1 {padding: 0 40px 40px; display: block; width: 100%; height: auto; box-sizing: border-box; border-bottom: 1px solid #E6E8EC;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.title {margin-bottom: 5px; display: block; font-size: 33px; font-weight: 600; color: #000; line-height: normal;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.title>span {margin-left: 10px; color: #777E90;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.price {display: block; font-size: 15px; font-weight: 600; color: #777E90; line-height: normal;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.price>span {margin-left: 10px; color: #000; font-weight: 600;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.price>span>em {font-weight: 600;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.buyNow {display: block; font-size: 15px; font-weight: 600; color: #777E90; line-height: normal;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.buyNow>span {margin-left: 10px; color: #C18BFF; font-weight: 600;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.buyNow>span>em {font-weight: 600;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.infoCont {display: block; width: 515px;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.infoCont>.info {display: block; font-size: 13px; font-weight: 300; color: #777E90; overflow: hidden; text-overflow: ellipsis; white-space: normal; line-height: 1.2; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.infoCont>a {margin-right: 10px; display: block; text-align: right; font-size: 13px; font-weight: 300; color: #C18BFF;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea2 {padding: 20px 40px; display: block; width: 100%; height: auto; box-sizing: border-box;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea2>p {margin-bottom: 10px; display: block; font-size: 19px; font-weight: 600; color: #000; line-height: normal;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea2>.prof>.txtBox {display: block;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea2>.prof>.txtBox>p {display: block; font-size: 15px; font-weight: 500; color: #000; line-height: normal;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea3 {padding-bottom: 40px; display: block; background-color: #fff; box-sizing: border-box; border-bottom: 1px solid #E6E8EC;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea3>.titCont {display: block; width: 100%; height: 70px; border-bottom: 1px solid #E6E8EC;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea3>.titCont>.bidsCont {margin-top: 32px; margin-left: 40px; display: inline-block; width: auto; height: 35px; border-bottom: 4px solid #834BEF;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea3>.titCont>.bidsCont>p {margin-bottom: 18px; display: block; font-size: 15px; font-weight: 400; color: #23262f;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea3>ul {margin-left: 40px; display: block;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea3>ul>li {margin: 20px 0; display: block;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea3>ul>li:last-child {margin-bottom: 0px;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox {display: block;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>p {display: block; font-size: 15px; font-weight: 500; color: #000; line-height: normal;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>p>em {font-size: 15px; font-weight: 400; color: #777E90;}
+.nftaddprevPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>span {font-size: 13px; font-weight: 300; color: #afb5c7; line-height: normal;}
+.nftaddprevPage>.nftDetails>.rightCont>.sellCont {padding: 0 40px; display: block;}
+.nftaddprevPage>.nftDetails>.rightCont>.sellCont>.sellBtn {margin-top: 50px; padding: 15px; position: relative; display: block; width: 100%; height: auto; font-size: 18px; font-weight: 500; color: #fff; text-align: center; box-sizing: border-box; background: linear-gradient(90deg, #C18BFF 0%, #AA7DFF 50.52%, #834BEF 100%); border-radius: 500px;}
+/* -----------NFT DETAILS(판매 등록 전)---------------- */
+
+/* NFT DETAILS(타유저 NFT) */
+.nftuserPage {display: block; width: 100%; height: 100%; background-color: #FCFCFD;}
+.nftuserPage>.nftDetails {margin: 0 auto; padding: 40px; display: flex; width: 1440px; height: auto; box-sizing: border-box; background-color: #FCFCFD;} 
+.nftuserPage>.nftDetails>.leftCont {position: relative; float: left; display: block; width: 58%; height: auto; background-color: #fff;}
+.nftuserPage>.nftDetails>.leftCont>.nftBox {position: absolute; top: 50%; left: 50%; padding: 27px; display: block; width: 725px; height: 725px; box-sizing: border-box; background-color: #fff; border-radius: 10px; transform: translate(-50%, -50%); box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1);}
+.nftuserPage>.nftDetails>.leftCont>.nftBox>.frame {display: block; width: 100%; height: 100%; border-radius: 10px;}
+.nftuserPage>.nftDetails>.leftCont>.nftBox>.frame>img {display: block; width: 100%; height: 100%;}
+.nftuserPage>.nftDetails>.rightCont {padding: 40px 0; float: left; display: block; width: 42%; height: auto;}    
+.nftuserPage>.nftDetails>.rightCont>.txtArea1 {padding: 0 40px 40px; display: block; width: 100%; height: auto; box-sizing: border-box; border-bottom: 1px solid #E6E8EC;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea1>.title {margin-bottom: 5px; display: block; font-size: 33px; font-weight: 600; color: #000; line-height: normal;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea1>.title>span {margin-left: 10px; color: #777E90;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea1>.price {display: block; font-size: 15px; font-weight: 600; color: #777E90; line-height: normal;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea1>.price>span {margin-left: 10px; color: #000; font-weight: 600;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea1>.price>span>em {font-weight: 600;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea1>.buyNow {display: block; font-size: 15px; font-weight: 600; color: #777E90; line-height: normal;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea1>.buyNow>span {margin-left: 10px; color: #C18BFF; font-weight: 600;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea1>.buyNow>span>em {font-weight: 600;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea1>.buyNow>img {position: relative; top: 50%; margin: 0 10px; display: inline-block; width: 4px; height: 4px; line-height: normal; transform: translateY(-190%);}
+.nftuserPage>.nftDetails>.rightCont>.txtArea1>.infoCont {display: block; width: 515px;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea1>.infoCont>.info {display: block; font-size: 13px; font-weight: 300; color: #777E90; overflow: hidden; text-overflow: ellipsis; white-space: normal; line-height: 1.2; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea1>.infoCont>a {margin-right: 10px; display: block; text-align: right; font-size: 13px; font-weight: 300; color: #C18BFF;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea2 {padding: 20px 40px; display: block; width: 100%; height: auto; box-sizing: border-box;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea2>p {margin-bottom: 10px; display: block; font-size: 19px; font-weight: 600; color: #000; line-height: normal;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea2>.prof>.txtBox {display: block; }
+.nftuserPage>.nftDetails>.rightCont>.txtArea2>.prof>.txtBox>p {display: block; font-size: 15px; font-weight: 500; color: #000; line-height: normal;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea3 {padding-bottom: 40px; display: block; background-color: #fff; box-sizing: border-box; border-bottom: 1px solid #E6E8EC;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea3>.titCont {display: block; width: 100%; height: 70px; border-bottom: 1px solid #E6E8EC;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea3>.titCont>.bidsCont {margin-top: 32px; margin-left: 40px; display: inline-block; width: auto; height: 35px; border-bottom: 4px solid #834BEF;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea3>.titCont>.bidsCont>p {margin-bottom: 18px; display: block; font-size: 15px; font-weight: 400; color: #23262f;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea3>ul {margin-left: 40px; display: block;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea3>ul>li {margin: 20px 0; display: block;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea3>ul>li:last-child {margin-bottom: 0px;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox {display: block;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>p {display: block; font-size: 15px; font-weight: 500; color: #000; line-height: normal;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>p>em {font-size: 15px; font-weight: 400; color: #777E90;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>span {font-size: 13px; font-weight: 300; color: #afb5c7; line-height: normal;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea4 {padding: 20px 40px 40px ; width: 100%; box-sizing: border-box; border-bottom: 1px solid #E6E8EC;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea4>p {margin-bottom: 10px; font-size: 19px; font-weight: 500; color: #000;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea4>ul {display: block;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea4>ul>li {margin-right: 40px; display: block; float: left;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea4>ul>li:last-child {margin: 0;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea4>ul>li>.aucEnd {display: block; text-align: left;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea4>ul>li>.aucEnd>p {display: block; font-size: 33px; font-weight: 600; color: #000; line-height: normal;}
+.nftuserPage>.nftDetails>.rightCont>.txtArea4>ul>li>.aucEnd>span {display: block; font-size: 15px; font-weight: 400; color: #777E90; line-height: normal;}
+.nftuserPage>.nftDetails>.rightCont>.sellCont {padding: 40px; display: block;}
+.nftuserPage>.nftDetails>.rightCont>.sellCont>.buyBtn {margin-right: 9px; padding: 15px; float: left; display: block; width: 49%; height: auto; font-size: 18px; font-weight: 500; color: #fff; text-align: center; box-sizing: border-box; background: linear-gradient(90deg, #C18BFF 0%, #AA7DFF 50.52%, #834BEF 100%); border-radius: 500px;}
+.nftuserPage>.nftDetails>.rightCont>.sellCont>.placeBtn {padding: 15px; float: left; display: block; width: 49%; height: auto; font-size: 18px; font-weight: 500; color: #834BEF; text-align: center; box-sizing: border-box; background-color: #FCFCFD; border-radius: 500px; border: 1px solid #834BEF;}
+/* -----------NFT DETAILS(타유저 NFT)---------------- */
+
+/* NFT DETAILS(판매 등록 된) */
+.nftDetailsPage {display: block; width: 100%; height: 100%; background-color: #FCFCFD;}
+.nftDetailsPage>.nftDetails {margin: 0 auto; padding: 40px; display: flex; width: 1440px; height: auto; box-sizing: border-box; background-color: #FCFCFD;} 
+.nftDetailsPage>.nftDetails>.leftCont {position: relative; float: left; display: block; width: 58%; height: auto; background-color: #fff;}
+.nftDetailsPage>.nftDetails>.leftCont>.nftBox {position: absolute; top: 50%; left: 50%; padding: 27px; display: block; width: 725px; height: 725px; box-sizing: border-box; background-color: #fff; border-radius: 10px; transform: translate(-50%, -50%); box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1);}
+.nftDetailsPage>.nftDetails>.leftCont>.nftBox>.frame {display: block; width: 100%; height: 100%; border-radius: 10px;}
+.nftDetailsPage>.nftDetails>.leftCont>.nftBox>.frame>img {display: block; width: 100%; height: 100%;}
+.nftDetailsPage>.nftDetails>.rightCont {padding: 40px 0; float: left; display: block; width: 42%; height: auto;}    
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea1 {padding: 0 40px 40px; display: block; width: 100%; height: auto; box-sizing: border-box; border-bottom: 1px solid #E6E8EC;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.title {margin-bottom: 5px; display: block; font-size: 33px; font-weight: 600; color: #000; line-height: normal;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.title>span {margin-left: 10px; color: #777E90;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.price {display: block; font-size: 15px; font-weight: 600; color: #777E90; line-height: normal;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.price>span {margin-left: 10px; color: #000; font-weight: 600;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.price>span>em {font-weight: 600;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.buyNow {display: block; font-size: 15px; font-weight: 600; color: #777E90; line-height: normal;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.buyNow>span {margin-left: 10px; color: #C18BFF; font-weight: 600;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.buyNow>span>em {font-weight: 600;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.buyNow>img {position: relative; top: 50%; margin: 0 10px; display: inline-block; width: 4px; height: 4px; line-height: normal; transform: translateY(-190%);}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.infoCont {display: block; width: 515px;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.infoCont>.info {display: block; font-size: 13px; font-weight: 300; color: #777E90; overflow: hidden; text-overflow: ellipsis; white-space: normal; line-height: 1.2; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.infoCont>a {margin-right: 10px; display: block; text-align: right; font-size: 13px; font-weight: 300; color: #C18BFF;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea2 {padding: 20px 40px; display: block; width: 100%; height: auto; box-sizing: border-box;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea2>p {margin-bottom: 10px; display: block; font-size: 19px; font-weight: 600; color: #000; line-height: normal;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea2>.prof>.txtBox {display: block; }
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea2>.prof>.txtBox>p {display: block; font-size: 15px; font-weight: 500; color: #000; line-height: normal;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea3 {padding-bottom: 40px; display: block; background-color: #fff; box-sizing: border-box; border-bottom: 1px solid #E6E8EC;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea3>.titCont {display: block; width: 100%; height: 70px; border-bottom: 1px solid #E6E8EC;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea3>.titCont>.bidsCont {margin-top: 32px; margin-left: 40px; display: inline-block; width: auto; height: 35px; border-bottom: 4px solid #834BEF;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea3>.titCont>.bidsCont>p {margin-bottom: 18px; display: block; font-size: 15px; font-weight: 400; color: #23262f;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea3>ul {margin-left: 40px; display: block;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea3>ul>li {margin: 20px 0; display: block;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea3>ul>li:last-child {margin-bottom: 0px;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox {display: block;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>p {display: block; font-size: 15px; font-weight: 500; color: #000; line-height: normal;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>p>em {font-size: 15px; font-weight: 400; color: #777E90;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>span {font-size: 13px; font-weight: 300; color: #afb5c7; line-height: normal;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea4 {padding: 20px 40px 40px ; width: 100%; box-sizing: border-box; border-bottom: 1px solid #E6E8EC;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea4>p {margin-bottom: 10px; font-size: 19px; font-weight: 500; color: #000;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea4>ul {display: block;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea4>ul>li {margin-right: 40px; display: block; float: left;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea4>ul>li:last-child {margin: 0;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea4>ul>li>.aucEnd {display: block; text-align: left;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea4>ul>li>.aucEnd>p {display: block; font-size: 33px; font-weight: 600; color: #000; line-height: normal;}
+.nftDetailsPage>.nftDetails>.rightCont>.txtArea4>ul>li>.aucEnd>span {display: block; font-size: 15px; font-weight: 400; color: #777E90; line-height: normal;}
+.nftDetailsPage>.nftDetails>.rightCont>.sellCont {padding: 40px; display: block; box-sizing: border-box;}
+.nftDetailsPage>.nftDetails>.rightCont>.sellCont>.buyBtn {margin-right: 9px; padding: 15px; float: left; display: block; width: 49%; height: auto; font-size: 18px; font-weight: 500; color: #fff; text-align: center; box-sizing: border-box; background: linear-gradient(90deg, #C18BFF 0%, #AA7DFF 50.52%, #834BEF 100%); border-radius: 500px;}
+.nftDetailsPage>.nftDetails>.rightCont>.sellCont>.placeBtn {padding: 15px; float: left; display: block; width: 49%; height: auto; font-size: 18px; font-weight: 500; color: #834BEF; text-align: center; box-sizing: border-box; background-color: #FCFCFD; border-radius: 500px; border: 1px solid #834BEF;}
+/* -----------NFT DETAILS(판매 등록 된)---------------- */
+
+/* NFT 생성페이지 */
+.createnftPage {display: block; width: 100%; height: 100%; background-color: #fff;}
+.createnftPage>.contents {margin:0 auto; padding:40px; display: block; width: 1060px; height: auto; box-sizing: border-box; background-color: #fff;}
+.createnftPage>.contents>h2 {font-weight: 600; font-size: 23px; color: #000;}
+
+.createnftPage>.contents>.cont1 {margin-top: 40px; display: block; width: 100%; height: auto;}
+.createnftPage>.contents>.cont1>p {margin-bottom: 10px; font-weight: 600; font-size: 18px; color: #777E90;}
+.createnftPage>.contents>.cont1>p.subtit {font-weight: normal; font-size: 13px;}
+.createnftPage>.contents>.cont1>span.err {margin-top: 5px; display: none; font-weight: normal; font-size: 13px; color: #EF4B4B;}
+.createnftPage>.contents>.cont1>.fileupArea {padding:80px 0; display: block; width: 100%; height: auto; background-color: #fff; box-sizing: border-box; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1); border:1px solid transparent; border-radius: 10px;}
+.createnftPage>.contents>.cont1>.fileupArea>input[type="file"] {display: none;}
+.createnftPage>.contents>.cont1>.fileupArea>label {margin:0 auto 24px; display: block; width: 60px; height: 60px;}
+.createnftPage>.contents>.cont1>.fileupArea>label>img {display: block; width: 100%; height: 100%;}
+.createnftPage>.contents>.cont1>.fileupArea>p {font-weight: 300; font-size: 12px; color: #AFB5C7; text-align: center;}
+.createnftPage>.contents>.cont1>.fileupArea>#imgViewArea {padding: 40px 0; display: none; width: 100%; height: auto;}
+.createnftPage>.contents>.cont1>.fileupArea>#imgViewArea>.frame {position: relative; margin:0 auto; display: block; width: 220px; height: 220px;}
+.createnftPage>.contents>.cont1>.fileupArea>#imgViewArea>.frame>img {display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 10px; overflow: hidden;}
+.createnftPage>.contents>.cont1>.fileupArea>#imgViewArea>.frame>a {position: absolute; top:-20px; right:-20px; display: block; width: 40px; height: 40px; background-color: #fff; border-radius: 50%;}
+.createnftPage>.contents>.cont1>.fileupArea>#imgViewArea>.frame>a>img {display: block; width: 100%; height: 100%;}
+.createnftPage>.contents>.cont1.error>span.err {display: block;}
+.createnftPage>.contents>.cont1.error>.fileupArea {background-color: #FFF8F8; border: 1px solid #FF7A7A;}
+
+.createnftPage>.contents>.cont2 {margin-top: 40px; display: block; width: 100%; height: auto;}
+.createnftPage>.contents>.cont2>p {margin-bottom: 20px; font-weight: 600; font-size: 18px; color: #777E90;}
+.createnftPage>.contents>.cont2>span.err {margin-top: 5px; display: none; font-weight: normal; font-size: 13px; color: #EF4B4B;}
+.createnftPage>.contents>.cont2>.inputArea {padding: 14px 0; position: relative; display: block; width: 100%; height: auto; background-color: #fff; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1); border-radius: 15px;}
+.createnftPage>.contents>.cont2>.inputArea>input {padding:0; display: inline-block; width: 100%; height: 100%; font-family: Poppins; font-weight: 300; font-size: 12px; color: #23262F; background-color: transparent; text-indent: 15px; border:none;}
+.createnftPage>.contents>.cont2>.inputArea>input::placeholder {font-family: Poppins; font-weight: 300; font-size: 12px; color: #AFB5C7;}
+.createnftPage>.contents>.cont2.error>span.err {display: block;}
+.createnftPage>.contents>.cont2.error>.inputArea {background-color: #FFF8F8; border: 1px solid #FF7A7A;}
+
+.createnftPage>.contents>.cont3 {margin-top: 40px; display: block; width: 100%; height: auto;}
+.createnftPage>.contents>.cont3>p {margin-bottom: 20px; font-weight: 600; font-size: 18px; color: #777E90;}
+.createnftPage>.contents>.cont3>.txtArea {position: relative; display: block; width: 100%; height: 116px;}
+.createnftPage>.contents>.cont3>.txtArea>textarea {padding:15px; display: block; width: 100%; height: 100%; font-family: Poppins; font-weight: 300; font-size: 12px; color: #23262F ; border:none; border-radius: 15px; box-sizing: border-box; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1);}
+.createnftPage>.contents>.cont3>.txtArea>textarea::placeholder {font-family: Poppins; font-weight: 300; font-size: 12px; color: #AFB5C7;}
+.createnftPage>.contents>.cont3>.txtArea>span {position: absolute; bottom:12px; right:20px; display: block; font-weight: 500; font-size: 12px; color: #AFB5C7;}
+
+.createnftPage>.contents>.cont4 {margin-top: 40px; display: block; width: 100%; height: auto;}
+.createnftPage>.contents>.cont4>p {margin-bottom: 10px; font-weight: 600; font-size: 18px; color: #777E90;}
+.createnftPage>.contents>.cont4>p.subtit {font-weight: normal; font-size: 13px;}
+.createnftPage>.contents>.cont4>.selectArea {margin:20px 0 40px; display: block; width: 100%; height: auto;}
+.createnftPage>.contents>.cont4>.selectArea>p.err {display: none; font-weight: normal; font-size: 13px; color: #EF4B4B;}
+.createnftPage>.contents>.cont4>.selectArea>ul {}
+.createnftPage>.contents>.cont4>.selectArea>ul>li {margin: 0 10px 10px 0; float: left;}
+.createnftPage>.contents>.cont4>.selectArea>ul>li:last-child {margin: 0 0 10px 0;}
+.createnftPage>.contents>.cont4>.selectArea>ul>li>a {padding:17.5px 20px; display: block; font-weight: 600; font-size: 19px; color: #777E90; background-color: #fff; box-sizing: border-box; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1); border:1px solid transparent; border-radius: 10px;}
+.createnftPage>.contents>.cont4>.selectArea>ul>li>a>.frame {margin-right: 12px; display: inline-block; width: 40px; height: 40px; vertical-align: middle;}
+.createnftPage>.contents>.cont4>.selectArea>ul>li>a>.frame>img {display: block; width: 100%; height: 100%;}
+.createnftPage>.contents>.cont4>.selectArea>ul>li.on>a {background-color: #FAF5FF; border-color:#834BEF;}
+.createnftPage>.contents>.cont4.error>.selectArea>p.err {display: block;}
+.createnftPage>.contents>.cont4.error>.selectArea>ul>li>a {background-color: #FFF8F8; border-color: #FF7A7A;}
+
+.createnftPage>.contents>.btnArea {display: block; width: 100%; height: auto; box-sizing: border-box;}
+.createnftPage>.contents>.btnArea>a {padding:15px 0; display: block; width: 100%; font-weight: 500; font-size: 16px; color: #fff; background-color: #E6E8EC; text-align: center; border-radius: 24px;}
+.createnftPage>.contents>.btnArea>a.on {
+  background: #c18bff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #c18bff 0%, #aa7dff 50%, #834bef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c18bff', endColorstr='#834bef',GradientType=1); /* IE6-9 */
+}
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* CONTACT US */
+.contactusPage {display: block; width: 100%; height: 100%; background-color: #fff;}
+.contactusPage>.contactusBG {display: block; width: 100%; height: 280px; background-image: url(../img/contactbg.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.contactusPage>.content {margin:0 auto; padding: 0 0 40px; display: block; width: 800px; height: auto; box-sizing: border-box; background-color: #FCFCFD; transform: translateY(-20%); border-radius: 15px;}
+.contactusPage>.content>p.tit {position: relative; padding:40px 0; font-weight: 600; font-size: 23px; color: #834BEF; text-align: center; border-bottom: 1px solid #E6E8EC;}
+.contactusPage>.content>.inputbox {display: block; width: 100%; height: auto; box-sizing: border-box;}
+.contactusPage>.content>.inputbox.step1 {padding:30px 40px 0;}
+.contactusPage>.content>.inputbox.step2 {padding:30px 40px;}
+.contactusPage>.content>.inputbox.step3 {padding:0 40px 30px;}
+.contactusPage>.content>.inputbox>p {margin-bottom:10px; position: relative; font-weight: 600; font-size: 19px; line-height: normal; color: #000;}
+.contactusPage>.content>.inputbox>span.err {margin-top: 5px; display: none; font-weight: normal; font-size: 13px; color: #EF4B4B; line-height: normal;}
+.contactusPage>.content>.inputbox>.inputArea {padding: 14px 0; position: relative; display: block; width: 100%; height: auto; background-color: #fff; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1); border-radius: 15px;}
+.contactusPage>.content>.inputbox>.inputArea>input {padding:0; display: inline-block; width: 100%; height: 100%; font-family: Poppins; font-weight: 300; font-size: 12px; color: #23262F; background-color: transparent; text-indent: 15px; border:none;}
+.contactusPage>.content>.inputbox>.inputArea>input::placeholder {font-family: Poppins; font-weight: 300; font-size: 12px; color: #AFB5C7;}
+.contactusPage>.content>.inputbox>.txtArea {position: relative; display: block; width: 100%; height: 230px;}
+.contactusPage>.content>.inputbox>.txtArea>textarea {padding:15px; display: block; width: 100%; height: 100%; font-family: Poppins; font-weight: 300; font-size: 12px; color: #23262F ; border:none; border-radius: 15px; box-sizing: border-box; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1);}
+.contactusPage>.content>.inputbox>.txtArea>textarea::placeholder {font-family: Poppins; font-weight: 300; font-size: 12px; color: #AFB5C7;}
+.contactusPage>.content>.inputbox>.txtArea>span {position: absolute; bottom:12px; right:20px; display: block; font-weight: 500; font-size: 12px; color: #AFB5C7;}
+.contactusPage>.content>.inputbox.error>span.err {display: block;}
+.contactusPage>.content>.inputbox.error>.inputArea {background-color: #FFF8F8; border: 1px solid #FF7A7A;}
+.contactusPage>.content>.inputbox.error>.txtArea>textarea {background-color: #FFF8F8; border: 1px solid #FF7A7A;}
+
+.contactusPage>.content>.btnArea {padding:0 40px; display: block; width: 100%; height: auto; box-sizing: border-box;}
+.contactusPage>.content>.btnArea>a {padding:15px 0; display: block; width: 100%; font-weight: 500; font-size: 16px; color: #fff; background-color: #E6E8EC; text-align: center; border-radius: 24px;}
+.contactusPage>.content>.btnArea>a.on {
+  background: #c18bff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #c18bff 0%, #aa7dff 50%, #834bef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #c18bff 0%,#aa7dff 50%,#834bef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c18bff', endColorstr='#834bef',GradientType=1); /* IE6-9 */
+}
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* footer */
+footer {display: block; width: 100%; height: auto; background-color: #FCFCFD;}
+footer>.footerConts {margin: 0 auto; padding: 40px 40px 20px; display: block; width: 1440px; height: auto; box-sizing: border-box; background-color: #FCFCFD;}
+footer>.footerConts>.footerCont {padding-bottom: 20px; display: flex; flex-direction: row; justify-content: space-between; border-bottom: 1px solid #E6E8EC;}
+footer>.footerConts>.footerCont>.footerCont1 {display: block;}
+footer>.footerConts>.footerCont>.footerCont1>.footTit {margin-bottom: 44px; display: block;}
+footer>.footerConts>.footerCont>.footerCont1>.footTit>p {margin-bottom: 20px; display: block; font-size: 19px; font-weight: 600; color: #000; line-height: normal;}
+footer>.footerConts>.footerCont>.footerCont1>.footTit>span {display: block; font-size: 13px; font-weight: 400; color: #777E90;}
+footer>.footerConts>.footerCont>.footerCont1>.footSubTit {display: block;}
+footer>.footerConts>.footerCont>.footerCont1>.footSubTit>p {margin-bottom: 20px; display: block; font-size: 19px; font-weight: 600; color: #000; line-height: normal;}
+footer>.footerConts>.footerCont>.footerCont1>.footSubTit>.iconArea {display: block; }
+footer>.footerConts>.footerCont>.footerCont1>.footSubTit>.iconArea>.frame {padding-left: 20px; display: inline-block; width: 32px; height: 32px; vertical-align: middle;}
+footer>.footerConts>.footerCont>.footerCont1>.footSubTit>.iconArea>.frame:first-child {padding: 0; width: 32px; height: 24px;}
+footer>.footerConts>.footerCont>.footerCont1>.footSubTit>.iconArea>.frame>img {display: block; width: 100%; height: 100%;}
+footer>.footerConts>.footerCont>.footerCont2 {display: flex; flex-direction: row; justify-content: space-between;}
+footer>.footerConts>.footerCont>.footerCont2>.listCont {display: block;}
+footer>.footerConts>.footerCont>.footerCont2>.listCont>p {margin-bottom: 20px; font-size: 19px; font-weight: 600; color: #777E90;}
+footer>.footerConts>.footerCont>.footerCont2>.listCont>ul>li {margin-bottom: 12px; font-size: 15px; font-weight: 500; color: #777E90;}
+footer>.footerConts>.footerCont>.footerCont2>.listCont>ul>li:last-child {margin: 0;}
+footer>.footerConts>.footerCont>.footerCont2>.listCont:nth-child(2) {margin: 0 50px;}
+footer>.footerConts>p {margin-top: 20px; position: relative; display: block; font-size: 15px; font-weight: 500; color: #777E90; line-height: normal;}
+footer>.footerConts>p>span {position: absolute; right: 0; display: inline-block; line-height: normal;}
+footer>.footerConts>p>span>em {display: inline-block; width: 4px; height: 4px; vertical-align: middle;}
+footer>.footerConts>p>span>em>img {display: block; width: 100%; height: 100%;}
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* --------신규 css---------*/
+
+
+.myprofilePage {display: block; width: 100%; height: calc(100% - 70px); background-color: #F5F6FA; overflow: hidden;}
+.myprofilePage>.secontinner {margin: 0 auto; position: relative; display: block; width: 1440px; height: 100%; box-sizing: border-box;}
+.myprofilePage>.secontinner>.sidemnuArea {position: absolute; top: 0; left:0; display: block; width: 18%; height: 100%; background-color: #fff; box-shadow: 3px 3px 6px rgba(0,0,0,0.3);}
+.myprofilePage>.secontinner>.sidemnuArea>p {padding:18px 40px; font-weight: 600; font-size: 19px; color: #777E90; line-height: normal; box-sizing: border-box;}
+.myprofilePage>.secontinner>.sidemnuArea>ul {border-top: 1px solid #E6E8EC;}
+.myprofilePage>.secontinner>.sidemnuArea>ul>li {border-bottom: 1px solid #E6E8EC;}
+.myprofilePage>.secontinner>.sidemnuArea>ul>li>a {padding:18px 40px; display: block; width: 100%; height: auto; font-weight: 500; font-size: 17px; color: #000; box-sizing: border-box;}
+.myprofilePage>.secontinner>.sidemnuArea>ul>li>a>.frame {margin-right: 8px; display: none; width: 22px; height: 22px; vertical-align: middle;}
+.myprofilePage>.secontinner>.sidemnuArea>ul>li>a>.frame>img {display: block; width: 100%; height: 100%;}
+.myprofilePage>.secontinner>.sidemnuArea>ul>li>a>.frame.type1 {display: none;}
+.myprofilePage>.secontinner>.sidemnuArea>ul>li>a>.frame.type2 {display: inline-block;}
+.myprofilePage>.secontinner>.sidemnuArea>ul>li.on>a {color: #844CEF;}
+.myprofilePage>.secontinner>.sidemnuArea>ul>li.on>a>.frame.type1 {display: inline-block;}
+.myprofilePage>.secontinner>.sidemnuArea>ul>li.on>a>.frame.type2 {display: none;}
+
+
+.myprofilePage>.secontinner>.contArea {margin-left: 18%; display: block; width: 82%; height: 100%; background-color: #F5F6FA; overflow-y: auto; -ms-overflow-style: none;}
+.myprofilePage>.secontinner>.contArea::-webkit-scrollbar{display:none;}
+.myprofilePage>.secontinner>.contArea>ul {display: block; width: 100%; height: 100%;}
+.myprofilePage>.secontinner>.contArea>ul>li {display: none; width: 100%; height: 100%;}
+.myprofilePage>.secontinner>.contArea>ul>li:nth-child(1) {display: block;}
+.myprofilePage>.secontinner>.contArea>ul>li:nth-child(2) {display: none;}
+/* .myprofilePage>.secontinner>.contArea>ul>li>.contprof {} */
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.myproArea {padding: 100px 0 50px; display: block;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.myproArea>.imgArea {position: relative; margin:0 auto 16px; display: block; width: 120px;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.myproArea>.imgArea>.frame {display: block; width: 120px; height: 120px;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.myproArea>.imgArea>.frame>img {display: block; width: 100%; height: 100%; object-fit: cover; object-position: center;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.myproArea>.imgArea>.imgChange {position: absolute; bottom:0; right:0; display: block; width: 30px; height: 30px;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.myproArea>.imgArea>.imgChange>img {display: block; width: 100%; height: 100%; object-fit: cover; object-position: center;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.myproArea>.imgArea>.saveNick {position: absolute; top:90%; left:85%; padding:2px 4px; display: block; font-weight: 500; font-size: 16px; color: #fff; background-color: #BF8AFF; transform: translate(120%, -50%); border-radius: 5px;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.myproArea>.nickArea {position: relative; margin:0 auto 28px; display: block; width: 180px;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.myproArea>.nickArea>input {display: block; width: 100%; height: 100%; font-weight: 500; font-size: 19px; color: #000; font-family: 'Poppins'; background-color: #F5F6FA; text-align: center; border:none;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.myproArea>.nickArea>.chgNick {position: absolute; top:50%; right:0; display: block; width: 16px; height: 16px; transform: translate(120%, -50%);}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.myproArea>.nickArea>.chgNick>img {display: block; width: 100%; height: 100%;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.myproArea>.nickArea>.saveNick {position: absolute; top:50%; right:0; padding:2px 4px; display: block; font-weight: 500; font-size: 16px; color: #fff; background-color: #BF8AFF; transform: translate(120%, -50%); border-radius: 5px;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.myproArea>.transAddr {position: relative; margin:0 auto; padding:10px 15px; display: block; width: 54%; height: auto; background-color: #fff; box-sizing: border-box; border-radius: 10px;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.myproArea>.transAddr>p {width: 97%; font-weight: 500; font-size: 15px; color: #777E90; line-height: normal;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.myproArea>.transAddr>a {position: absolute; top:50%; right:15px; display: block; width: 16px; height: 16px; transform: translateY(-50%);}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.myproArea>.transAddr>a>img {display: block; width: 100%; height: 100%;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea {display: block; width: 100%; height: auto;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>.tapMnuArea {padding-bottom: 50px; display: block; width: 100%; height: auto;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>.tapMnuArea>ul {display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: center;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>.tapMnuArea>ul>li {margin-right:11%; display: block;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>.tapMnuArea>ul>li:last-child {margin-right: 0;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>.tapMnuArea>ul>li>a {padding:0 10px; font-weight: 600; font-size: 19px; color: #777E90; line-height: normal; border-bottom:4px solid transparent;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>.tapMnuArea>ul>li.on>a {color: #000; border-color: #BF8AFF;}
+
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li {display: none;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li:nth-child(1) {display: block;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li:nth-child(2) {display: none;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li:nth-child(3) {display: none;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol {display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-items: center;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li.nodata {display: block; width: 100%;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li.nodata>p {padding:120px 0; font-weight: 500; font-size: 35px; color: #844CEF; line-height: normal; text-align: center;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li {display: block; width: 25%;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li>.nftCont {position: relative; padding: 20px; display: block; width: 100%; height: 100%; box-sizing: border-box;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li>.nftCont>.ContFrame {display: block; width: 100%; height: auto; border-radius: 16px; overflow: hidden;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li>.nftCont>.ContFrame>.frame {margin: 0 auto; display: block; width: 100%; height: 170px;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li>.nftCont>.ContFrame>.frame>img {display: block; width: 100%; height: 100%; object-fit: cover; object-position: center;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li>.nftCont>.ContFrame>.textArea {padding:15px 0; display: block; width: 100%; height: auto; background-color: #fff; box-sizing: border-box;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li>.nftCont>.ContFrame>.textArea>p {margin:0 18px; position: relative; line-height: normal;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li>.nftCont>.ContFrame>.textArea>p>span:last-child {position: absolute; top:50%; right:0; transform: translateY(-50%);}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li>.nftCont>.ContFrame>.textArea>p:nth-child(2) {padding:10px 0 5px;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li>.nftCont>.ContFrame>.textArea>p:nth-child(2)>span {font-weight: 400; font-size: 11px; color: #000; line-height: normal;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li>.nftCont>.ContFrame>.textArea>p:nth-child(3)>span {font-weight: 400; font-size: 11px; color: #000; line-height: normal;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li>.nftCont>.ContFrame>.textArea>p:nth-child(3)>span>em {margin-right: 4px; font-weight: 600; font-size: 15px; color: #000;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li>.nftCont>.ContFrame>.textArea>.nftName {font-weight: 600; font-size: 17px; color: #000; line-height: normal;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li>.nftCont>.ContFrame>.textArea>.nftName>.likeArea {transform: translateY(-40%);}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li>.nftCont>.ContFrame>.textArea>.nftName>.likeArea>.frame {margin:0 auto -6px; display: block; width: 19px; height: 19px;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li>.nftCont>.ContFrame>.textArea>.nftName>.likeArea>.frame>img {display: block; width: 100%; height: 100%;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contprof>.contlistArea>ul>li>.tapSec>ol>li>.nftCont>.ContFrame>.textArea>.nftName>.likeArea>.num {font-weight: 600; font-size: 13px; color: #000;}
+
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap {padding:60px 110px;  display: block; width: 100%; height: 100%; box-sizing: border-box; background-color: #F5F6FA;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.tapMnuArea {padding-bottom: 70px; display: block; width: 100%; height: auto;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.tapMnuArea>ul {display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-items: center;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.tapMnuArea>ul>li {margin-right:11%; display: block;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.tapMnuArea>ul>li:last-child {margin-right: 0;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.tapMnuArea>ul>li>a {padding:0 10px; font-weight: 600; font-size: 19px; color: #777E90; line-height: normal; border-bottom:4px solid transparent;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.tapMnuArea>ul>li.on>a {color: #000; border-color: #bf8aff; /* Old browsers */
+  border-image: -moz-linear-gradient(left,  #bf8aff 0%, #844cef 100%); /* FF3.6-15 */
+  border-image: -webkit-linear-gradient(left,  #bf8aff 0%,#844cef 100%); /* Chrome10-25,Safari5.1-6 */
+  border-image: linear-gradient(to right,  #bf8aff 0%,#844cef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  border-image-slice: 1;
+}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont {display: block; width: 100%; height: auto;}
+/* .myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul {} */
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li {display: none;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li:nth-child(1) {display: block;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li:nth-child(2) {display: none;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.balanceCont {display: block; width: 100%; height: auto;}
+/* .myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.balanceCont>ol {} */
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.balanceCont>ol>li {margin-bottom: 25px;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.balanceCont>ol>li>p {position: relative; font-weight: 500; font-size: 19px; color: #000; line-height: normal;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.balanceCont>ol>li>p>span {position: absolute; top:50%; right:0; padding:10px 12px; display: block; width: 67%; font-weight: 500; font-size: 15px; color: #777E90; background-color: #fff; box-sizing: border-box; border-radius: 10px; transform: translateY(-50%);}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.balanceCont>ol>li>p>span>em {margin-right: 5px; font-weight: 500; font-size: 15px; color: #000;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.balanceCont>ol>li>p>span>a {display: inline-block; width: 16px; height: 16px; vertical-align: middle;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.balanceCont>ol>li>p>span>a>img {display: block; width: 100%; height: 100%;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.balanceCont>ol>li:nth-child(1)>p>span>em {display: inline-block; width: 96%; font-weight: 500; font-size: 15px; color: #777E90; vertical-align: middle;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.balanceCont>ol>li>.btnArea {display: block; width: 100%; height: auto; text-align: right;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.balanceCont>ol>li>.btnArea>a {padding:10px 20px; display: inline-block; font-weight: 500; font-size: 17px; color: #fff; text-align: center; border-radius: 8px;
+  background: #bf8aff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #bf8aff 0%, #844cef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #bf8aff 0%,#844cef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #bf8aff 0%,#844cef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf8aff', endColorstr='#844cef',GradientType=1 ); /* IE6-9 */
+}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont {display: block; width: 100%; height: auto;}
+/* .myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea {} */
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.fiexdtable {display: block; width: 100%; height: auto;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.fiexdtable>ul {padding:20px 0; display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: flex-start;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.fiexdtable>ul>li {font-weight: 500; font-size: 17px; color: #777E90; text-align: center;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.fiexdtable>ul>li:nth-child(1) {width: 21%;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.fiexdtable>ul>li:nth-child(2) {width: 14%;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.fiexdtable>ul>li:nth-child(3) {width: 14%; text-align: left;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.fiexdtable>ul>li:nth-child(4) {width: 14%;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.fiexdtable>ul>li:nth-child(5) {width: 14%; text-align: left;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.fiexdtable>ul>li:nth-child(6) {width: 23%;}
+
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.tableCont {display: block; width: 100%; height: auto;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.tableCont>.nodata {padding:100px 0; font-weight: 500; font-size: 17px; color: #000; text-align: center;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.tableCont>ul {margin-bottom:5px; padding:10px 0; display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: flex-start; background-color: #fff; box-sizing: border-box; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.16);}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.tableCont>ul>li {font-weight: 500; font-size: 13px; color: #000; text-align: center;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.tableCont>ul>li:nth-child(1) {width: 21%;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.tableCont>ul>li:nth-child(2) {width: 14%; text-align: center;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.tableCont>ul>li:nth-child(3) {margin-right: 20px; width: 14%; text-align: right;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.tableCont>ul>li:nth-child(4) {width: 14%; text-align: center;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.tableCont>ul>li:nth-child(5) {margin-right: 20px; width: 14%; text-align: right;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.tableCont>ul>li:nth-child(6) {width: 23%;}
+.myprofilePage>.secontinner>.contArea>ul>li>.contswap>.swapCont>ul>li>.swaphiscont>.tableArea>.tableCont>ul>li:nth-child(6)>p {padding:0 10px 0 0; box-sizing: border-box; color: #3E6DE5;}
+
+
+/* 환전 팝업 */
+.exchgPop {position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; z-index: 4000;}
+.exchgPop>.shadow {display: block; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4);}
+.exchgPop>.exchgCont {position: absolute; top:50%; left:50%; display: block; width: 376px; height: auto; background-color: #fff; transform: translate(-50%, -50%); box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1); border-radius: 16px;}
+.exchgPop>.exchgCont>a {position: absolute; top:10px; right:14px; padding:10px; display: block; width: 16px; height: 16px;}
+.exchgPop>.exchgCont>a>img {display: block; width: 100%; height: 100%;}
+.exchgPop>.exchgCont>.popTIt {margin:0 auto; padding:22px 0 5px; display: block; width: 200px; font-weight: 600; font-size: 17px; color: #844CEF; line-height: normal; text-align: center; border-bottom:1px solid #E6E8EC;}
+.exchgPop>.exchgCont>.inputSec {margin:35px 0 25px; padding:0 35px; display: block; width: 100%; height: auto; box-sizing: border-box;}
+.exchgPop>.exchgCont>.inputSec>ul>li {margin-bottom: 24px;}
+.exchgPop>.exchgCont>.inputSec>ul>li:nth-child(3) {margin-bottom: 8px;}
+.exchgPop>.exchgCont>.inputSec>ul>li:last-child {margin-bottom: 0;}
+.exchgPop>.exchgCont>.inputSec>ul>li>p.subTit {position: relative; font-weight: 500; font-size: 13px; color: #000; line-height: normal;}
+.exchgPop>.exchgCont>.inputSec>ul>li>p.subTit>span {position: absolute; top:50%; right:0; font-weight: 500; font-size: 13px; color: #777E90; transform: translateY(-50%);}
+.exchgPop>.exchgCont>.inputSec>ul>li>p.subTit>span>em {margin-right: 10px; font-weight: 500; font-size: 15px; color: #777E90;}
+.exchgPop>.exchgCont>.inputSec>ul>li>.inputArea {margin-top: 5px; display: block; width: 100%; height: auto;}
+.exchgPop>.exchgCont>.inputSec>ul>li>.inputArea>input {margin-right: 5px; padding-right: 10px; display: inline-block; width: 84%; height: 35px; font-family: 'Poppins'; font-weight: 500; font-size: 15px; color: #000; background-color: #fff; text-align: right; border:1px solid #E6E8EC; border-radius: 8px;}
+.exchgPop>.exchgCont>.inputSec>ul>li>.inputArea>input::placeholder {font-family: 'Poppins'; font-weight: 300; font-size: 15px; color: #AFB5C7;}
+.exchgPop>.exchgCont>.inputSec>ul>li:last-child>.inputArea>input {color: #777E90; background-color: #E6E8EC;}
+.exchgPop>.exchgCont>.inputSec>ul>li>.inputArea>span {font-weight: 500; font-size: 13px; color: #777E90;}
+.exchgPop>.exchgCont>.inputSec>ul>li>.frame {margin:0 auto; display: block; width: 40px; height: 40px;}
+.exchgPop>.exchgCont>.inputSec>ul>li>.frame>img {display: block; width: 100%; height: 100%;}
+.exchgPop>.exchgCont>.btnArea {display: flex; width: 100%; height: auto; border-top:1px solid #E6E8EC;}
+.exchgPop>.exchgCont>.btnArea>a {padding:20px 0; display: block; width: 50%; font-weight: 500; font-size: 15px; color: #777E90; box-sizing: border-box; text-align: center;}
+.exchgPop>.exchgCont>.btnArea>a:first-child {border-right:1px solid #e6e8ec;}
+.exchgPop>.exchgCont>.btnArea>a:last-child {color: #844CEF;}
+
+/* 환전 완료 팝업 */
+.exchgcompPop {position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; z-index: 4000;}
+.exchgcompPop>.shadow {display: block; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4);}
+.exchgcompPop>.exchgcompCont {position: absolute; top:50%; left:50%; display: block; width: 376px; height: auto; background-color: #fff; transform: translate(-50%, -50%); box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1); border-radius: 16px;}
+.exchgcompPop>.exchgcompCont>a {position: absolute; top:10px; right:14px; padding:10px; display: block; width: 16px; height: 16px;}
+.exchgcompPop>.exchgcompCont>a>img {display: block; width: 100%; height: 100%;}
+.exchgcompPop>.exchgcompCont>.popTIt {margin:0 auto; padding:22px 0 5px; display: block; width: 200px; font-weight: 600; font-size: 17px; color: #844CEF; line-height: normal; text-align: center; border-bottom:1px solid #E6E8EC;}
+.exchgcompPop>.exchgcompCont>.txtbox {margin:30px 0; display: block; width: 100%; height: auto; text-align: center;}
+.exchgcompPop>.exchgcompCont>.txtbox>p {font-weight: 500; font-size: 17px; color: #777E90; line-height: normal;}
+.exchgcompPop>.exchgcompCont>.txtbox>p:last-child {margin-top: 5px;}
+.exchgcompPop>.exchgcompCont>.btnArea {display: block; width: 100%; height: auto; border-top:1px solid #E6E8EC;}
+.exchgcompPop>.exchgcompCont>.btnArea>a {padding:20px 0; display: block; width: 100%; font-weight: 500; font-size: 15px; color: #844CEF; box-sizing: border-box; text-align: center;}
+
+
+
+
+/* -------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Web */
+
+/* 1440px 이하일 때 적용 */
+@media all and (max-width: 1440px) {
+  /* header */
+  header>.headerInner.web {width: 100%;}
+  .mainPage>.sectionCont {width: 100%;}
+
+  /* section */
+  #MynftsPage>.content {width: 100%;}
+  #MynftsPage>.content>.listArea>ul {width: 1100px;}
+  #MynftsPage>.content>.listArea>ul>li {margin: 0 7.5px 32px;}
+  #MynftsPage>.content>.listArea>ul>li:nth-child(5n) {margin: 0 7.5px 32px;}
+
+  /* footer */
+  footer>.footerConts {width: 100%;}
+  
+}
+
+/* 1390px 이하일 때 적용 */
+@media all and (max-width: 1390px){
+  .mainPage>.sectionCont>.webnftList>li {width: 24%;}
+  .mainPage>.sectionCont>.webnftList>li:nth-child(5) {margin-right: 15px;}
+  .mainPage>.sectionCont>.webnftList>li:nth-child(10) {margin-right: 15px;}
+  .mainPage>.sectionCont>.webnftList>li:nth-child(4) {margin-right: 0px;}
+  .mainPage>.sectionCont>.webnftList>li:nth-child(8) {margin-right: 0px;}
+}
+
+/* 1250px 이하일 때 적용 */
+@media all and (max-width: 1250px) {
+  .mainPage>.sectionCont.top {padding: 60px;}
+  .mainPage>.sectionCont.top>.toptxtArea {margin-bottom: 60px; width: 100%; text-align: center;}
+  .mainPage>.sectionCont.top>.toptxtArea>a {margin: 20px auto 0;}
+  .mainPage>.sectionCont.top>.swiper {margin: 0 auto;}
+  .mainPage>.sectionCont>.webnftList>li {width: 32%;}
+  .mainPage>.sectionCont>.webnftList>li:nth-child(4) {margin-right: 15px;}
+  .mainPage>.sectionCont>.webnftList>li:nth-child(8) {margin-right: 15px;}
+  .mainPage>.sectionCont>.webnftList>li:nth-child(3) {margin-right: 0px;}
+  .mainPage>.sectionCont>.webnftList>li:nth-child(6) {margin-right: 0px;}
+  .mainPage>.sectionCont>.webnftList>li:nth-child(9) {margin-right: 0px;}
+  .mainPage>.sectionCont>.webexploreList>li {width: 32%;}
+  .mainPage>.sectionCont>.webexploreList>li:nth-child(4) {margin-right: 15px;}
+  .mainPage>.sectionCont>.webexploreList>li:nth-child(8) {margin-right: 15px;}
+  .mainPage>.sectionCont>.webexploreList>li:nth-child(3) {margin-right: 0;}
+  .mainPage>.sectionCont>.webexploreList>li:nth-child(6) {margin-right: 0;}
+  .mainPage>.sectionCont>.createList>li {width: 48%;}
+  .mainPage>.sectionCont>.createList>li:nth-child(2) {margin-right: 0;}
+  .mainPage>.sectionCont>.createList>li:nth-child(4) {margin-right: 0;}
+}
+
+
+/* 1200px 이하일 때 적용 */
+@media all and (max-width: 1200px) {
+  /* header */
+  header>.headerInner.web>nav {margin-right: 0;}
+
+  /* section */
+  #MynftsPage>.content>.listArea>ul {width: 825px;}
+
+
+  /* footer */
+
+}
+
+/* 1024px 이하일 때 적용 */
+@media all and (max-width: 1024px) {
+  /* header */
+
+  /* section */
+  .createnftPage>.contents {width: 100%;}
+
+  /* footer */
+
+}
+
+/* 950px 이하일 때 적용 */
+@media all and (max-width: 950px) {
+  .mainPage>.sectionCont>.webnftList>li {width: 48%; margin: 0 15px 32px 0; display: block;  height: auto;}
+  .mainPage>.sectionCont>.webnftList>li:nth-child(3) {margin-right: 15px;}
+  .mainPage>.sectionCont>.webnftList>li:nth-child(6) {margin-right: 15px;}
+  .mainPage>.sectionCont>.webnftList>li:nth-child(9) {margin-right: 15px;}
+  .mainPage>.sectionCont>.webnftList>li:nth-child(2) {margin-right: 0px;}
+  .mainPage>.sectionCont>.webnftList>li:nth-child(4) {margin-right: 0px;}
+  .mainPage>.sectionCont>.webnftList>li:nth-child(6) {margin-right: 0px;}
+  .mainPage>.sectionCont>.webnftList>li:nth-child(8) {margin-right: 0px;}
+  .mainPage>.sectionCont>.webnftList>li:nth-child(10) {margin-right: 0px;}
+  .mainPage>.sectionCont>.webnftList>li>.nftCont>.ContFrame>.frame {width: 43vw; height: 43vw;}
+  .mainPage>.sectionCont>.webnftList>li>.nftCont>.ContFrame>.textArea {margin:0 auto; padding:2vh 0; display: block; width: 43vw;}
+  .mainPage>.sectionCont>.webnftList>li>.nftCont>.ContFrame>.textArea>p {font-size: 2vw;}
+  .mainPage>.sectionCont>.webnftList>li>.nftCont>.ContFrame>.textArea>p>span>em {margin-right: 1.2vw;}
+
+  .mainPage>.sectionCont>.webexploreList>li {width: 48%;}
+  .mainPage>.sectionCont>.webexploreList>li:nth-child(3) {margin-right: 16px;}
+  .mainPage>.sectionCont>.webexploreList>li:nth-child(6) {margin-right: 16px;}
+  .mainPage>.sectionCont>.webexploreList>li:nth-child(2) {margin-right: 0;}
+  .mainPage>.sectionCont>.webexploreList>li:nth-child(4) {margin-right: 0;}
+  .mainPage>.sectionCont>.webexploreList>li:nth-child(6) {margin-right: 0;}
+  .mainPage>.sectionCont>.webexploreList>li:nth-child(8) {margin-right: 0;}
+
+  
+  
+  
+  
+  
+  
+}
+
+/* 810px 이하일 때 적용 */
+@media all and (max-width: 810px) {
+  .contactusPage>.content {width: 95%;}
+
+
+  footer>.footerConts>.footerCont {flex-direction: column;}
+  footer>.footerConts>.footerCont>.footerCont2 {width: 100%;}
+  footer>.footerConts>.footerCont>.footerCont1>.footSubTit {margin-bottom: 5vh;}
+  footer>.footerConts>.footerCont>.footerCont2>.listCont:nth-child(2) {margin: 0;}
+}
+
+
+/* 768px 이하일 때 적용 */
+@media all and (max-width: 768px) {
+
+  /* 팝업's */
+  .comingsoonPop>.contArea {padding:5vw;}
+  .comingsoonPop>.contArea>p {padding-bottom: 5vw; font-size: 5vw;}
+  .comingsoonPop>.contArea>.imgArea>.frame {width: 80vw; height: auto;}
+  .comingsoonPop>.contArea>a {height: auto;}
+
+  .nftcreateconfPop>.contArea {margin: 0 auto; padding: 3vw 0 0; width: 70vw; height: auto; transform: translate(-50%, -45%);}
+  .nftcreateconfPop>.contArea>.frame {margin: 3vw auto; width: 50vw; height: 50vw;}
+  .nftcreateconfPop>.contArea>.txtArea {padding-bottom: 3vw;}
+  .nftcreateconfPop>.contArea>.txtArea>p {font-size: 4.5vw;}
+  .nftcreateconfPop>.contArea>span {padding-bottom: 3vw; font-size: 3.5vw; border-bottom: 1px solid #E6E8EC;}
+  .nftcreateconfPop>.contArea>.btnArea {padding:5vw;}
+  .nftcreateconfPop>.contArea>.btnArea>a {padding:2.5vw 0; font-size: 4vw;}
+
+  .buynowPop>.contArea {padding:0 5vw 5vw; width: 85vw; transform: translate(-50%, -45%); border-radius: 3vw;}
+  .buynowPop>.contArea>p.tit {padding:5vw 0; font-size: 3.8vw;}
+  .buynowPop>.contArea>p.tit>a {width: 6.5vw; height: 6.5vw;}
+  .buynowPop>.contArea>.imgArea {padding:5vw 0; display: block;}
+  .buynowPop>.contArea>.imgArea>.frame {margin:0 auto; width: 21vw; height: 21vw;}
+  .buynowPop>.contArea>.imgArea>.txtbox {margin-top:4vw; width: 100%;}
+  .buynowPop>.contArea>.imgArea>.txtbox>p {margin-bottom: 1.5vw; font-size: 3vw;}
+  .buynowPop>.contArea>.imgArea>.txtbox>p:last-child {margin-bottom: 0;}
+  .buynowPop>.contArea>.infoArea {padding:5vw 0;}
+  .buynowPop>.contArea>.infoArea>p {margin-bottom: 2vw; font-size: 2.8vw;}
+  .buynowPop>.contArea>.infoArea>p>span {font-size: 2.8vw;}
+  .buynowPop>.contArea>.infoArea>p>span>em {margin-right: 1vw;}
+  .buynowPop>.contArea>.btnArea>a {padding:2vw 0; font-size: 2.8vw; border-radius: 3vw;}
+
+  .placebidPop>.contArea {padding:0 5vw 5vw; width: 85vw; transform: translate(-50%, -45%); border-radius: 3vw;}
+  .placebidPop>.contArea>p.tit {padding:5vw 0; font-size: 3.8vw;}
+  .placebidPop>.contArea>p.tit>a {width: 6.5vw; height: 6.5vw;}
+  .placebidPop>.contArea>.imgArea {padding:5vw 0; display: block;}
+  .placebidPop>.contArea>.imgArea>.frame {margin:0 auto; width: 21vw; height: 21vw;}
+  .placebidPop>.contArea>.imgArea>.txtbox {margin-top:4vw; width: 100%;}
+  .placebidPop>.contArea>.imgArea>.txtbox>p {margin-bottom: 1.5vw; font-size: 3vw;}
+  .placebidPop>.contArea>.imgArea>.txtbox>p:last-child {margin-bottom: 0;}
+  .placebidPop>.contArea>.bidArea {padding:5vw 0;}
+  .placebidPop>.contArea>.bidArea>p {margin-bottom: 2vw; font-size: 2.8vw;}
+  .placebidPop>.contArea>.bidArea>span {margin-top: 1vw; font-size: 1.5vw;}
+  .placebidPop>.contArea>.bidArea>.inputArea {padding:1vh 0 1.5vh; background-color: #fff; box-shadow: 0px 3px 20px rgba(119, 126, 144, 0.1); border-bottom:none; border-radius: 2vw;}
+  .placebidPop>.contArea>.bidArea>.inputArea>input {width: 65vw; font-size: 3vw; text-align: right;}
+  .placebidPop>.contArea>.bidArea>.inputArea>input::placeholder {font-size: 3vw;}
+  .placebidPop>.contArea>.bidArea>.inputArea>span {right:3vw; font-size: 3vw;}
+  .placebidPop>.contArea>.btnArea>a {padding:2vw 0; font-size: 2.8vw; border-radius: 3vw;}
+
+  .createauctionPop>.contArea {padding: 0 5vw 5vw; width: 85vw; transform: translate(-50%, -45%); border-radius: 3vw;}
+  .createauctionPop>.contArea>p.tit {padding:5vw 0; font-size: 3.8vw;}
+  .createauctionPop>.contArea>p.tit>a {width: 6.5vw; height: 6.5vw;}  
+  .createauctionPop>.contArea>.inputbox.step1 {padding:1.5vw 0 0;}
+  .createauctionPop>.contArea>.inputbox.step2 {padding:3vw 0;}
+  .createauctionPop>.contArea>.inputbox.step3 {padding:0 0 5vw;}
+  .createauctionPop>.contArea>.inputbox>p {margin-bottom:1.5vw; font-size: 2.8vw;}
+  .createauctionPop>.contArea>.inputbox>span.err {margin-top: 1vw; font-size: 1.5vw;}
+  .createauctionPop>.contArea>.inputbox>.inputArea {padding: 1vh 0;}
+  .createauctionPop>.contArea>.inputbox>.inputArea>input {width: 58vw; font-size: 2.8vw;}
+  .createauctionPop>.contArea>.inputbox>.inputArea>input::placeholder {font-size: 2.8vw;}
+  .createauctionPop>.contArea>.inputbox>.inputArea>span {right:2.5vw; font-size: 2.8vw;}
+  .createauctionPop>.contArea>.inputbox>.inputArea>span.frame {width: 4vw; height: 4vw;}
+  .createauctionPop>.contArea>.btnArea>a {padding:2vw 0; font-size: 2.8vw; border-radius: 3vw;}
+
+  .auctionsuccessPop>.contArea {padding: 0 5vw 5vw; width: 85vw; transform: translate(-50%, -45%);}
+  .auctionsuccessPop>.contArea>.titbox {padding:5vw 0;}
+  .auctionsuccessPop>.contArea>.titbox>p {font-size: 4vw;}
+  .auctionsuccessPop>.contArea>.imgArea {padding:5vw 0;}
+  .auctionsuccessPop>.contArea>.imgArea>.frame {width: 37vw; height: 37vw;}
+  .auctionsuccessPop>.contArea>.imgArea>p {margin-top: 2vw; font-size: 3vw;}
+  .auctionsuccessPop>.contArea>.btnArea>a {padding:2vw 0; font-size: 2.8vw; border-radius: 3vw;}
+
+  .settlePop>.contArea {padding:0 5vw 5vw; width: 85vw; transform: translate(-50%, -45%); border-radius: 3vw;}
+  .settlePop>.contArea>p.tit {padding:5vw 0; font-size: 3.8vw;}
+  .settlePop>.contArea>p.tit>a {width: 6.5vw; height: 6.5vw;}
+  .settlePop>.contArea>.imgArea {padding:5vw 0; display: block;}
+  .settlePop>.contArea>.imgArea>.frame {margin:0 auto; width: 21vw; height: 21vw;}
+  .settlePop>.contArea>.imgArea>.txtbox {margin-top:4vw; width: 100%;}
+  .settlePop>.contArea>.imgArea>.txtbox>p {margin-bottom: 1.5vw; font-size: 3vw;}
+  .settlePop>.contArea>.imgArea>.txtbox>p:last-child {margin-bottom: 0;}
+  .settlePop>.contArea>.infoArea {padding:5vw 0;}
+  .settlePop>.contArea>.infoArea>p {margin-bottom: 2vw; font-size: 2.8vw;}
+  .settlePop>.contArea>.infoArea>p>span {font-size: 2.8vw;}
+  .settlePop>.contArea>.infoArea>p>span>em {margin-right: 1vw;}
+  .settlePop>.contArea>.btnArea>a {padding:2vw 0; font-size: 2.8vw; border-radius: 3vw;}
+
+  .inquirycompPop>.contArea {padding: 0 5vw 5vw; width: 85vw; transform: translate(-50%, -45%); border-radius: 3vw;}
+  .inquirycompPop>.contArea>p.tit {padding:5vw 0; font-size: 3.8vw;}
+  .inquirycompPop>.contArea>.txtArea {padding:6.5vw 0;}
+  .inquirycompPop>.contArea>.txtArea>p {margin-bottom:1vw; font-size: 3.8vw;}
+  .inquirycompPop>.contArea>.btnArea>a {padding:2vw 0; font-size: 2.8vw; border-radius: 3vw;}
+
+  /* header */
+  header>.headerInner.web {display: none;}
+  header>.headerInner.mob {display: flex;}
+
+  /* section */
+  #MynftsPage {margin-top: 10vh;}
+  #MynftsPage>.content>.listArea>ul {width: 550px;}
+
+  #explorePage {margin-top: 10vh; width: 100%;}
+  #explorePage>.content {flex-direction: column;}
+  #explorePage>.content>.sortArea {display: block; width: 100%;}
+  #explorePage>.content>.itemlistArea {width: 100%;}
+  #explorePage>.content>.itemlistArea>.titleArea {padding:4vw;}
+  #explorePage>.content>.itemlistArea>.titleArea>p {display: none;}
+  #explorePage>.content>.itemlistArea>.titleArea>.sortbyArea {width: 100%;}
+  #explorePage>.content>.itemlistArea>.titleArea>.sortbyArea>a {padding:3vw 5vw; width: 100%; font-size: 3.4vw; box-sizing: border-box;}
+  #explorePage>.content>.itemlistArea>.titleArea>.sortbyArea>a>i {right:5vw;}
+  #explorePage>.content>.itemlistArea>.titleArea>.sortbyArea>ul {top:13vw;}
+  #explorePage>.content>.itemlistArea>.titleArea>.sortbyArea>ul>li>a {padding:3vw 5vw; font-size: 3.4vw;}
+  #explorePage>.content>.itemlistArea>.sortchkList {display: none;}
+  #explorePage>.content>.itemlistArea>.listArea>ul {width: 550px;}
+  #explorePage>.content>.itemlistArea>.listArea>ul>li {margin: 0 7.5px 32px;}
+  #explorePage>.content>.itemlistArea>.listArea>ul>li:nth-child(4n) {margin: 0 7.5px 32px;}
+  #explorePage>.content>.itemlistArea>.btnArea {padding: 0 4vw 4vh;}
+  #explorePage>.content>.itemlistArea>.btnArea>a {padding:1.7vh 0; font-size: 4vw;}
+
+  .mainPage {margin-top: 10vh;}
+  .mainPage>.sectionCont>span {margin: 0 0  1.5vh 5vw; font-size: 6.5vw;}
+  .mainPage>.sectionCont>a {margin: 0 auto; width: 89vw;}
+  /*.mainPage>.sectionCont>.webnftList {display: none;}*/
+  /*.mainPage>.sectionCont>.webexploreList {display: none;}*/
+  .mainPage>.sectionCont>.createList>li {margin-right: 0; width: 100%;}
+  .mainPage>.sectionCont.top {padding: 40px 0;}
+  .mainPage>.sectionCont.top>.toptxtArea {margin-bottom: 5.5vh; margin-left: 0; }
+  .mainPage>.sectionCont.top>.toptxtArea>span {font-size: 3.2vw; color: #000000; margin-left: 0;}
+  .mainPage>.sectionCont.top>.toptxtArea>p {font-size: 7.2vw; margin-left: 0;}
+  .mainPage>.sectionCont.top>.toptxtArea>a {width: 46vw; height: 11vw;}
+  .mainPage>.sectionCont.top>.toptxtArea>a>p {font-size: 3.7vw;}
+  .mainPage>.sectionCont.top>.swiper {width: 99.3vw; height: 83.3vw !important;}
+  .mainPage>.sectionCont.top>.swiper>ul>li {margin: 0 5vw;}
+  .mainPage>.sectionCont.top>.swiper>ul>li>.nftCont {width: 90vw;}
+  .mainPage>.sectionCont.top>.swiper>ul>li>.nftCont>.ContFrame>.frame {width: 90vw; height: 66vw;}
+  .mainPage>.sectionCont.top>.swiper>ul>li>.nftCont>.ContFrame>.Area {padding: 2vw 4.3vw;}
+  .mainPage>.sectionCont.top>.swiper>ul>li>.nftCont>.ContFrame>.Area>.frame {width: 8vw; height: 8vw;}
+  .mainPage>.sectionCont.top>.swiper>ul>li>.nftCont>.ContFrame>.Area>.txtArea {margin-left: 3.2vw;}
+  .mainPage>.sectionCont.top>.swiper>ul>li>.nftCont>.ContFrame>.Area>.txtArea>p {margin-bottom: 5px; font-size: 2.5vw; font-weight: 600; line-height: normal;}
+  .mainPage>.sectionCont.top>.swiper>ul>li>.nftCont>.ContFrame>.Area>.txtArea>p:last-child {font-size: 2vw;}
+  .sectionCont.top>.ts-controls>.ts-prev {width: 8vw; height: 8vw;}
+  .sectionCont.top>.ts-controls>.ts-prev>img {width: 2.5vw; height: 3.7vw;}
+  .sectionCont.top>.ts-controls>.ts-prev {top: 50%; left: 2vw; transform: translateY(300%);}
+  .sectionCont.top>.ts-controls>.ts-next {width: 8vw; height: 8vw;}
+  .sectionCont.top>.ts-controls>.ts-next>img {width: 2.5vw; height: 3.7vw;}
+  .sectionCont.top>.ts-controls>.ts-next {top: 50%; right: 2vw; transform: translateY(300%);}
+  .mainPage>.sectionCont.one {padding: 20px 0;}
+  .sectionCont.one>.swiper {display: block;}
+  .sectionCont.one>.ts-controls>.ts-prev {display: block;}
+  .sectionCont.one>.ts-controls>.ts-next {display: block;}
+  .mainPage>.sectionCont.two {padding: 20px 0;}
+  .sectionCont.two>.swiper {display: block;}
+  .sectionCont.two>.ts-controls>.ts-prev {display: block;}
+  .sectionCont.two>.ts-controls>.ts-next {display: block;}
+  .mainPage>.sectionCont.thr {padding: 20px 0;}
+  .sectionCont.thr>.swiper {display: block;}
+  .sectionCont.thr>.ts-controls>.ts-prev {display: block;}
+  .sectionCont.thr>.ts-controls>.ts-next {display: block;}
+  .sectionCont.thr>.ts-controls>.ts-paging {display: block;}
+
+  .nftaddprevPage {margin-top: 10vh;}
+  .nftaddprevPage>.nftDetails {width: 100%;}
+  .nftaddprevPage>.nftDetails {padding: 0; display: block;}
+  .nftaddprevPage>.nftDetails>.leftCont {padding: 5.4vw 5.4vw 0; width: 100%; box-sizing: border-box; background-color: #FCFCFD;;}
+  .nftaddprevPage>.nftDetails>.leftCont>.nftBox {padding: 3.2vw; position: static; top: 0; left: 0; width: 100%; height: 89vw; transform: translate(0, 0);}
+  .nftaddprevPage>.nftDetails>.leftCont>.nftBox>.frame {margin: 0 auto; width: 82vw; height: 82vw;}
+  .nftaddprevPage>.nftDetails>.rightCont {padding: 0; width: 100%;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea1 {padding: 5.4vw;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.title {font-size: 8vw;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.infoCont {width: auto;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.infoCont>.info {display: block; font-size: 3.7vw; line-height: normal;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.infoCont>a {display: none;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.price {display: block; font-size: 4.3vw; font-weight: 400;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.price>span {font-size: 4.3vw; font-weight: 600;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.buyNow {margin-bottom: 2vh; display: block; font-size: 4.3vw; font-weight: 600;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.buyNow>span {font-size: 4.3vw; font-weight: 600;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea1>.buyNow>img {display: none;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea2 {padding: 5.4vw;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea2>p {font-size: 5.3vw;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea2>.prof>.frame {width: 11vw; height: 11vw;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea2>.prof>.txtBox>p {font-size: 4.2vw;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea2>.prof>.txtBox>p:last-child {font-size: 3.4vw;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea3 {padding-bottom: 8vw; background-color: #FCFCFD;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea3>.titCont>.bidsCont>p {font-size: 4.2vw;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea3>ul {margin-left: 5.4vw;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea3>ul>li>.frame {width: 11vw; height: 11vw;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>p {font-size: 4.2vw;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>p>em {font-size: 4.2vw;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>span {font-size: 4.2vw;}
+  .nftaddprevPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>.time{font-size: 3.4vw;}
+  .nftaddprevPage>.nftDetails>.rightCont>.sellCont {padding: 8vw 5.4vw 5.4vw;}
+  .nftaddprevPage>.nftDetails>.rightCont>.sellCont>.sellBtn {margin: 0; padding: 3vw; font-size: 4.3vw; border-radius: 5vw;}
+
+  .nftuserPage>.nftDetails {margin-top: 10vh; width: 100%;}
+  .nftuserPage>.nftDetails {padding: 0; display: block;}
+  .nftuserPage>.nftDetails>.leftCont {padding: 5.4vw 5.4vw 0; width: 100%; box-sizing: border-box; background-color: #FCFCFD;;}
+  .nftuserPage>.nftDetails>.leftCont>.nftBox {padding: 3.2vw; position: static; top: 0; left: 0; width: 100%; height: 89vw; transform: translate(0, 0);}
+  .nftuserPage>.nftDetails>.leftCont>.nftBox>.frame {margin: 0 auto; width: 82vw; height: 82vw;}
+  .nftuserPage>.nftDetails>.rightCont {padding: 0; width: 100%;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea1 {padding: 5.4vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea1>.title {font-size: 8vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea1>.infoCont {width: auto;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea1>.infoCont>.info {display: block; font-size: 3.7vw; line-height: normal;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea1>.infoCont>a {display: none;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea1>.price {display: block; font-size: 4.3vw; font-weight: 400;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea1>.price>span {font-size: 4.3vw; font-weight: 600;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea1>.buyNow {margin-bottom: 2vh; display: block; font-size: 4.3vw; font-weight: 600;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea1>.buyNow>span {font-size: 4.3vw; font-weight: 600;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea1>.buyNow>img {display: none;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea2 {padding: 5.4vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea2>p {font-size: 5.3vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea2>.prof>.frame {width: 11vw; height: 11vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea2>.prof>.txtBox>p {font-size: 4.2vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea2>.prof>.txtBox>p:last-child {font-size: 3.4vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea3 {padding-bottom: 5.4vw; background-color: #FCFCFD;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea3>.titCont>.bidsCont>p {font-size: 4.2vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea3>ul {margin-left: 5.4vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea3>ul>li>.frame {width: 11vw; height: 11vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>p {font-size: 4.2vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>p>em {font-size: 4.2vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>span {font-size: 4.2vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>.time{font-size: 3.4vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea4 {padding: 5.4vw 5.4vw 8vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea4>p {font-size: 5.3vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea4>ul>li {margin-right: 7.8vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea4>ul>li>.aucEnd>p {font-size: 7.8vw;}
+  .nftuserPage>.nftDetails>.rightCont>.txtArea4>ul>li>.aucEnd>span {font-size: 4.3vw;}
+  .nftuserPage>.nftDetails>.rightCont>.sellCont {padding: 8vw 5.4vw 5.4vw;}
+  .nftuserPage>.nftDetails>.rightCont>.sellCont>.buyBtn {margin-right: 1vw; padding: 3vw; font-size: 4.3vw; font-weight: 500; border-radius: 5vw;}
+  .nftuserPage>.nftDetails>.rightCont>.sellCont>.placeBtn {padding: 3vw; font-size: 4.3vw; font-weight: 500; border-radius: 5vw;}
+
+  .nftDetailsPage>.nftDetails {margin-top: 10vh; width: 100%;}
+  .nftDetailsPage>.nftDetails {padding: 0; display: block;} 
+  .nftDetailsPage>.nftDetails>.leftCont {padding: 5.4vw 5.4vw 0; width: 100%; box-sizing: border-box; background-color: #FCFCFD;;}
+  .nftDetailsPage>.nftDetails>.leftCont>.nftBox {padding: 3.2vw; position: static; top: 0; left: 0; width: 100%; height: 89vw; transform: translate(0, 0);}
+  .nftDetailsPage>.nftDetails>.leftCont>.nftBox>.frame {margin: 0 auto; width: 82vw; height: 82vw;}
+  .nftDetailsPage>.nftDetails>.rightCont {padding: 0; width: 100%;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea1 {padding: 5.4vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.title {font-size: 8vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.infoCont {width: auto;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.infoCont>.info {display: block; font-size: 3.7vw; line-height: normal;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.infoCont>a {display: none;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.price {display: block; font-size: 4.3vw; font-weight: 400;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.price>span {font-size: 4.3vw; font-weight: 600;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.buyNow {margin-bottom: 2vh; display: block; font-size: 4.3vw; font-weight: 600;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.buyNow>span {font-size: 4.3vw; font-weight: 600;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea1>.buyNow>img {display: none;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea2 {padding: 5.4vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea2>p {font-size: 5.3vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea2>.prof>.frame {width: 11vw; height: 11vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea2>.prof>.txtBox>p {font-size: 4.2vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea2>.prof>.txtBox>p:last-child {font-size: 3.4vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea3 {padding-bottom: 5.4vw; background-color: #FCFCFD;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea3>.titCont>.bidsCont>p {font-size: 4.2vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea3>ul {margin-left: 5.4vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea3>ul>li>.frame {width: 11vw; height: 11vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>p {font-size: 4.2vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>p>em {font-size: 4.2vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>span {font-size: 4.2vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea3>ul>li>.txtBox>.time{font-size: 3.4vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea4 {padding: 5.4vw 5.4vw 8vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea4>p {font-size: 5.3vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea4>ul>li {margin-right: 7.8vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea4>ul>li>.aucEnd>p {font-size: 7.8vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.txtArea4>ul>li>.aucEnd>span {font-size: 4.3vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.sellCont {padding: 8vw 5.4vw 5.4vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.sellCont>.buyBtn {margin-right: 1vw; padding: 3vw; font-size: 4.3vw; font-weight: 500; border-radius: 5vw;}
+  .nftDetailsPage>.nftDetails>.rightCont>.sellCont>.placeBtn {padding: 3vw; font-size: 4.3vw; font-weight: 500; border-radius: 5vw;}
+
+  .contactusPage {margin-top: 10vh;}
+  .contactusPage>.contactusBG {height: 36vw;}
+  .contactusPage>.content {width: 90%;}
+  .contactusPage>.content>p.tit {padding:5vw 0; font-size: 3.2vw;}
+  .contactusPage>.content>.inputbox.step1 {padding:3.5vw 5vw 0;}
+  .contactusPage>.content>.inputbox.step2 {padding:3.5vw 5vw;}
+  .contactusPage>.content>.inputbox.step3 {padding:0 5vw 3.5vw}
+  .contactusPage>.content>.inputbox>p {margin-bottom: 1.5vw; font-size: 3vw;}
+  .contactusPage>.content>.inputbox>span.err {margin-top: 1vw; font-size: 2vw;}
+  .contactusPage>.content>.inputbox>.inputArea {padding:2vw 0; border-radius: 1.5vw;}
+  .contactusPage>.content>.inputbox>.inputArea>input {font-size: 2.3vw; text-indent: 2.5vw;}
+  .contactusPage>.content>.inputbox>.inputArea>input::placeholder {font-size: 2.3vw;}
+  .contactusPage>.content>.inputbox>.txtArea>textarea {padding:2vw; font-size: 2.3vw; border-radius: 1.5vw;}
+  .contactusPage>.content>.inputbox>.txtArea>textarea::placeholder {font-size: 2.3vw;}
+  .contactusPage>.content>.btnArea {padding: 0 5vw;}
+  .contactusPage>.content>.btnArea>a {padding:2vw 0; font-size: 2.8vw; border-radius: 3vw;}
+
+  .createnftPage {margin-top: 10vh;}
+  .createnftPage>.contents {padding:5vw;}
+  .createnftPage>.contents>h2 {font-size: 4.5vw;}
+  .createnftPage>.contents>.cont1 {margin-top: 5vw;}
+  .createnftPage>.contents>.cont1>p {margin-bottom: 2vw; font-size: 3.4vw;}
+  .createnftPage>.contents>.cont1>p.subtit {font-size: 2.5vw;}
+  .createnftPage>.contents>.cont1>.fileupArea {padding:12vw 0; border-radius: 2.5vw;}
+  .createnftPage>.contents>.cont1>.fileupArea>label {margin:0 auto 5vw; width: 13vw; height: 13vw;}
+  .createnftPage>.contents>.cont1>.fileupArea>p {font-size: 2.3vw;}
+  .createnftPage>.contents>.cont1>.fileupArea>#imgViewArea {padding: 7vw 0 0;}
+  .createnftPage>.contents>.cont1>.fileupArea>#imgViewArea>.frame {width: 40vw; height: 40vw;}
+  .createnftPage>.contents>.cont1>.fileupArea>#imgViewArea>.frame>a {top:-3.5vw; right:-3.5vw; width: 7vw; height: 7vw;}
+  .createnftPage>.contents>.cont1>.fileupArea>#imgViewArea>.frame>img {border-radius: 2.5vw;}
+  .createnftPage>.contents>.cont1>span.err {margin-top: 1vw; font-size: 2.5vw;}
+  .createnftPage>.contents>.cont2 {margin-top: 5vw;}
+  .createnftPage>.contents>.cont2>p {margin-bottom: 2vw; font-size: 3.4vw;}
+  .createnftPage>.contents>.cont2>span.err {margin-top: 1vw; font-size: 2.2vw;}
+  .createnftPage>.contents>.cont2>.inputArea {padding:2.3vw 0; border-radius: 2vw;}
+  .createnftPage>.contents>.cont2>.inputArea>input {font-size: 2.4vw; text-indent: 3vw;}
+  .createnftPage>.contents>.cont2>.inputArea>input::placeholder {font-size: 2.4vw;}
+  .createnftPage>.contents>.cont3 {margin-top: 5vw;}
+  .createnftPage>.contents>.cont3>p {margin-bottom: 2vw; font-size: 3.4vw;}
+  .createnftPage>.contents>.cont3>span.err {margin-top: 1vw; font-size: 2.2vw;}
+  .createnftPage>.contents>.cont3>.txtArea {height: 20vw;}
+  .createnftPage>.contents>.cont3>.txtArea>textarea {padding: 2vw; font-size: 2.4vw; border-radius: 2.5vw;}
+  .createnftPage>.contents>.cont3>.txtArea>textarea::placeholder {font-size: 2.4vw;}
+  .createnftPage>.contents>.cont3>.txtArea>span {bottom:1vw; right:2vw; font-size: 2.2vw;}
+  .createnftPage>.contents>.cont4 {margin-top: 5vw;}
+  .createnftPage>.contents>.cont4>p {margin-bottom: 2vw; font-size: 3.4vw;}
+  .createnftPage>.contents>.cont4>p.subtit {font-size: 2.5vw;}
+  .createnftPage>.contents>.cont4>.selectArea {margin:2.5vw 0 5vw;}
+  .createnftPage>.contents>.cont4>.selectArea>p.err {font-size: 2.2vw;}
+  .createnftPage>.contents>.cont4>.selectArea>ul>li {margin: 0 0 2vw 0; width: 100%;}
+  .createnftPage>.contents>.cont4>.selectArea>ul>li>a {padding: 2.5vw 3vw; font-size: 3.2vw; border-radius: 2.5vw;}
+  .createnftPage>.contents>.cont4>.selectArea>ul>li>a>.frame {margin-right: 3vw; width: 5.3vw; height: 5.3vw;}
+  .createnftPage>.contents>.btnArea>a {padding:2vw 0; font-size: 2.8vw; border-radius: 3vw;}
+
+
+  /* footer */
+
+}
+
+/* 650px 이하일 때 적용 */
+@media all and (max-width: 650px) {
+  /* header */
+
+  /* section */
+  #MynftsPage {margin-top: 10vh;}
+  #MynftsPage>.content>h2 {padding:5vh 0 2.5vh; font-size: 5vw;}
+  #MynftsPage>.content>.disconnectBtn {margin:0 auto 5vh; padding:2.5vw 4vw; font-size: 3.2vw; width: 32vw; border-radius: 5vw;}
+  #MynftsPage>.content>.sortArea>ul>li {width: 50%;}
+  #MynftsPage>.content>.sortArea>ul>li>a {width: 100%; font-size: 4vw;}
+  #MynftsPage>.content>.listArea>ul {width: 100%;}
+  #MynftsPage>.content>.listArea>ul>li {margin: 0 3.5vw 3vh; width: 100%;}
+  #MynftsPage>.content>.listArea>ul>li>.listCont {padding:3.5vw;}
+  #MynftsPage>.content>.listArea>ul>li>.listCont>.frame {width: 83vw; height: 83vw;}
+  #MynftsPage>.content>.listArea>ul>li>.listCont>.txtBox {margin:0 auto; padding:2vh 0; display: block; width: 83vw;}
+  #MynftsPage>.content>.listArea>ul>li>.listCont>.txtBox>p {font-size: 4vw;}
+  #MynftsPage>.content>.listArea>ul>li>.listCont>.txtBox>p>span>em {margin-right: 1.2vw;}
+  #MynftsPage>.content>.btnArea {padding:0 4vw 4vh;}
+  #MynftsPage>.content>.btnArea>a {padding: 1.7vh 0; font-size: 4vw;}
+
+  #explorePage>.content>.itemlistArea>.listArea>ul {width: 100%;}
+  #explorePage>.content>.itemlistArea>.listArea>ul>li {margin: 0 3.5vw 3vh; width: 100%;}
+  #explorePage>.content>.itemlistArea>.listArea>ul>li>.listCont {padding:3.5vw;}
+  #explorePage>.content>.itemlistArea>.listArea>ul>li>.listCont>.frame {width: 83vw; height: 83vw;}
+  #explorePage>.content>.itemlistArea>.listArea>ul>li>.listCont>.txtBox {margin:0 auto; padding:2vh 0; display: block; width: 83vw;}
+  #explorePage>.content>.itemlistArea>.listArea>ul>li>.listCont>.txtBox>p {font-size: 4vw;}
+  #explorePage>.content>.itemlistArea>.listArea>ul>li>.listCont>.txtBox>p>span>em {margin-right: 1.2vw;}
+  
+
+  .mainPage>.sectionCont>.webnftList>li {width: 98%; margin: 0 15px 32px 0; display: block;  height: auto;}
+  .mainPage>.sectionCont>.webnftList>li {margin: 0 15px 32px 0; display: block;  height: auto;}
+  .mainPage>.sectionCont>.webnftList>li>.nftCont {width: 100%;}
+  .mainPage>.sectionCont>.webnftList>li>.nftCont>.ContFrame {padding:3.5vw;}
+  .mainPage>.sectionCont>.webnftList>li>.nftCont>.ContFrame>.frame {width: 83vw; height: 83vw;}
+  .mainPage>.sectionCont>.webnftList>li>.nftCont>.ContFrame>.textArea {margin:0 auto; padding:2vh 0; display: block; width: 83vw;}
+  .mainPage>.sectionCont>.webnftList>li>.nftCont>.ContFrame>.textArea>p {font-size: 4vw;}
+  .mainPage>.sectionCont>.webnftList>li>.nftCont>.ContFrame>.textArea>p>span>em {margin-right: 1.2vw;}
+
+  .mainPage>.sectionCont>.webexploreList>li {width: 98%;}
+  
+
+  /* footer */
+  footer>.footerConts>p {display: block;}
+  footer>.footerConts>p>span {position: static; left: 0; display: block;}
+  footer>.footerConts>p>span>em {width: 1vw; height: 1vw;}
+
+}
+
+/* 500px 이하일 때 적용 */
+@media all and (max-width: 500px) {
+  /* header */
+  /* section */
+  .mainPage>.sectionCont {padding: 20px;}
+  .mainPage>.sectionCont>a {height: 12vw;}
+  .mainPage>.sectionCont>a>p {font-size: 4.3vw; font-weight: 300; color: #fff;}
+  .mainPage>.sectionCont>.createList>li>.createCont>.contframe>.frame {width: 20vw; height: 20vw;}
+  .mainPage>.sectionCont>.createList>li>.createCont>.contframe>p {font-size: 5.3vw;}
+  .mainPage>.sectionCont>.createList>li>.createCont>.contframe>span {font-size: 4.1vw;}
+  .sectionCont.one>.ts-controls>.ts-prev {width: 8vw; height: 8vw;}
+  .sectionCont.one>.ts-controls>.ts-prev>img {width: 2.5vw; height: 3.7vw;}
+  .sectionCont.one>.ts-controls>.ts-next {width: 8vw; height: 8vw;}
+  .sectionCont.one>.ts-controls>.ts-next>img {width: 2.5vw; height: 3.7vw;}
+  .sectionCont.thr>.ts-controls>.ts-prev {width: 8vw; height: 8vw;}
+  .sectionCont.thr>.ts-controls>.ts-prev>img {width: 2.5vw; height: 3.7vw;}
+  .sectionCont.thr>.ts-controls>.ts-next {width: 8vw; height: 8vw;}
+  .sectionCont.thr>.ts-controls>.ts-next>img {width: 2.5vw; height: 3.7vw;}
+  .sectionCont.two>.ts-controls>.ts-prev {width: 8vw; height: 8vw;}
+  .sectionCont.two>.ts-controls>.ts-prev>img {width: 2.5vw; height: 3.7vw;}
+  .sectionCont.two>.ts-controls>.ts-next {width: 8vw; height: 8vw;}
+  .sectionCont.two>.ts-controls>.ts-next>img {width: 2.5vw; height: 3.7vw;}
+  .ts-controls>.ts-paging>.ts-paging-btn {height: 3vw;}
+
+  /* footer */
+  footer>.footerConts {margin: 0 auto; padding: 5.4vw; display: block; width: 100%; height: auto;}
+  footer>.footerConts>.footerCont {display: block;}
+  footer>.footerConts>.footerCont>.footerCont1>.footTit {margin-bottom: 5vh;}
+  footer>.footerConts>.footerCont>.footerCont1>.footTit>p {margin-bottom: 2.8vh; font-size: 5.2vw;}
+  footer>.footerConts>.footerCont>.footerCont1>.footTit>span {display: block; font-size: 3.2vw;}
+  footer>.footerConts>.footerCont>.footerCont1>.footSubTit {margin-bottom: 5vh;}
+  footer>.footerConts>.footerCont>.footerCont1>.footSubTit>p {margin-bottom: 2.8vh;  font-size: 5.2vw;}
+  footer>.footerConts>.footerCont>.footerCont1>.footSubTit>.iconArea {display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+  footer>.footerConts>.footerCont>.footerCont1>.footSubTit>.iconArea>.frame {padding: 0; display: inline-block; width: 8.2vw; height: 8.2vw;}
+  footer>.footerConts>.footerCont>.footerCont1>.footSubTit>.iconArea>.frame:first-child {height: 6vw;}
+  footer>.footerConts>.footerCont>.footerCont1>.footSubTit>.iconArea>.frame>img {display: block; width: 100%; height: 100%;}
+  footer>.footerConts>.footerCont>.footerCont2 {display: dlock;}
+  footer>.footerConts>.footerCont>.footerCont2>.listCont {display: block;}
+  footer>.footerConts>.footerCont>.footerCont2>.listCont:nth-child(2) {margin: 0 11vw;}
+  footer>.footerConts>.footerCont>.footerCont2>.listCont>p {margin-bottom: 2.8vh; font-size: 4.3vw;}
+  footer>.footerConts>.footerCont>.footerCont2>.listCont>ul>li {margin-bottom: 3.2vw; font-size: 3.2vw;}
+  footer>.footerConts>.footerCont>.footerCont2>.listCont>ul>li:last-child {margin: 0;}
+  footer>.footerConts>p {display: block; font-size: 4vw;}
+  footer>.footerConts>p>span {position: static; left: 0; display: block;}
+  footer>.footerConts>p>span>em {width: 1vw; height: 1vw;}
+}
+
+/* 414px 이하일 때 적용 */
+@media all and (max-width: 414px) {
+  /* header */
+  /* footer */
+}
+
+/* 375px 이하일 때 적용 */
+@media all and (max-width: 375px) {
+  /* header */
+
+  /* section */
+  .contactusPage>.content {transform: translateY(-15%);}
+  
+  /* footer */
+}
+
+/* 320px 이하일 때 적용 */
+@media all and (max-width: 320px) {
+  /* header */
+  /* footer */
+}
+
+.fixedBox {
+  /*position: fixed; */
+  /*z-index: 100;*/
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+

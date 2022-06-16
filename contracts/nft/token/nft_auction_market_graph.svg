@@ -1,0 +1,899 @@
+<?xml version="1.0" standalone="no"?>
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [  <!ENTITY quot "&#34;">  <!ENTITY amp "&#38;">  <!ENTITY apos "&#39;">  <!ENTITY lt "&#60;">  <!ENTITY gt "&#62;">  <!ENTITY nbsp "&#160;">  <!ENTITY iexcl "&#161;">  <!ENTITY cent "&#162;">  <!ENTITY pound "&#163;">  <!ENTITY curren "&#164;">  <!ENTITY yen "&#165;">  <!ENTITY brvbar "&#166;">  <!ENTITY sect "&#167;">  <!ENTITY uml "&#168;">  <!ENTITY copy "&#169;">  <!ENTITY ordf "&#170;">  <!ENTITY laquo "&#171;">  <!ENTITY not "&#172;">  <!ENTITY shy "&#173;">  <!ENTITY reg "&#174;">  <!ENTITY macr "&#175;">  <!ENTITY deg "&#176;">  <!ENTITY plusmn "&#177;">  <!ENTITY sup2 "&#178;">  <!ENTITY sup3 "&#179;">  <!ENTITY acute "&#180;">  <!ENTITY micro "&#181;">  <!ENTITY para "&#182;">  <!ENTITY middot "&#183;">  <!ENTITY cedil "&#184;">  <!ENTITY sup1 "&#185;">  <!ENTITY ordm "&#186;">  <!ENTITY raquo "&#187;">  <!ENTITY frac14 "&#188;">  <!ENTITY frac12 "&#189;">  <!ENTITY frac34 "&#190;">  <!ENTITY iquest "&#191;">  <!ENTITY Agrave "&#192;">  <!ENTITY Aacute "&#193;">  <!ENTITY Acirc "&#194;">  <!ENTITY Atilde "&#195;">  <!ENTITY Auml "&#196;">  <!ENTITY Aring "&#197;">  <!ENTITY AElig "&#198;">  <!ENTITY Ccedil "&#199;">  <!ENTITY Egrave "&#200;">  <!ENTITY Eacute "&#201;">  <!ENTITY Ecirc "&#202;">  <!ENTITY Euml "&#203;">  <!ENTITY Igrave "&#204;">  <!ENTITY Iacute "&#205;">  <!ENTITY Icirc "&#206;">  <!ENTITY Iuml "&#207;">  <!ENTITY ETH "&#208;">  <!ENTITY Ntilde "&#209;">  <!ENTITY Ograve "&#210;">  <!ENTITY Oacute "&#211;">  <!ENTITY Ocirc "&#212;">  <!ENTITY Otilde "&#213;">  <!ENTITY Ouml "&#214;">  <!ENTITY times "&#215;">  <!ENTITY Oslash "&#216;">  <!ENTITY Ugrave "&#217;">  <!ENTITY Uacute "&#218;">  <!ENTITY Ucirc "&#219;">  <!ENTITY Uuml "&#220;">  <!ENTITY Yacute "&#221;">  <!ENTITY THORN "&#222;">  <!ENTITY szlig "&#223;">  <!ENTITY agrave "&#224;">  <!ENTITY aacute "&#225;">  <!ENTITY acirc "&#226;">  <!ENTITY atilde "&#227;">  <!ENTITY auml "&#228;">  <!ENTITY aring "&#229;">  <!ENTITY aelig "&#230;">  <!ENTITY ccedil "&#231;">  <!ENTITY egrave "&#232;">  <!ENTITY eacute "&#233;">  <!ENTITY ecirc "&#234;">  <!ENTITY euml "&#235;">  <!ENTITY igrave "&#236;">  <!ENTITY iacute "&#237;">  <!ENTITY icirc "&#238;">  <!ENTITY iuml "&#239;">  <!ENTITY eth "&#240;">  <!ENTITY ntilde "&#241;">  <!ENTITY ograve "&#242;">  <!ENTITY oacute "&#243;">  <!ENTITY ocirc "&#244;">  <!ENTITY otilde "&#245;">  <!ENTITY ouml "&#246;">  <!ENTITY divide "&#247;">  <!ENTITY oslash "&#248;">  <!ENTITY ugrave "&#249;">  <!ENTITY uacute "&#250;">  <!ENTITY ucirc "&#251;">  <!ENTITY uuml "&#252;">  <!ENTITY yacute "&#253;">  <!ENTITY thorn "&#254;">  <!ENTITY yuml "&#255;">  <!ENTITY OElig "&#338;">  <!ENTITY oelig "&#339;">  <!ENTITY Scaron "&#352;">  <!ENTITY scaron "&#353;">  <!ENTITY Yuml "&#376;">  <!ENTITY fnof "&#402;">  <!ENTITY circ "&#710;">  <!ENTITY tilde "&#732;">  <!ENTITY Alpha "&#913;">  <!ENTITY Beta "&#914;">  <!ENTITY Gamma "&#915;">  <!ENTITY Delta "&#916;">  <!ENTITY Epsilon "&#917;">  <!ENTITY Zeta "&#918;">  <!ENTITY Eta "&#919;">  <!ENTITY Theta "&#920;">  <!ENTITY Iota "&#921;">  <!ENTITY Kappa "&#922;">  <!ENTITY Lambda "&#923;">  <!ENTITY Mu "&#924;">  <!ENTITY Nu "&#925;">  <!ENTITY Xi "&#926;">  <!ENTITY Omicron "&#927;">  <!ENTITY Pi "&#928;">  <!ENTITY Rho "&#929;">  <!ENTITY Sigma "&#931;">  <!ENTITY Tau "&#932;">  <!ENTITY Upsilon "&#933;">  <!ENTITY Phi "&#934;">  <!ENTITY Chi "&#935;">  <!ENTITY Psi "&#936;">  <!ENTITY Omega "&#937;">  <!ENTITY alpha "&#945;">  <!ENTITY beta "&#946;">  <!ENTITY gamma "&#947;">  <!ENTITY delta "&#948;">  <!ENTITY epsilon "&#949;">  <!ENTITY zeta "&#950;">  <!ENTITY eta "&#951;">  <!ENTITY theta "&#952;">  <!ENTITY iota "&#953;">  <!ENTITY kappa "&#954;">  <!ENTITY lambda "&#955;">  <!ENTITY mu "&#956;">  <!ENTITY nu "&#957;">  <!ENTITY xi "&#958;">  <!ENTITY omicron "&#959;">  <!ENTITY pi "&#960;">  <!ENTITY rho "&#961;">  <!ENTITY sigmaf "&#962;">  <!ENTITY sigma "&#963;">  <!ENTITY tau "&#964;">  <!ENTITY upsilon "&#965;">  <!ENTITY phi "&#966;">  <!ENTITY chi "&#967;">  <!ENTITY psi "&#968;">  <!ENTITY omega "&#969;">  <!ENTITY thetasym "&#977;">  <!ENTITY upsih "&#978;">  <!ENTITY piv "&#982;">  <!ENTITY ensp "&#8194;">  <!ENTITY emsp "&#8195;">  <!ENTITY thinsp "&#8201;">  <!ENTITY zwnj "&#8204;">  <!ENTITY zwj "&#8205;">  <!ENTITY lrm "&#8206;">  <!ENTITY rlm "&#8207;">  <!ENTITY ndash "&#8211;">  <!ENTITY mdash "&#8212;">  <!ENTITY lsquo "&#8216;">  <!ENTITY rsquo "&#8217;">  <!ENTITY sbquo "&#8218;">  <!ENTITY ldquo "&#8220;">  <!ENTITY rdquo "&#8221;">  <!ENTITY bdquo "&#8222;">  <!ENTITY dagger "&#8224;">  <!ENTITY Dagger "&#8225;">  <!ENTITY bull "&#8226;">  <!ENTITY hellip "&#8230;">  <!ENTITY permil "&#8240;">  <!ENTITY prime "&#8242;">  <!ENTITY Prime "&#8243;">  <!ENTITY lsaquo "&#8249;">  <!ENTITY rsaquo "&#8250;">  <!ENTITY oline "&#8254;">  <!ENTITY frasl "&#8260;">  <!ENTITY euro "&#8364;">  <!ENTITY image "&#8465;">  <!ENTITY weierp "&#8472;">  <!ENTITY real "&#8476;">  <!ENTITY trade "&#8482;">  <!ENTITY alefsym "&#8501;">  <!ENTITY larr "&#8592;">  <!ENTITY uarr "&#8593;">  <!ENTITY rarr "&#8594;">  <!ENTITY darr "&#8595;">  <!ENTITY harr "&#8596;">  <!ENTITY crarr "&#8629;">  <!ENTITY lArr "&#8656;">  <!ENTITY uArr "&#8657;">  <!ENTITY rArr "&#8658;">  <!ENTITY dArr "&#8659;">  <!ENTITY hArr "&#8660;">  <!ENTITY forall "&#8704;">  <!ENTITY part "&#8706;">  <!ENTITY exist "&#8707;">  <!ENTITY empty "&#8709;">  <!ENTITY nabla "&#8711;">  <!ENTITY isin "&#8712;">  <!ENTITY notin "&#8713;">  <!ENTITY ni "&#8715;">  <!ENTITY prod "&#8719;">  <!ENTITY sum "&#8721;">  <!ENTITY minus "&#8722;">  <!ENTITY lowast "&#8727;">  <!ENTITY radic "&#8730;">  <!ENTITY prop "&#8733;">  <!ENTITY infin "&#8734;">  <!ENTITY ang "&#8736;">  <!ENTITY and "&#8743;">  <!ENTITY or "&#8744;">  <!ENTITY cap "&#8745;">  <!ENTITY cup "&#8746;">  <!ENTITY int "&#8747;">  <!ENTITY there4 "&#8756;">  <!ENTITY sim "&#8764;">  <!ENTITY cong "&#8773;">  <!ENTITY asymp "&#8776;">  <!ENTITY ne "&#8800;">  <!ENTITY equiv "&#8801;">  <!ENTITY le "&#8804;">  <!ENTITY ge "&#8805;">  <!ENTITY sub "&#8834;">  <!ENTITY sup "&#8835;">  <!ENTITY nsub "&#8836;">  <!ENTITY sube "&#8838;">  <!ENTITY supe "&#8839;">  <!ENTITY oplus "&#8853;">  <!ENTITY otimes "&#8855;">  <!ENTITY perp "&#8869;">  <!ENTITY sdot "&#8901;">  <!ENTITY lceil "&#8968;">  <!ENTITY rceil "&#8969;">  <!ENTITY lfloor "&#8970;">  <!ENTITY rfloor "&#8971;">  <!ENTITY lang "&#9001;">  <!ENTITY rang "&#9002;">  <!ENTITY loz "&#9674;">  <!ENTITY spades "&#9824;">  <!ENTITY clubs "&#9827;">  <!ENTITY hearts "&#9829;">  <!ENTITY diams "&#9830;"> ]><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="545pt" height="4756pt" viewBox="0.00 0.00 545.05 4756.00">
+<g id="graph0" class="graph" transform="translate(49.14352406659479,3415.3742173611904) scale(0.5886650168146644)" data-name="G">
+
+<polygon fill="#2e3e56" stroke="transparent" points="-4,4 -4,-4752 541.0497,-4752 541.0497,4 -4,4" style=""></polygon>
+<g id="clust1" class="cluster">
+<title style="">clusterNAMarket</title>
+<path fill="#445773" stroke="#445773" d="M33.9466,-402C33.9466,-402 517.0497,-402 517.0497,-402 523.0497,-402 529.0497,-408 529.0497,-414 529.0497,-414 529.0497,-1719 529.0497,-1719 529.0497,-1725 523.0497,-1731 517.0497,-1731 517.0497,-1731 33.9466,-1731 33.9466,-1731 27.9466,-1731 21.9466,-1725 21.9466,-1719 21.9466,-1719 21.9466,-414 21.9466,-414 21.9466,-408 27.9466,-402 33.9466,-402" style=""></path>
+<text text-anchor="middle" x="275.4981" y="-1714.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">NAMarket</text>
+</g>
+<g id="clust2" class="cluster">
+<title style="">clusterReentrancyGuard</title>
+<path fill="#445773" stroke="#445773" d="M64.9836,-1739C64.9836,-1739 201.4978,-1739 201.4978,-1739 207.4978,-1739 213.4978,-1745 213.4978,-1751 213.4978,-1751 213.4978,-1866 213.4978,-1866 213.4978,-1872 207.4978,-1878 201.4978,-1878 201.4978,-1878 64.9836,-1878 64.9836,-1878 58.9836,-1878 52.9836,-1872 52.9836,-1866 52.9836,-1866 52.9836,-1751 52.9836,-1751 52.9836,-1745 58.9836,-1739 64.9836,-1739" style=""></path>
+<text text-anchor="middle" x="133.2407" y="-1861.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">ReentrancyGuard</text>
+</g>
+<g id="clust3" class="cluster">
+<title style="">clusterOwnable</title>
+<path fill="#445773" stroke="#445773" d="M48.4465,-1886C48.4465,-1886 406.4496,-1886 406.4496,-1886 412.4496,-1886 418.4496,-1892 418.4496,-1898 418.4496,-1898 418.4496,-2121 418.4496,-2121 418.4496,-2127 412.4496,-2133 406.4496,-2133 406.4496,-2133 48.4465,-2133 48.4465,-2133 42.4465,-2133 36.4465,-2127 36.4465,-2121 36.4465,-2121 36.4465,-1898 36.4465,-1898 36.4465,-1892 42.4465,-1886 48.4465,-1886" style=""></path>
+<text text-anchor="middle" x="227.4481" y="-2116.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">Ownable</text>
+</g>
+<g id="clust4" class="cluster">
+<title style="">clusterContext</title>
+<path fill="#445773" stroke="#445773" d="M78.466,-2141C78.466,-2141 188.0153,-2141 188.0153,-2141 194.0153,-2141 200.0153,-2147 200.0153,-2153 200.0153,-2153 200.0153,-2260 200.0153,-2260 200.0153,-2266 194.0153,-2272 188.0153,-2272 188.0153,-2272 78.466,-2272 78.466,-2272 72.466,-2272 66.466,-2266 66.466,-2260 66.466,-2260 66.466,-2153 66.466,-2153 66.466,-2147 72.466,-2141 78.466,-2141" style=""></path>
+<text text-anchor="middle" x="133.2407" y="-2255.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">Context</text>
+</g>
+<g id="clust5" class="cluster">
+<title style="">clusterSafeMath</title>
+<path fill="#445773" stroke="#445773" d="M95.2362,-2280C95.2362,-2280 172.2451,-2280 172.2451,-2280 178.2451,-2280 184.2451,-2286 184.2451,-2292 184.2451,-2292 184.2451,-2831 184.2451,-2831 184.2451,-2837 178.2451,-2843 172.2451,-2843 172.2451,-2843 95.2362,-2843 95.2362,-2843 89.2362,-2843 83.2362,-2837 83.2362,-2831 83.2362,-2831 83.2362,-2292 83.2362,-2292 83.2362,-2286 89.2362,-2280 95.2362,-2280" style=""></path>
+<text text-anchor="middle" x="133.7407" y="-2826.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">SafeMath &nbsp;(lib)</text>
+</g>
+<g id="clust6" class="cluster">
+<title style="">clusterMath</title>
+<path fill="#445773" stroke="#445773" d="M96.1856,-2851C96.1856,-2851 170.2958,-2851 170.2958,-2851 176.2958,-2851 182.2958,-2857 182.2958,-2863 182.2958,-2863 182.2958,-3078 182.2958,-3078 182.2958,-3084 176.2958,-3090 170.2958,-3090 170.2958,-3090 96.1856,-3090 96.1856,-3090 90.1856,-3090 84.1856,-3084 84.1856,-3078 84.1856,-3078 84.1856,-2863 84.1856,-2863 84.1856,-2857 90.1856,-2851 96.1856,-2851" style=""></path>
+<text text-anchor="middle" x="133.2407" y="-3073.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">Math &nbsp;(lib)</text>
+</g>
+<g id="clust7" class="cluster">
+<title style="">clusterCounters</title>
+<path fill="#445773" stroke="#445773" d="M85.9898,-3098C85.9898,-3098 180.4916,-3098 180.4916,-3098 186.4916,-3098 192.4916,-3104 192.4916,-3110 192.4916,-3110 192.4916,-3325 192.4916,-3325 192.4916,-3331 186.4916,-3337 180.4916,-3337 180.4916,-3337 85.9898,-3337 85.9898,-3337 79.9898,-3337 73.9898,-3331 73.9898,-3325 73.9898,-3325 73.9898,-3110 73.9898,-3110 73.9898,-3104 79.9898,-3098 85.9898,-3098" style=""></path>
+<text text-anchor="middle" x="133.2407" y="-3320.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">Counters &nbsp;(lib)</text>
+</g>
+<g id="clust8" class="cluster">
+<title style="">clusterIERC721</title>
+<path fill="#445773" stroke="#445773" d="M53.2576,-3345C53.2576,-3345 213.2238,-3345 213.2238,-3345 219.2238,-3345 225.2238,-3351 225.2238,-3357 225.2238,-3357 225.2238,-3788 225.2238,-3788 225.2238,-3794 219.2238,-3800 213.2238,-3800 213.2238,-3800 53.2576,-3800 53.2576,-3800 47.2576,-3800 41.2576,-3794 41.2576,-3788 41.2576,-3788 41.2576,-3357 41.2576,-3357 41.2576,-3351 47.2576,-3345 53.2576,-3345" style=""></path>
+<text text-anchor="middle" x="133.2407" y="-3783.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">IERC721 &nbsp;(iface)</text>
+</g>
+<g id="clust9" class="cluster">
+<title style="">clusterIERC165</title>
+<path fill="#445773" stroke="#445773" d="M59.1773,-3808C59.1773,-3808 207.3041,-3808 207.3041,-3808 213.3041,-3808 219.3041,-3814 219.3041,-3820 219.3041,-3820 219.3041,-3873 219.3041,-3873 219.3041,-3879 213.3041,-3885 207.3041,-3885 207.3041,-3885 59.1773,-3885 59.1773,-3885 53.1773,-3885 47.1773,-3879 47.1773,-3873 47.1773,-3873 47.1773,-3820 47.1773,-3820 47.1773,-3814 53.1773,-3808 59.1773,-3808" style=""></path>
+<text text-anchor="middle" x="133.2407" y="-3868.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">IERC165 &nbsp;(iface)</text>
+</g>
+<g id="clust10" class="cluster">
+<title style="">clusterIERC1155</title>
+<path fill="#445773" stroke="#445773" d="M34.5096,-3893C34.5096,-3893 231.9718,-3893 231.9718,-3893 237.9718,-3893 243.9718,-3899 243.9718,-3905 243.9718,-3905 243.9718,-4228 243.9718,-4228 243.9718,-4234 237.9718,-4240 231.9718,-4240 231.9718,-4240 34.5096,-4240 34.5096,-4240 28.5096,-4240 22.5096,-4234 22.5096,-4228 22.5096,-4228 22.5096,-3905 22.5096,-3905 22.5096,-3899 28.5096,-3893 34.5096,-3893" style=""></path>
+<text text-anchor="middle" x="133.2407" y="-4223.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">IERC1155 &nbsp;(iface)</text>
+</g>
+<g id="clust11" class="cluster">
+<title style="">clusterERC1155Receiver</title>
+<path fill="#445773" stroke="#445773" d="M20,-4248C20,-4248 246.4814,-4248 246.4814,-4248 252.4814,-4248 258.4814,-4254 258.4814,-4260 258.4814,-4260 258.4814,-4367 258.4814,-4367 258.4814,-4373 252.4814,-4379 246.4814,-4379 246.4814,-4379 20,-4379 20,-4379 14,-4379 8,-4373 8,-4367 8,-4367 8,-4260 8,-4260 8,-4254 14,-4248 20,-4248" style=""></path>
+<text text-anchor="middle" x="133.2407" y="-4362.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">ERC1155Receiver</text>
+</g>
+<g id="clust12" class="cluster">
+<title style="">clusterIERC1155Receiver</title>
+<path fill="#445773" stroke="#445773" d="M20,-4387C20,-4387 246.4814,-4387 246.4814,-4387 252.4814,-4387 258.4814,-4393 258.4814,-4399 258.4814,-4399 258.4814,-4506 258.4814,-4506 258.4814,-4512 252.4814,-4518 246.4814,-4518 246.4814,-4518 20,-4518 20,-4518 14,-4518 8,-4512 8,-4506 8,-4506 8,-4399 8,-4399 8,-4393 14,-4387 20,-4387" style=""></path>
+<text text-anchor="middle" x="133.2407" y="-4501.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">IERC1155Receiver &nbsp;(iface)</text>
+</g>
+<g id="clust13" class="cluster">
+<title style="">clusterERC165</title>
+<path fill="#445773" stroke="#445773" d="M59.1773,-4526C59.1773,-4526 375.3388,-4526 375.3388,-4526 381.3388,-4526 387.3388,-4532 387.3388,-4538 387.3388,-4538 387.3388,-4591 387.3388,-4591 387.3388,-4597 381.3388,-4603 375.3388,-4603 375.3388,-4603 59.1773,-4603 59.1773,-4603 53.1773,-4603 47.1773,-4597 47.1773,-4591 47.1773,-4591 47.1773,-4538 47.1773,-4538 47.1773,-4532 53.1773,-4526 59.1773,-4526" style=""></path>
+<text text-anchor="middle" x="217.258" y="-4586.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">ERC165</text>
+</g>
+<g id="clust14" class="cluster">
+<title style="">cluster_cuPrice</title>
+<path fill="#3b4b63" stroke="#e8726d" stroke-dasharray="5,2" d="M463.9591,-317C463.9591,-317 509.9591,-317 509.9591,-317 515.9591,-317 521.9591,-323 521.9591,-329 521.9591,-329 521.9591,-382 521.9591,-382 521.9591,-388 515.9591,-394 509.9591,-394 509.9591,-394 463.9591,-394 463.9591,-394 457.9591,-394 451.9591,-388 451.9591,-382 451.9591,-382 451.9591,-329 451.9591,-329 451.9591,-323 457.9591,-317 463.9591,-317" style=""></path>
+<text text-anchor="middle" x="486.9591" y="-377.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">_cuPrice</text>
+</g>
+<g id="clust15" class="cluster">
+<title style="">clusterexpiryDate</title>
+<path fill="#3b4b63" stroke="#e8726d" stroke-dasharray="5,2" d="M324.675,-317C324.675,-317 378.675,-317 378.675,-317 384.675,-317 390.675,-323 390.675,-329 390.675,-329 390.675,-382 390.675,-382 390.675,-388 384.675,-394 378.675,-394 378.675,-394 324.675,-394 324.675,-394 318.675,-394 312.675,-388 312.675,-382 312.675,-382 312.675,-329 312.675,-329 312.675,-323 318.675,-317 324.675,-317" style=""></path>
+<text text-anchor="middle" x="351.675" y="-377.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">expiryDate</text>
+</g>
+<g id="clust16" class="cluster">
+<title style="">clusterCounters.Counter</title>
+<path fill="#3b4b63" stroke="#e8726d" stroke-dasharray="5,2" d="M306.0271,-178C306.0271,-178 397.3229,-178 397.3229,-178 403.3229,-178 409.3229,-184 409.3229,-190 409.3229,-190 409.3229,-297 409.3229,-297 409.3229,-303 403.3229,-309 397.3229,-309 397.3229,-309 306.0271,-309 306.0271,-309 300.0271,-309 294.0271,-303 294.0271,-297 294.0271,-297 294.0271,-190 294.0271,-190 294.0271,-184 300.0271,-178 306.0271,-178" style=""></path>
+<text text-anchor="middle" x="351.675" y="-292.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">Counters.Counter</text>
+</g>
+<g id="clust17" class="cluster">
+<title style="">clustertotalSales</title>
+<path fill="#3b4b63" stroke="#e8726d" stroke-dasharray="5,2" d="M328.675,-93C328.675,-93 374.675,-93 374.675,-93 380.675,-93 386.675,-99 386.675,-105 386.675,-105 386.675,-158 386.675,-158 386.675,-164 380.675,-170 374.675,-170 374.675,-170 328.675,-170 328.675,-170 322.675,-170 316.675,-164 316.675,-158 316.675,-158 316.675,-105 316.675,-105 316.675,-99 322.675,-93 328.675,-93" style=""></path>
+<text text-anchor="middle" x="351.675" y="-153.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">totalSales</text>
+</g>
+<g id="clust18" class="cluster">
+<title style="">clusterbidPrice</title>
+<path fill="#3b4b63" stroke="#e8726d" stroke-dasharray="5,2" d="M328.675,-8C328.675,-8 374.675,-8 374.675,-8 380.675,-8 386.675,-14 386.675,-20 386.675,-20 386.675,-73 386.675,-73 386.675,-79 380.675,-85 374.675,-85 374.675,-85 328.675,-85 328.675,-85 322.675,-85 316.675,-79 316.675,-73 316.675,-73 316.675,-20 316.675,-20 316.675,-14 322.675,-8 328.675,-8" style=""></path>
+<text text-anchor="middle" x="351.675" y="-68.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">bidPrice</text>
+</g>
+<g id="clust19" class="cluster">
+<title style="">cluster_01</title>
+<polygon fill="#2e3e56" stroke="#000000" points="60.2407,-4611 60.2407,-4740 386.675,-4740 386.675,-4611 60.2407,-4611" style=""></polygon>
+<text text-anchor="middle" x="223.4578" y="-4723.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">Legend</text>
+</g>
+<!-- NAMarket.onlyAdmin -->
+<g id="node1" class="node" data-name="NAMarket.onlyAdmin">
+
+<polygon fill="#edad56" stroke="#1bc6a6" stroke-width="3" points="192.8641,-1668.5442 192.8641,-1683.4558 157.9375,-1694 108.5438,-1694 73.6172,-1683.4558 73.6172,-1668.5442 108.5438,-1658 157.9375,-1658 192.8641,-1668.5442" style=""></polygon>
+<polygon fill="none" stroke="#1bc6a6" stroke-width="3" points="196.8682,-1665.5743 196.8682,-1686.4257 158.5293,-1698 107.9521,-1698 69.6132,-1686.4257 69.6132,-1665.5743 107.9521,-1654 158.5293,-1654 196.8682,-1665.5743" style=""></polygon>
+<text text-anchor="middle" x="133.2407" y="-1671.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">onlyAdmin</text>
+</g>
+<!-- NAMarket.openAuction -->
+<g id="node2" class="node" data-name="NAMarket.openAuction">
+
+<polygon fill="#edad56" stroke="#1bc6a6" stroke-width="3" points="199.1217,-1606.5442 199.1217,-1621.4558 160.5295,-1632 105.9519,-1632 67.3596,-1621.4558 67.3596,-1606.5442 105.9519,-1596 160.5295,-1596 199.1217,-1606.5442" style=""></polygon>
+<polygon fill="none" stroke="#1bc6a6" stroke-width="3" points="203.1182,-1603.4897 203.1182,-1624.5103 161.0652,-1636 105.4162,-1636 63.3631,-1624.5103 63.3631,-1603.4897 105.4162,-1592 161.0652,-1592 203.1182,-1603.4897" style=""></polygon>
+<text text-anchor="middle" x="133.2407" y="-1609.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">openAuction</text>
+</g>
+<!-- NAMarket.settleStatusCheck -->
+<g id="node3" class="node" data-name="NAMarket.settleStatusCheck">
+
+<polygon fill="#edad56" stroke="#1bc6a6" stroke-width="3" points="219.2712,-1544.5442 219.2712,-1559.4558 168.8757,-1570 97.6057,-1570 47.2101,-1559.4558 47.2101,-1544.5442 97.6057,-1534 168.8757,-1534 219.2712,-1544.5442" style=""></polygon>
+<polygon fill="none" stroke="#1bc6a6" stroke-width="3" points="223.2606,-1541.2927 223.2606,-1562.7073 169.2875,-1574 97.1939,-1574 43.2208,-1562.7073 43.2208,-1541.2927 97.1939,-1530 169.2875,-1530 223.2606,-1541.2927" style=""></polygon>
+<text text-anchor="middle" x="133.2407" y="-1547.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">settleStatusCheck</text>
+</g>
+<!-- NAMarket.nonExpiredAuction -->
+<g id="node4" class="node" data-name="NAMarket.nonExpiredAuction">
+
+<polygon fill="#edad56" stroke="#1bc6a6" stroke-width="3" points="227.5206,-1482.5442 227.5206,-1497.4558 172.2927,-1508 94.1887,-1508 38.9608,-1497.4558 38.9608,-1482.5442 94.1887,-1472 172.2927,-1472 227.5206,-1482.5442" style=""></polygon>
+<polygon fill="none" stroke="#1bc6a6" stroke-width="3" points="231.516,-1479.2349 231.516,-1500.7651 172.6703,-1512 93.8111,-1512 34.9654,-1500.7651 34.9654,-1479.2349 93.8111,-1468 172.6703,-1468 231.516,-1479.2349" style=""></polygon>
+<text text-anchor="middle" x="133.2407" y="-1485.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">nonExpiredAuction</text>
+</g>
+<!-- NAMarket.onlyExpiredAuction -->
+<g id="node5" class="node" data-name="NAMarket.onlyExpiredAuction">
+
+<polygon fill="#edad56" stroke="#1bc6a6" stroke-width="3" points="230.334,-1420.5442 230.334,-1435.4558 173.4581,-1446 93.0233,-1446 36.1473,-1435.4558 36.1473,-1420.5442 93.0233,-1410 173.4581,-1410 230.334,-1420.5442" style=""></polygon>
+<polygon fill="none" stroke="#1bc6a6" stroke-width="3" points="234.3258,-1417.2163 234.3258,-1438.7837 173.8242,-1450 92.6572,-1450 32.1555,-1438.7837 32.1555,-1417.2163 92.6572,-1406 173.8242,-1406 234.3258,-1417.2163" style=""></polygon>
+<text text-anchor="middle" x="133.2407" y="-1423.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">onlyExpiredAuction</text>
+</g>
+<!-- NAMarket.noBids -->
+<g id="node6" class="node" data-name="NAMarket.noBids">
+
+<polygon fill="#edad56" stroke="#1bc6a6" stroke-width="3" points="174.8658,-1358.5442 174.8658,-1373.4558 150.4824,-1384 115.999,-1384 91.6156,-1373.4558 91.6156,-1358.5442 115.999,-1348 150.4824,-1348 174.8658,-1358.5442" style=""></polygon>
+<polygon fill="none" stroke="#1bc6a6" stroke-width="3" points="178.8715,-1355.9174 178.8715,-1376.0826 151.3125,-1388 115.1689,-1388 87.6099,-1376.0826 87.6099,-1355.9174 115.1689,-1344 151.3125,-1344 178.8715,-1355.9174" style=""></polygon>
+<text text-anchor="middle" x="133.2407" y="-1361.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">noBids</text>
+</g>
+<!-- NAMarket.sellerOnly -->
+<g id="node7" class="node" data-name="NAMarket.sellerOnly">
+
+<polygon fill="#edad56" stroke="#1bc6a6" stroke-width="3" points="188.7078,-1296.5442 188.7078,-1311.4558 156.2159,-1322 110.2654,-1322 77.7735,-1311.4558 77.7735,-1296.5442 110.2654,-1286 156.2159,-1286 188.7078,-1296.5442" style=""></polygon>
+<polygon fill="none" stroke="#1bc6a6" stroke-width="3" points="192.7067,-1293.6366 192.7067,-1314.3634 156.8484,-1326 109.633,-1326 73.7747,-1314.3634 73.7747,-1293.6366 109.633,-1282 156.8484,-1282 192.7067,-1293.6366" style=""></polygon>
+<text text-anchor="middle" x="133.2407" y="-1299.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">sellerOnly</text>
+</g>
+<!-- NAMarket.marketStatusCheck -->
+<g id="node8" class="node" data-name="NAMarket.marketStatusCheck">
+
+<polygon fill="#edad56" stroke="#1bc6a6" stroke-width="3" points="226.6763,-1234.5442 226.6763,-1249.4558 171.943,-1260 94.5384,-1260 39.8051,-1249.4558 39.8051,-1234.5442 94.5384,-1224 171.943,-1224 226.6763,-1234.5442" style=""></polygon>
+<polygon fill="none" stroke="#1bc6a6" stroke-width="3" points="230.6854,-1231.2426 230.6854,-1252.7574 172.3265,-1264 94.1549,-1264 35.7959,-1252.7574 35.7959,-1231.2426 94.1549,-1220 172.3265,-1220 230.6854,-1231.2426" style=""></polygon>
+<text text-anchor="middle" x="133.2407" y="-1237.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">marketStatusCheck</text>
+</g>
+<!-- NAMarket.setMarkStatus -->
+<g id="node9" class="node" data-name="NAMarket.setMarkStatus">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-1184" rx="66.0666" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-1179.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">setMarkStatus</text>
+</g>
+<!-- NAMarket.setFeeAddress -->
+<g id="node10" class="node" data-name="NAMarket.setFeeAddress">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-1130" rx="67.1907" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-1125.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">setFeeAddress</text>
+</g>
+<!-- NAMarket.setAdmin -->
+<g id="node11" class="node" data-name="NAMarket.setAdmin">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-1076" rx="48.6733" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-1071.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">setAdmin</text>
+</g>
+<!-- NAMarket.setMinBidSize -->
+<g id="node12" class="node" data-name="NAMarket.setMinBidSize">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-1022" rx="68.3729" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-1017.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">setMinBidSize</text>
+</g>
+<!-- NAMarket.setMinAuctionLiveness -->
+<g id="node13" class="node" data-name="NAMarket.setMinAuctionLiveness">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-968" rx="103.0887" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-963.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">setMinAuctionLiveness</text>
+</g>
+<!-- NAMarket.setFeePercentage -->
+<g id="node14" class="node" data-name="NAMarket.setFeePercentage">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-914" rx="78.123" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-909.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">setFeePercentage</text>
+</g>
+<!-- NAMarket.calculateFee -->
+<g id="node15" class="node" data-name="NAMarket.calculateFee">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.675" cy="-590" rx="59.0833" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="351.675" y="-585.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">calculateFee</text>
+</g>
+<!-- _cuPrice.mul -->
+<g id="node81" class="node" data-name="_cuPrice.mul">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="486.9591" cy="-343" rx="27" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="486.9591" y="-338.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">mul</text>
+</g>
+<!-- NAMarket.calculateFee&#45;&gt;_cuPrice.mul -->
+<g id="edge1" class="edge" data-name="NAMarket.calculateFee->_cuPrice.mul">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M360.4384,-571.9899C377.285,-537.6572 415.7358,-460.6777 451.9591,-398 457.71,-388.0492 464.4056,-377.3387 470.3916,-368.0369" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="473.3461,-369.9137 475.8592,-359.6212 467.4761,-366.1 473.3461,-369.9137" style=""></polygon>
+</g>
+<!-- NAMarket.createAuction -->
+<g id="node16" class="node" data-name="NAMarket.createAuction">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-644" rx="65.3859" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-639.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">createAuction</text>
+</g>
+<!-- NAMarket.transferToken -->
+<g id="node23" class="node" data-name="NAMarket.transferToken">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.675" cy="-742" rx="65.3878" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="351.675" y="-737.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">transferToken</text>
+</g>
+<!-- NAMarket.createAuction&#45;&gt;NAMarket.transferToken -->
+<g id="edge5" class="edge" data-name="NAMarket.createAuction->NAMarket.transferToken">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M197.03,-647.926C218.0462,-651.669 240.5924,-658.5449 258.4814,-671 277.5042,-684.2445 268.7283,-700.0966 286.4814,-715 290.3693,-718.2639 294.7068,-721.1786 299.2463,-723.7716" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="297.6681,-726.8957 308.16,-728.3688 300.8767,-720.6743 297.6681,-726.8957" style=""></polygon>
+</g>
+<!-- expiryDate.sub -->
+<g id="node82" class="node" data-name="expiryDate.sub">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.675" cy="-343" rx="27" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="351.675" y="-338.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">sub</text>
+</g>
+<!-- NAMarket.createAuction&#45;&gt;expiryDate.sub -->
+<g id="edge2" class="edge" data-name="NAMarket.createAuction->expiryDate.sub">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M198.67,-644.49C220.5874,-641.2402 243.2868,-633.5471 258.4814,-617 324.8499,-544.7237 239.5593,-484.1798 286.4814,-398 294.8458,-382.6374 309.3717,-369.7419 322.5921,-360.3077" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="324.6876,-363.1159 331.0134,-354.6168 320.7681,-357.3161 324.6876,-363.1159" style=""></polygon>
+</g>
+<!-- Counters.Counter.increment -->
+<g id="node83" class="node" data-name="Counters.Counter.increment">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.675" cy="-258" rx="49.7962" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="351.675" y="-253.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">increment</text>
+</g>
+<!-- NAMarket.createAuction&#45;&gt;Counters.Counter.increment -->
+<g id="edge3" class="edge" data-name="NAMarket.createAuction->Counters.Counter.increment">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M198.668,-644.8298C220.7197,-641.6385 243.5076,-633.8961 258.4814,-617 303.4773,-566.2276 255.0979,-373.146 286.4814,-313 293.4269,-299.689 305.0971,-288.2945 316.6601,-279.3864" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="318.9489,-282.0501 324.9916,-273.3474 314.8407,-276.3823 318.9489,-282.0501" style=""></polygon>
+</g>
+<!-- Counters.Counter.current -->
+<g id="node84" class="node" data-name="Counters.Counter.current">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.675" cy="-204" rx="38.2607" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="351.675" y="-199.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">current</text>
+</g>
+<!-- NAMarket.createAuction&#45;&gt;Counters.Counter.current -->
+<g id="edge4" class="edge" data-name="NAMarket.createAuction->Counters.Counter.current">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M198.5221,-645.0345C220.6944,-641.8895 243.5995,-634.1247 258.4814,-617 314.8949,-552.0842 236.1415,-300.7312 286.4814,-231 291.5837,-223.9322 298.8864,-218.7075 306.772,-214.8473" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="308.3185,-217.9945 316.1999,-210.9139 305.6232,-211.5342 308.3185,-217.9945" style=""></polygon>
+</g>
+<!-- NAMarket.cancelAuction -->
+<g id="node17" class="node" data-name="NAMarket.cancelAuction">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-752" rx="66.6132" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-747.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">cancelAuction</text>
+</g>
+<!-- NAMarket.cancelAuction&#45;&gt;NAMarket.transferToken -->
+<g id="edge7" class="edge" data-name="NAMarket.cancelAuction->NAMarket.transferToken">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M199.371,-748.9725C223.8715,-747.8509 251.8171,-746.5715 277.0239,-745.4176" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="277.4411,-748.9022 287.2706,-744.9485 277.121,-741.9095 277.4411,-748.9022" style=""></polygon>
+</g>
+<!-- NAMarket.cancelAuction&#45;&gt;Counters.Counter.increment -->
+<g id="edge6" class="edge" data-name="NAMarket.cancelAuction->Counters.Counter.increment">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M200.1963,-752.8318C221.8589,-749.5436 244.0024,-741.738 258.4814,-725 318.5176,-655.5969 245.0089,-394.8607 286.4814,-313 293.2667,-299.6067 304.9037,-288.195 316.4848,-279.2962" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="318.7769,-281.9584 324.8376,-273.2682 314.6805,-276.2821 318.7769,-281.9584" style=""></polygon>
+</g>
+<!-- NAMarket.settleAuction -->
+<g id="node18" class="node" data-name="NAMarket.settleAuction">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-806" rx="62.5547" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-801.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">settleAuction</text>
+</g>
+<!-- NAMarket.settleAuction&#45;&gt;NAMarket.calculateFee -->
+<g id="edge12" class="edge" data-name="NAMarket.settleAuction->NAMarket.calculateFee">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M195.7894,-805.8677C218.1883,-802.6786 241.9563,-795.1874 258.4814,-779 296.9863,-741.2819 261.215,-708.6119 286.4814,-661 295.8586,-643.3297 310.6933,-626.6807 323.8443,-613.9521" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="326.4327,-616.3231 331.3387,-606.9326 321.6475,-611.2141 326.4327,-616.3231" style=""></polygon>
+</g>
+<!-- NAMarket.saveSales -->
+<g id="node19" class="node" data-name="NAMarket.saveSales">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.675" cy="-796" rx="48.6501" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="351.675" y="-791.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">saveSales</text>
+</g>
+<!-- NAMarket.settleAuction&#45;&gt;NAMarket.saveSales -->
+<g id="edge13" class="edge" data-name="NAMarket.settleAuction->NAMarket.saveSales">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M195.2509,-803.1611C226.074,-801.7501 263.1087,-800.0546 293.4037,-798.6677" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="293.5711,-802.1638 303.4006,-798.21 293.2509,-795.1711 293.5711,-802.1638" style=""></polygon>
+</g>
+<!-- NAMarket.creditUser -->
+<g id="node20" class="node" data-name="NAMarket.creditUser">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.675" cy="-688" rx="51.4992" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="351.675" y="-683.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">creditUser</text>
+</g>
+<!-- NAMarket.settleAuction&#45;&gt;NAMarket.creditUser -->
+<g id="edge10" class="edge" data-name="NAMarket.settleAuction->NAMarket.creditUser">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M187.6595,-796.9521C211.6309,-793.2214 238.7644,-786.12 258.4814,-770 282.5181,-750.3484 264.3116,-727.7359 286.4814,-706 288.887,-703.6415 291.5281,-701.4781 294.3263,-699.5063" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="296.3884,-702.3487 303.1139,-694.1622 292.7511,-696.3678 296.3884,-702.3487" style=""></polygon>
+</g>
+<!-- NAMarket.settleAuction&#45;&gt;NAMarket.creditUser -->
+<g id="edge11" class="edge" data-name="NAMarket.settleAuction->NAMarket.creditUser">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M190.817,-813.035C213.9865,-810.584 239.6254,-803.416 258.4814,-788 282.5181,-768.3484 264.3116,-745.7359 286.4814,-724 293.895,-716.7314 303.5451,-711.3164 313.1382,-706.9976" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="314.7604,-710.1126 322.6275,-703.0162 312.0521,-703.6577 314.7604,-710.1126" style=""></polygon>
+</g>
+<!-- NAMarket.settleAuction&#45;&gt;NAMarket.transferToken -->
+<g id="edge9" class="edge" data-name="NAMarket.settleAuction->NAMarket.transferToken">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M171.7529,-791.713C196.7411,-785.7129 229.8584,-778.7018 258.4814,-770 265.7908,-767.7778 279.0435,-762.7299 293.3046,-757.4178" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="294.6054,-760.6685 302.7695,-753.916 292.1764,-754.1035 294.6054,-760.6685" style=""></polygon>
+</g>
+<!-- NAMarket.settleAuction&#45;&gt;NAMarket.transferToken -->
+<g id="edge15" class="edge" data-name="NAMarket.settleAuction->NAMarket.transferToken">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M195.2326,-803.2875C215.5688,-799.5048 238.158,-794.1786 258.4814,-788 270.1401,-784.4556 296.9187,-773.7222 318.793,-763.2508" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="320.3909,-766.3653 327.8091,-758.8008 317.2928,-760.0882 320.3909,-766.3653" style=""></polygon>
+</g>
+<!-- NAMarket.settleAuction&#45;&gt;Counters.Counter.increment -->
+<g id="edge8" class="edge" data-name="NAMarket.settleAuction->Counters.Counter.increment">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M195.7062,-807.5223C218.7875,-804.6685 243.0541,-796.9762 258.4814,-779 326.0441,-700.2742 239.9601,-405.7267 286.4814,-313 293.2142,-299.5802 304.8402,-288.163 316.4273,-279.2672" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="318.7205,-281.9288 324.7871,-273.2428 314.6279,-276.2498 318.7205,-281.9288" style=""></polygon>
+</g>
+<!-- totalSales.add -->
+<g id="node85" class="node" data-name="totalSales.add">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.675" cy="-119" rx="27" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="351.675" y="-114.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">add</text>
+</g>
+<!-- NAMarket.settleAuction&#45;&gt;totalSales.add -->
+<g id="edge14" class="edge" data-name="NAMarket.settleAuction->totalSales.add">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M195.5079,-807.6702C218.7046,-804.8642 243.1064,-797.1669 258.4814,-779 301.9545,-727.6328 256.7193,-234.355 286.4814,-174 294.2176,-158.3116 308.695,-145.391 322.0454,-136.0243" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="324.1602,-138.822 330.5736,-130.3888 320.301,-132.9819 324.1602,-138.822" style=""></polygon>
+</g>
+<!-- NAMarket.withdrawCredit -->
+<g id="node21" class="node" data-name="NAMarket.withdrawCredit">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-698" rx="71.7853" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-693.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">withdrawCredit</text>
+</g>
+<!-- NAMarket.placeBid -->
+<g id="node22" class="node" data-name="NAMarket.placeBid">
+
+<ellipse fill="#ff9797" stroke="#a52a2a" stroke-width="3" cx="133.2407" cy="-590" rx="45.2227" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-585.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">placeBid</text>
+</g>
+<!-- NAMarket.placeBid&#45;&gt;NAMarket.calculateFee -->
+<g id="edge17" class="edge" data-name="NAMarket.placeBid->NAMarket.calculateFee">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M170.2951,-579.566C204.5586,-576.0841 255.9731,-575.5679 295.3224,-578.0173" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="295.0824,-581.509 305.3048,-578.7243 295.5771,-574.5265 295.0824,-581.509" style=""></polygon>
+</g>
+<!-- NAMarket.placeBid&#45;&gt;NAMarket.calculateFee -->
+<g id="edge19" class="edge" data-name="NAMarket.placeBid->NAMarket.calculateFee">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M178.7658,-590C208.5666,-590 248.0921,-590 281.8304,-590" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="282.098,-593.5001 292.0979,-590 282.0979,-586.5001 282.098,-593.5001" style=""></polygon>
+</g>
+<!-- NAMarket.placeBid&#45;&gt;NAMarket.calculateFee -->
+<g id="edge22" class="edge" data-name="NAMarket.placeBid->NAMarket.calculateFee">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M170.2951,-600.434C204.5586,-603.9159 255.9731,-604.4321 295.3224,-601.9827" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="295.5771,-605.4735 305.3048,-601.2757 295.0824,-598.491 295.5771,-605.4735" style=""></polygon>
+</g>
+<!-- NAMarket.placeBid&#45;&gt;NAMarket.creditUser -->
+<g id="edge20" class="edge" data-name="NAMarket.placeBid->NAMarket.creditUser">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M177.3431,-594.6996C202.0455,-598.4966 232.9256,-605.2273 258.4814,-617 283.9538,-628.7343 309.0221,-648.4251 326.7322,-664.0975" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="324.5641,-666.8559 334.3265,-670.9725 329.262,-661.6665 324.5641,-666.8559" style=""></polygon>
+</g>
+<!-- bidPrice.add -->
+<g id="node86" class="node" data-name="bidPrice.add">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.675" cy="-34" rx="27" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="351.675" y="-29.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">add</text>
+</g>
+<!-- NAMarket.placeBid&#45;&gt;bidPrice.add -->
+<g id="edge16" class="edge" data-name="NAMarket.placeBid->bidPrice.add">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M168.4188,-578.6287C197.2381,-575.2783 236.6933,-570.414 258.4814,-545 327.1594,-464.8928 239.2119,-165.3368 286.4814,-71 293.0892,-57.8126 304.425,-46.5607 315.8091,-38.795" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="317.7075,-41.7372 324.4465,-33.5618 314.0801,-35.7503 317.7075,-41.7372" style=""></polygon>
+</g>
+<!-- NAMarket.placeBid&#45;&gt;bidPrice.add -->
+<g id="edge18" class="edge" data-name="NAMarket.placeBid->bidPrice.add">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M178.2438,-592.8656C205.677,-591.9647 239.082,-585.6278 258.4814,-563 327.1594,-482.8928 239.2119,-183.3368 286.4814,-89 294.3175,-73.3613 308.8026,-60.4445 322.1324,-51.0675" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="324.2437,-53.867 330.6435,-45.4235 320.3751,-48.0332 324.2437,-53.867" style=""></polygon>
+</g>
+<!-- NAMarket.placeBid&#45;&gt;bidPrice.add -->
+<g id="edge21" class="edge" data-name="NAMarket.placeBid->bidPrice.add">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M157.5592,-605.2935C186.4397,-612.2083 233.7978,-609.7913 258.4814,-581 327.1594,-500.8928 239.2119,-201.3368 286.4814,-107 296.7062,-86.5942 318.2514,-70.8227 333.779,-57.5736" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="336.1519,-60.1468 341.2586,-50.8639 331.4776,-54.9362 336.1519,-60.1468" style=""></polygon>
+</g>
+<!-- NAMarket.getOpenAuctions -->
+<g id="node24" class="node" data-name="NAMarket.getOpenAuctions">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-860" rx="78.7337" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-855.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">getOpenAuctions</text>
+</g>
+<!-- NAMarket.sfilter -->
+<g id="node28" class="node" data-name="NAMarket.sfilter">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.675" cy="-924" rx="33.6189" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="351.675" y="-919.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">sfilter</text>
+</g>
+<!-- NAMarket.getOpenAuctions&#45;&gt;NAMarket.sfilter -->
+<g id="edge25" class="edge" data-name="NAMarket.getOpenAuctions->NAMarket.sfilter">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M194.9133,-871.1786C215.3322,-875.4394 238.0516,-880.789 258.4814,-887 269.6027,-890.381 294.4822,-900.3036 315.7389,-909.0226" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="314.6089,-912.3424 325.1882,-912.9161 317.2757,-905.8702 314.6089,-912.3424" style=""></polygon>
+</g>
+<!-- NAMarket.cfilter -->
+<g id="node29" class="node" data-name="NAMarket.cfilter">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="486.9591" cy="-878" rx="34.1813" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="486.9591" y="-873.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">cfilter</text>
+</g>
+<!-- NAMarket.getOpenAuctions&#45;&gt;NAMarket.cfilter -->
+<g id="edge26" class="edge" data-name="NAMarket.getOpenAuctions->NAMarket.cfilter">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M188.7617,-847.2024C246.8627,-836.0007 340.3226,-824.199 418.4496,-843 431.77,-846.2055 445.4152,-852.4616 456.9863,-858.809" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="455.3617,-861.9122 465.7755,-863.8625 458.8509,-855.8437 455.3617,-861.9122" style=""></polygon>
+</g>
+<!-- NAMarket.sortMap -->
+<g id="node30" class="node" data-name="NAMarket.sortMap">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.675" cy="-870" rx="43.4377" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="351.675" y="-865.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">sortMap</text>
+</g>
+<!-- NAMarket.getOpenAuctions&#45;&gt;NAMarket.sortMap -->
+<g id="edge27" class="edge" data-name="NAMarket.getOpenAuctions->NAMarket.sortMap">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M178.7658,-845.2733C219.6808,-842.1252 278.927,-845.3146 316.359,-853.0034" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="315.775,-856.4604 326.305,-855.2899 317.3434,-849.6383 315.775,-856.4604" style=""></polygon>
+</g>
+<!-- NAMarket.getOpenAuctions&#45;&gt;NAMarket.sortMap -->
+<g id="edge28" class="edge" data-name="NAMarket.getOpenAuctions->NAMarket.sortMap">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M210.8675,-857.0613C241.0707,-857.9386 274.8006,-859.7213 301.6744,-861.9342" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="301.7225,-865.4517 311.9896,-862.837 302.3329,-858.4783 301.7225,-865.4517" style=""></polygon>
+</g>
+<!-- NAMarket.getOpenAuctions&#45;&gt;NAMarket.sortMap -->
+<g id="edge29" class="edge" data-name="NAMarket.getOpenAuctions->NAMarket.sortMap">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M200.5605,-869.3696C232.182,-871.5493 269.3265,-873.1125 298.8757,-873.4584" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="298.9651,-876.959 308.9894,-873.529 299.0141,-869.9592 298.9651,-876.959" style=""></polygon>
+</g>
+<!-- NAMarket.getOpenAuctions&#45;&gt;NAMarket.sortMap -->
+<g id="edge30" class="edge" data-name="NAMarket.getOpenAuctions->NAMarket.sortMap">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M165.9425,-876.4445C204.8921,-884.9029 269.933,-888.2533 311.7972,-884.2403" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="312.3844,-887.6956 321.9112,-883.06 311.5729,-880.7428 312.3844,-887.6956" style=""></polygon>
+</g>
+<!-- NAMarket.getOpenAuctions&#45;&gt;Counters.Counter.current -->
+<g id="edge23" class="edge" data-name="NAMarket.getOpenAuctions->Counters.Counter.current">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M203.6684,-851.9285C224.2804,-847.9209 244.9007,-840.043 258.4814,-824 301.7453,-772.8919 247.9946,-276.7957 286.4814,-222 290.8865,-215.7282 297.0322,-210.9093 303.8046,-207.3391" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="305.5324,-210.4053 313.3235,-203.2255 302.7555,-203.9796 305.5324,-210.4053" style=""></polygon>
+</g>
+<!-- NAMarket.getOpenAuctions&#45;&gt;Counters.Counter.current -->
+<g id="edge24" class="edge" data-name="NAMarket.getOpenAuctions->Counters.Counter.current">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M200.071,-869.5168C221.8564,-866.8103 244.1103,-858.9767 258.4814,-842 301.7453,-790.8919 247.9946,-294.7957 286.4814,-240 293.1254,-230.5406 303.7287,-224.3862 314.47,-219.935" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="315.7122,-223.2073 323.8488,-216.4215 313.2564,-216.6522 315.7122,-223.2073" style=""></polygon>
+</g>
+<!-- NAMarket.getBids -->
+<g id="node25" class="node" data-name="NAMarket.getBids">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-536" rx="40.5867" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-531.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">getBids</text>
+</g>
+<!-- NAMarket.getUserAuctions -->
+<g id="node26" class="node" data-name="NAMarket.getUserAuctions">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-482" rx="75.8605" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-477.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">getUserAuctions</text>
+</g>
+<!-- NAMarket.getUserAuctions&#45;&gt;Counters.Counter.current -->
+<g id="edge31" class="edge" data-name="NAMarket.getUserAuctions->Counters.Counter.current">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M200.9768,-473.6569C222.1794,-469.7219 243.8358,-461.9943 258.4814,-446 326.2372,-372.0045 225.6628,-301.7952 286.4814,-222 291.0252,-216.0384 297.1213,-211.3841 303.7681,-207.8757" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="305.3305,-211.0123 313.0792,-203.7867 302.5158,-204.6031 305.3305,-211.0123" style=""></polygon>
+</g>
+<!-- NAMarket.getUserAuctions&#45;&gt;Counters.Counter.current -->
+<g id="edge32" class="edge" data-name="NAMarket.getUserAuctions->Counters.Counter.current">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M199.3469,-490.8793C221.0642,-488.1127 243.4603,-480.4044 258.4814,-464 326.2372,-390.0045 225.6628,-319.7952 286.4814,-240 293.4178,-230.8992 303.9716,-224.8451 314.5797,-220.3889" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="316.14,-223.5397 324.2347,-216.704 313.644,-216.9998 316.14,-223.5397" style=""></polygon>
+</g>
+<!-- NAMarket.getSellerSalesList -->
+<g id="node27" class="node" data-name="NAMarket.getSellerSalesList">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-428" rx="80.5258" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-423.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">getSellerSalesList</text>
+</g>
+<!-- NAMarket.sfilter&#45;&gt;NAMarket.cfilter -->
+<g id="edge33" class="edge" data-name="NAMarket.sfilter->NAMarket.cfilter">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M380.035,-914.3569C399.9231,-907.5944 426.7445,-898.4745 448.5485,-891.0606" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="449.8297,-894.3218 458.1706,-887.7888 447.5761,-887.6945 449.8297,-894.3218" style=""></polygon>
+</g>
+<!-- ReentrancyGuard.&lt;Constructor&gt; -->
+<g id="node31" class="node" data-name="ReentrancyGuard.&lt;Constructor&gt;">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-1827" rx="67.5419" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-1822.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">&lt;Constructor&gt;</text>
+</g>
+<!-- ReentrancyGuard.nonReentrant -->
+<g id="node32" class="node" data-name="ReentrancyGuard.nonReentrant">
+
+<polygon fill="#edad56" stroke="#1bc6a6" stroke-width="3" points="201.2692,-1761.5442 201.2692,-1776.4558 161.419,-1787 105.0624,-1787 65.2122,-1776.4558 65.2122,-1761.5442 105.0624,-1751 161.419,-1751 201.2692,-1761.5442" style=""></polygon>
+<polygon fill="none" stroke="#1bc6a6" stroke-width="3" points="205.2558,-1758.4622 205.2558,-1779.5378 161.9358,-1791 104.5456,-1791 61.2256,-1779.5378 61.2256,-1758.4622 104.5456,-1747 161.9358,-1747 205.2558,-1758.4622" style=""></polygon>
+<text text-anchor="middle" x="133.2407" y="-1764.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">nonReentrant</text>
+</g>
+<!-- Ownable.&lt;Constructor&gt; -->
+<g id="node33" class="node" data-name="Ownable.&lt;Constructor&gt;">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-2020" rx="67.5419" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-2015.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">&lt;Constructor&gt;</text>
+</g>
+<!-- Ownable._setOwner -->
+<g id="node38" class="node" data-name="Ownable._setOwner">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.675" cy="-1966" rx="52.7276" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="351.675" y="-1961.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">_setOwner</text>
+</g>
+<!-- Ownable.&lt;Constructor&gt;&#45;&gt;Ownable._setOwner -->
+<g id="edge34" class="edge" data-name="Ownable.&lt;Constructor&gt;->Ownable._setOwner">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M187.3721,-2009.19C209.4998,-2004.5479 235.2971,-1998.85 258.4814,-1993 272.6757,-1989.4184 287.9728,-1985.1569 301.9881,-1981.09" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="303.3208,-1984.3467 311.9328,-1978.1755 301.3521,-1977.6292 303.3208,-1984.3467" style=""></polygon>
+</g>
+<!-- Ownable._msgSender -->
+<g id="node39" class="node" data-name="Ownable._msgSender">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.675" cy="-2022" rx="58.5502" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="351.675" y="-2017.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">_msgSender</text>
+</g>
+<!-- Ownable.&lt;Constructor&gt;&#45;&gt;Ownable._msgSender -->
+<g id="edge35" class="edge" data-name="Ownable.&lt;Constructor&gt;->Ownable._msgSender">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M200.8588,-2020.6191C226.8529,-2020.8571 256.5433,-2021.129 282.6666,-2021.3682" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="282.8325,-2024.8697 292.8642,-2021.4615 282.8967,-2017.87 282.8325,-2024.8697" style=""></polygon>
+</g>
+<!-- Ownable.owner -->
+<g id="node34" class="node" data-name="Ownable.owner">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.675" cy="-2078" rx="35.3334" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="351.675" y="-2073.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">owner</text>
+</g>
+<!-- Ownable.onlyOwner -->
+<g id="node35" class="node" data-name="Ownable.onlyOwner">
+
+<polygon fill="#edad56" stroke="#1bc6a6" stroke-width="3" points="192.1765,-2070.5442 192.1765,-2085.4558 157.6527,-2096 108.8287,-2096 74.3048,-2085.4558 74.3048,-2070.5442 108.8287,-2060 157.6527,-2060 192.1765,-2070.5442" style=""></polygon>
+<polygon fill="none" stroke="#1bc6a6" stroke-width="3" points="196.1744,-2067.583 196.1744,-2088.417 158.2493,-2100 108.2321,-2100 70.307,-2088.417 70.307,-2067.583 108.2321,-2056 158.2493,-2056 196.1744,-2067.583" style=""></polygon>
+<text text-anchor="middle" x="133.2407" y="-2073.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">onlyOwner</text>
+</g>
+<!-- Ownable.onlyOwner&#45;&gt;Ownable.owner -->
+<g id="edge36" class="edge" data-name="Ownable.onlyOwner->Ownable.owner">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M196.4209,-2078C231.5139,-2078 274.3686,-2078 306.1563,-2078" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="306.485,-2081.5001 316.485,-2078 306.485,-2074.5001 306.485,-2081.5001" style=""></polygon>
+</g>
+<!-- Ownable.onlyOwner&#45;&gt;Ownable._msgSender -->
+<g id="edge37" class="edge" data-name="Ownable.onlyOwner->Ownable._msgSender">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M187.5473,-2064.8018C209.5864,-2059.382 235.2733,-2052.9846 258.4814,-2047 271.2781,-2043.7002 285.0381,-2040.06 297.9524,-2036.6025" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="298.883,-2039.9767 307.6332,-2034.0029 297.0676,-2033.2162 298.883,-2039.9767" style=""></polygon>
+</g>
+<!-- Ownable.renounceOwnership -->
+<g id="node36" class="node" data-name="Ownable.renounceOwnership">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-1966" rx="88.5889" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-1961.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">renounceOwnership</text>
+</g>
+<!-- Ownable.renounceOwnership&#45;&gt;Ownable._setOwner -->
+<g id="edge38" class="edge" data-name="Ownable.renounceOwnership->Ownable._setOwner">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M222.0863,-1966C244.3158,-1966 267.7127,-1966 288.4151,-1966" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="288.6588,-1969.5001 298.6588,-1966 288.6587,-1962.5001 288.6588,-1969.5001" style=""></polygon>
+</g>
+<!-- Ownable.transferOwnership -->
+<g id="node37" class="node" data-name="Ownable.transferOwnership">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-1912" rx="82.782" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-1907.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">transferOwnership</text>
+</g>
+<!-- Ownable.transferOwnership&#45;&gt;Ownable._setOwner -->
+<g id="edge39" class="edge" data-name="Ownable.transferOwnership->Ownable._setOwner">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M194.2733,-1924.2672C214.7519,-1928.6197 237.6695,-1933.7486 258.4814,-1939 272.6757,-1942.5816 287.9728,-1946.8431 301.9881,-1950.91" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="301.3521,-1954.3708 311.9328,-1953.8245 303.3208,-1947.6533 301.3521,-1954.3708" style=""></polygon>
+</g>
+<!-- Context._msgSender -->
+<g id="node40" class="node" data-name="Context._msgSender">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-2221" rx="58.5502" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-2216.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">_msgSender</text>
+</g>
+<!-- Context._msgData -->
+<g id="node41" class="node" data-name="Context._msgData">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-2167" rx="50.38" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-2162.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">_msgData</text>
+</g>
+<!-- SafeMath.tryAdd -->
+<g id="node42" class="node" data-name="SafeMath.tryAdd">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-2792" rx="38.2838" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-2787.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">tryAdd</text>
+</g>
+<!-- SafeMath.trySub -->
+<g id="node43" class="node" data-name="SafeMath.trySub">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-2738" rx="36.5786" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-2733.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">trySub</text>
+</g>
+<!-- SafeMath.tryMul -->
+<g id="node44" class="node" data-name="SafeMath.tryMul">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-2684" rx="37.7198" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-2679.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">tryMul</text>
+</g>
+<!-- SafeMath.tryDiv -->
+<g id="node45" class="node" data-name="SafeMath.tryDiv">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-2630" rx="36.4955" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-2625.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">tryDiv</text>
+</g>
+<!-- SafeMath.tryMod -->
+<g id="node46" class="node" data-name="SafeMath.tryMod">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-2576" rx="40.0089" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-2571.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">tryMod</text>
+</g>
+<!-- SafeMath.add -->
+<g id="node47" class="node" data-name="SafeMath.add">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-2522" rx="27" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-2517.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">add</text>
+</g>
+<!-- SafeMath.sub -->
+<g id="node48" class="node" data-name="SafeMath.sub">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-2468" rx="27" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-2463.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">sub</text>
+</g>
+<!-- SafeMath.mul -->
+<g id="node49" class="node" data-name="SafeMath.mul">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-2414" rx="27" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-2409.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">mul</text>
+</g>
+<!-- SafeMath.div -->
+<g id="node50" class="node" data-name="SafeMath.div">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-2360" rx="27" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-2355.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">div</text>
+</g>
+<!-- SafeMath.mod -->
+<g id="node51" class="node" data-name="SafeMath.mod">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-2306" rx="28.4127" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-2301.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">mod</text>
+</g>
+<!-- Math.max -->
+<g id="node52" class="node" data-name="Math.max">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-3039" rx="27.8286" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-3034.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">max</text>
+</g>
+<!-- Math.min -->
+<g id="node53" class="node" data-name="Math.min">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-2985" rx="27" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-2980.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">min</text>
+</g>
+<!-- Math.average -->
+<g id="node54" class="node" data-name="Math.average">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-2931" rx="41.1103" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-2926.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">average</text>
+</g>
+<!-- Math.ceilDiv -->
+<g id="node55" class="node" data-name="Math.ceilDiv">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-2877" rx="39.4216" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-2872.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">ceilDiv</text>
+</g>
+<!-- Counters.current -->
+<g id="node56" class="node" data-name="Counters.current">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-3286" rx="38.2607" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-3281.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">current</text>
+</g>
+<!-- Counters.increment -->
+<g id="node57" class="node" data-name="Counters.increment">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-3232" rx="49.7962" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-3227.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">increment</text>
+</g>
+<!-- Counters.decrement -->
+<g id="node58" class="node" data-name="Counters.decrement">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-3178" rx="51.003" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-3173.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">decrement</text>
+</g>
+<!-- Counters.reset -->
+<g id="node59" class="node" data-name="Counters.reset">
+
+<ellipse fill="#f2c383" stroke="#f2c383" stroke-width="3" cx="133.2407" cy="-3124" rx="29.0299" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-3119.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">reset</text>
+</g>
+<!-- IERC721.balanceOf -->
+<g id="node60" class="node" data-name="IERC721.balanceOf">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-3749" rx="50.9211" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-3744.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">balanceOf</text>
+</g>
+<!-- IERC721.ownerOf -->
+<g id="node61" class="node" data-name="IERC721.ownerOf">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-3695" rx="45.2054" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-3690.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">ownerOf</text>
+</g>
+<!-- IERC721.safeTransferFrom -->
+<g id="node62" class="node" data-name="IERC721.safeTransferFrom">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-3641" rx="80.4112" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-3636.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">safeTransferFrom</text>
+</g>
+<!-- IERC721.transferFrom -->
+<g id="node63" class="node" data-name="IERC721.transferFrom">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-3587" rx="61.3916" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-3582.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">transferFrom</text>
+</g>
+<!-- IERC721.approve -->
+<g id="node64" class="node" data-name="IERC721.approve">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-3533" rx="42.2777" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-3528.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">approve</text>
+</g>
+<!-- IERC721.getApproved -->
+<g id="node65" class="node" data-name="IERC721.getApproved">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-3479" rx="61.4012" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-3474.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">getApproved</text>
+</g>
+<!-- IERC721.setApprovalForAll -->
+<g id="node66" class="node" data-name="IERC721.setApprovalForAll">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-3425" rx="83.9663" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-3420.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">setApprovalForAll</text>
+</g>
+<!-- IERC721.isApprovedForAll -->
+<g id="node67" class="node" data-name="IERC721.isApprovedForAll">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-3371" rx="81.6828" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-3366.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">isApprovedForAll</text>
+</g>
+<!-- IERC165.supportsInterface -->
+<g id="node68" class="node" data-name="IERC165.supportsInterface">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-3834" rx="78.1269" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-3829.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">supportsInterface</text>
+</g>
+<!-- IERC1155.balanceOf -->
+<g id="node69" class="node" data-name="IERC1155.balanceOf">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-4189" rx="50.9211" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-4184.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">balanceOf</text>
+</g>
+<!-- IERC1155.balanceOfBatch -->
+<g id="node70" class="node" data-name="IERC1155.balanceOfBatch">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-4135" rx="73.4726" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-4130.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">balanceOfBatch</text>
+</g>
+<!-- IERC1155.setApprovalForAll -->
+<g id="node71" class="node" data-name="IERC1155.setApprovalForAll">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-4081" rx="83.9663" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-4076.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">setApprovalForAll</text>
+</g>
+<!-- IERC1155.isApprovedForAll -->
+<g id="node72" class="node" data-name="IERC1155.isApprovedForAll">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-4027" rx="81.6828" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-4022.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">isApprovedForAll</text>
+</g>
+<!-- IERC1155.safeTransferFrom -->
+<g id="node73" class="node" data-name="IERC1155.safeTransferFrom">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-3973" rx="80.4112" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-3968.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">safeTransferFrom</text>
+</g>
+<!-- IERC1155.safeBatchTransferFrom -->
+<g id="node74" class="node" data-name="IERC1155.safeBatchTransferFrom">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-3919" rx="102.9628" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-3914.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">safeBatchTransferFrom</text>
+</g>
+<!-- ERC1155Receiver.onERC1155Received -->
+<g id="node75" class="node" data-name="ERC1155Receiver.onERC1155Received">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-4328" rx="94.9303" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-4323.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">onERC1155Received</text>
+</g>
+<!-- ERC1155Receiver.onERC1155BatchReceived -->
+<g id="node76" class="node" data-name="ERC1155Receiver.onERC1155BatchReceived">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-4274" rx="117.4819" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-4269.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">onERC1155BatchReceived</text>
+</g>
+<!-- IERC1155Receiver.onERC1155Received -->
+<g id="node77" class="node" data-name="IERC1155Receiver.onERC1155Received">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-4467" rx="94.9303" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-4462.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">onERC1155Received</text>
+</g>
+<!-- IERC1155Receiver.onERC1155BatchReceived -->
+<g id="node78" class="node" data-name="IERC1155Receiver.onERC1155BatchReceived">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="133.2407" cy="-4413" rx="117.4819" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-4408.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">onERC1155BatchReceived</text>
+</g>
+<!-- ERC165.supportsInterface -->
+<g id="node79" class="node" data-name="ERC165.supportsInterface">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="133.2407" cy="-4552" rx="78.1269" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="133.2407" y="-4547.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">supportsInterface</text>
+</g>
+<!-- ERC165.type -->
+<g id="node80" class="node" data-name="ERC165.type">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="351.675" cy="-4552" rx="27.8286" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="351.675" y="-4547.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">type</text>
+</g>
+<!-- ERC165.supportsInterface&#45;&gt;ERC165.type -->
+<g id="edge40" class="edge" data-name="ERC165.supportsInterface->ERC165.type">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M211.4835,-4552C246.2193,-4552 285.5119,-4552 313.642,-4552" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="313.8438,-4555.5001 323.8438,-4552 313.8438,-4548.5001 313.8438,-4555.5001" style=""></polygon>
+</g>
+<!-- key -->
+<g id="node87" class="node" data-name="key">
+
+<polygon fill="#edad56" stroke="transparent" stroke-width="3" points="198.2407,-4707 68.2407,-4707 68.2407,-4619 198.2407,-4619 198.2407,-4707" style=""></polygon>
+<text text-anchor="start" x="117.8767" y="-4688.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">Internal Call</text>
+<text text-anchor="start" x="113.9847" y="-4668.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">External Call</text>
+<text text-anchor="start" x="91.4461" y="-4648.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">Defined Contract</text>
+<text text-anchor="start" x="77.8434" y="-4628.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">Undefined Contract</text>
+</g>
+<!-- key2 -->
+<g id="node88" class="node" data-name="key2">
+
+<polygon fill="#edad56" stroke="transparent" stroke-width="3" points="378.675,-4707 324.675,-4707 324.675,-4619 378.675,-4619 378.675,-4707" style=""></polygon>
+<text text-anchor="start" x="339.4341" y="-4688.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">&nbsp;&nbsp;&nbsp;</text>
+<text text-anchor="start" x="339.4341" y="-4668.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">&nbsp;&nbsp;&nbsp;</text>
+<polygon fill="#445773" stroke="transparent" points="337.675,-4643 337.675,-4663 365.675,-4663 365.675,-4643 337.675,-4643" style=""></polygon>
+<text text-anchor="start" x="339.4341" y="-4648.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">&nbsp;&nbsp;&nbsp;</text>
+<polygon fill="none" stroke="#e8726d" points="339.675,-4625 339.675,-4641 363.675,-4641 363.675,-4625 339.675,-4625" style=""></polygon>
+</g>
+<!-- key&#45;&gt;key2 -->
+<g id="edge41" class="edge" data-name="key->key2">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M190.2407,-4693C252.1836,-4693 270.2099,-4693 327.3494,-4693" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="327.675,-4696.5001 337.675,-4693 327.675,-4689.5001 327.675,-4696.5001" style=""></polygon>
+</g>
+<!-- key&#45;&gt;key2 -->
+<g id="edge42" class="edge" data-name="key->key2">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M190.2407,-4673C252.1836,-4673 270.2099,-4673 327.3494,-4673" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="327.675,-4676.5001 337.675,-4673 327.675,-4669.5001 327.675,-4676.5001" style=""></polygon>
+</g>
+</g>
+</svg>
